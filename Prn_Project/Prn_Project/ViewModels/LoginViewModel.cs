@@ -1,9 +1,11 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
+﻿using BCrypt.Net;
 using Prn_Project.Models;
-using System.Linq;
+using Prn_Project.Views.Inspector;
+using Prn_Project.Views.Owner;
+using Prn_Project.Views.Police;
+using Prn_Project.Views.Station;
 using System.Windows;
+using System.Windows.Input;
 
 namespace Prn_Project.ViewModels
 {
@@ -13,49 +15,74 @@ namespace Prn_Project.ViewModels
         public string Email
         {
             get => _email;
-            set { _email = value; OnPropertyChanged(); }
+            set
+            {
+                if (_email != value)
+                {
+                    _email = value;
+                    OnPropertyChanged();
+                }
+            }
         }
 
         private string _password;
         public string Password
         {
             get => _password;
-            set { _password = value; OnPropertyChanged(); }
+            set
+            {
+                if (_password != value)
+                {
+                    _password = value;
+                    OnPropertyChanged();
+                }
+            }
         }
 
         public ICommand LoginCommand { get; set; }
 
         public LoginViewModel()
         {
-            LoginCommand = new RelayCommand(Login);
+            LoginCommand = new RelayCommand(ExecuteLogin);
         }
 
-        private void Login()
+        public void ExecuteLogin()
         {
+            // Kiểm tra nếu Email và Password trống
+            if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password))
+            {
+                MessageBox.Show("Email và mật khẩu không được để trống!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return; // Dừng lại nếu thiếu thông tin
+            }
+
             using (var context = new EmissionInspectionContext())
             {
                 var user = context.Users
-                    .FirstOrDefault(u => u.Email == Email && u.Password == Password); // Nên mã hóa pass thực tế
+                    .FirstOrDefault(u => u.Email == Email); // Tìm người dùng dựa trên Email
 
-                if (user != null)
+                // Kiểm tra nếu người dùng tồn tại và mật khẩu nhập vào khớp với mật khẩu đã mã hóa trong CSDL
+                if (user != null && BCrypt.Net.BCrypt.Verify(Password, user.Password))  // Kiểm tra mật khẩu sau khi mã hóa
                 {
                     MessageBox.Show("Đăng nhập thành công!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Application.Current.MainWindow.Hide();
 
                     // Mở MainWindow theo vai trò
-                    Application.Current.MainWindow.Hide();
                     switch (user.Role)
                     {
                         case "Owner":
-                            new Views.Owner.OwnerMainWindow(user).Show();
+                            new OwnerMainWindow(user).Show();
                             break;
                         case "Inspector":
-                            new Views.Inspector.InspectorMainWindow(user).Show();
+                            new InspectorMainWindow(user).Show();
                             break;
                         case "Police":
-                            new Views.Police.PoliceMainWindow(user).Show();
+                            new PoliceMainWindow(user).Show();
                             break;
                         case "Station":
-                            new Views.Station.StationMainWindow(user).Show();
+                            new StationMainWindow(user).Show();
+                            break;
+                        default:
+                            MessageBox.Show("Vai trò không hợp lệ.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                             break;
                     }
                 }
@@ -65,5 +92,6 @@ namespace Prn_Project.ViewModels
                 }
             }
         }
+
     }
 }

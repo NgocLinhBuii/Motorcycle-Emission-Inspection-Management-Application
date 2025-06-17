@@ -1,27 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Prn_Project.ViewModels;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-namespace Prn_Project.Views
+public partial class LoginView : Window
 {
-    /// <summary>
-    /// Interaction logic for LoginView.xaml
-    /// </summary>
-    public partial class LoginView : Window
+    public LoginView()
     {
-        public LoginView()
+        InitializeComponent();
+        this.DataContext = new LoginViewModel(); // Đảm bảo DataContext đã được thiết lập
+    }
+
+    private void InitializeComponent()
+    {
+        throw new NotImplementedException();
+    }
+
+    // Event handler cho PasswordChanged của PasswordBox
+    private void PwdBox_PasswordChanged(object sender, RoutedEventArgs e)
+    {
+        var passwordBox = sender as PasswordBox;
+        if (passwordBox != null)
         {
-            InitializeComponent();
+            var viewModel = this.DataContext as LoginViewModel;
+            if (viewModel != null)
+            {
+                viewModel.Password = passwordBox.Password; // Cập nhật Password trong ViewModel
+            }
         }
     }
 }

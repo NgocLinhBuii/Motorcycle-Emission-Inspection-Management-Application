@@ -1,27 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Prn_Project.Models;
 
 namespace Prn_Project.Views.Owner
 {
-    /// <summary>
-    /// Interaction logic for OwnerMainWindow.xaml
-    /// </summary>
     public partial class OwnerMainWindow : Window
     {
-        public OwnerMainWindow()
+        private User _currentUser;
+
+        public OwnerMainWindow(User user)
         {
             InitializeComponent();
+            _currentUser = user;
+            // có thể hiển thị tên user nếu muốn
         }
     }
 }
