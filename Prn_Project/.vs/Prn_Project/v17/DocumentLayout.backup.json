@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\models\\emissioninspectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\models\\emissioninspectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\views\\shared\\footer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\views\\shared\\footer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\views\\shared\\header.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\views\\shared\\header.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\views\\station\\stationmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\views\\station\\stationmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\views\\police\\policemainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\views\\police\\policemainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\views\\inspector\\inspectormainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\views\\inspector\\inspectormainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\views\\owner\\ownermainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\views\\owner\\ownermainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|d:\\motorcycle-emission-inspection-management-application\\prn_project\\prn_project\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6E0227D3-CF6F-48DF-A2C9-E690CBD3814C}|Prn_Project\\Prn_Project.csproj|solutionrelative:prn_project\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +43,85 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmissionInspectionContext.cs",
-              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Models\\EmissionInspectionContext.cs",
-              "RelativeDocumentMoniker": "Prn_Project\\Models\\EmissionInspectionContext.cs",
-              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Models\\EmissionInspectionContext.cs",
-              "RelativeToolTip": "Prn_Project\\Models\\EmissionInspectionContext.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA/wCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T11:05:07.421Z",
+              "Title": "Footer.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Shared\\Footer.xaml",
+              "RelativeDocumentMoniker": "Prn_Project\\Views\\Shared\\Footer.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Shared\\Footer.xaml",
+              "RelativeToolTip": "Prn_Project\\Views\\Shared\\Footer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-17T14:25:55.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\appsettings.json",
-              "RelativeDocumentMoniker": "Prn_Project\\appsettings.json",
-              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\appsettings.json",
-              "RelativeToolTip": "Prn_Project\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-11T11:01:14.484Z",
+              "Title": "Header.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Shared\\Header.xaml",
+              "RelativeDocumentMoniker": "Prn_Project\\Views\\Shared\\Header.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Shared\\Header.xaml",
+              "RelativeToolTip": "Prn_Project\\Views\\Shared\\Header.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-17T14:24:53.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Prn_Project\\MainWindow.xaml",
-              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\MainWindow.xaml",
-              "RelativeToolTip": "Prn_Project\\MainWindow.xaml",
+              "Title": "StationMainWindow.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Station\\StationMainWindow.xaml",
+              "RelativeDocumentMoniker": "Prn_Project\\Views\\Station\\StationMainWindow.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Station\\StationMainWindow.xaml",
+              "RelativeToolTip": "Prn_Project\\Views\\Station\\StationMainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-11T10:59:54.43Z",
+              "WhenOpened": "2025-06-17T14:23:59.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PoliceMainWindow.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Police\\PoliceMainWindow.xaml",
+              "RelativeDocumentMoniker": "Prn_Project\\Views\\Police\\PoliceMainWindow.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Police\\PoliceMainWindow.xaml",
+              "RelativeToolTip": "Prn_Project\\Views\\Police\\PoliceMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-17T14:23:05.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InspectorMainWindow.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Inspector\\InspectorMainWindow.xaml",
+              "RelativeDocumentMoniker": "Prn_Project\\Views\\Inspector\\InspectorMainWindow.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Inspector\\InspectorMainWindow.xaml",
+              "RelativeToolTip": "Prn_Project\\Views\\Inspector\\InspectorMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-17T14:22:20.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OwnerMainWindow.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Owner\\OwnerMainWindow.xaml",
+              "RelativeDocumentMoniker": "Prn_Project\\Views\\Owner\\OwnerMainWindow.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\Owner\\OwnerMainWindow.xaml",
+              "RelativeToolTip": "Prn_Project\\Views\\Owner\\OwnerMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-17T14:21:23.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginView.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\LoginView.xaml",
+              "RelativeDocumentMoniker": "Prn_Project\\Views\\LoginView.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\Prn_Project\\Prn_Project\\Views\\LoginView.xaml",
+              "RelativeToolTip": "Prn_Project\\Views\\LoginView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-17T14:19:50.046Z",
               "EditorCaption": ""
             }
           ]
