@@ -1,0 +1,17 @@
+﻿<Window x:Class="Prn_Project.Views.Police.PoliceMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trang tra cứu - Cảnh sát giao thông" Height="350" Width="600">
+    <Grid Background="#f8f8f8">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Xin chào cảnh sát giao thông!"
+                       FontSize="22" FontWeight="Bold"
+                       HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <Button Content="Tra cứu phương tiện theo biển số"
+                    Width="250" Height="40" Margin="0,10"/>
+            <Button Content="Xem phương tiện vi phạm đăng kiểm"
+                    Width="250" Height="40" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>
