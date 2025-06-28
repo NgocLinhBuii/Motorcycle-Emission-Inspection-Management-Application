@@ -1,0 +1,21 @@
+<Window x:Class="Motorcycle_Emission_Inspection_Management.VehicleOwner.VehicleOwnerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chủ phương tiện - Quản lý xe" Height="500" Width="850"
+        WindowStartupLocation="CenterScreen" Background="#FFCAE4E2" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Xe của tôi" FontSize="22" FontWeight="Bold" Foreground="#2e7d32" Margin="0,0,0,10"/>
+
+            <ListBox x:Name="lstVehicles" DisplayMemberPath="PlateNumber" Height="150" BorderBrush="#ccc"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                <Button Content="Đăng ký kiểm định" Width="150" Margin="5" Click="BtnRegister_Click"/>
+                <Button Content="Lịch sử kiểm định" Width="150" Margin="5" Click="BtnHistory_Click"/>
+                <Button Content="Thoát" Width="100" Margin="5" Click="BtnExit_Click"/>
+            </StackPanel>
+
+            <TextBlock x:Name="txtStatus" Foreground="DarkGreen" Margin="5" FontWeight="SemiBold"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Motorcycle_Emission_Inspection_Management.BLL.Entities;
+namespace Motorcycle_Emission_Inspection_Management.DAL.Entities;
 
 public partial class Notification
 {

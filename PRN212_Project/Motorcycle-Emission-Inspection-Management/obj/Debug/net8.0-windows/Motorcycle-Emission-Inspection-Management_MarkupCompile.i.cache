@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\FUL\25_SU25\PRN212\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\App.xaml
-11407045341
+25-1925938988
 
-6925331302
+30-1453743548
 235124854371
-MainWindow.xaml;
+Admin\LogView.xaml;Admin\SystemConfigView.xaml;Admin\UserManagementView.xaml;Dashboards\InspectorDashboard.xaml;Dashboards\OwnerDashboard.xaml;Dashboards\PoliceDashboard.xaml;Dashboards\StationDashboard.xaml;EmissionTestingFacility\InspectionInputView.xaml;EmissionTestingFacility\ReportUploadView.xaml;EmissionTestingFacility\StationDashboard.xaml;EmissionTestingFacility\StationWindow.xaml;Inspector\ConfirmResultView.xaml;Inspector\InspectorView.xaml;Inspector\InspectorWindow.xaml;LoginWindow.xaml;MainWindow.xaml;Police\PoliceSearchView.xaml;Police\PoliceWindow.xaml;Police\ViolationLogView.xaml;VehicleOwner\AddVehicleView.xaml;VehicleOwner\BookingView.xaml;VehicleOwner\InspectionHistoryView.xaml;VehicleOwner\RegisterView.xaml;VehicleOwner\VehicleOwnerWindow.xaml;VehicleOwner\Window1.xaml;
 
 True
 

@@ -1,0 +1,25 @@
+﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management"
+        mc:Ignorable="d"
+    Title="LoginWindow"  Height="500" Width="850" Background="#FFCAE4E2" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Grid Margin="-17,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="722*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="370" Stroke="Black" VerticalAlignment="Top" Width="584" Fill="#C0C0C0" RadiusX="20" RadiusY="20" Margin="23,70,0,0" Grid.Column="2"/>
+        <Label Content="Log in" HorizontalAlignment="Left" Height="60" Margin="195,77,0,0" VerticalAlignment="Top" Width="230" FontWeight="ExtraBold" FontSize="40" HorizontalContentAlignment="Center" Grid.Column="2"/>
+        <Label Content="Email" HorizontalAlignment="Left" Height="45" Margin="68,182,0,0" VerticalAlignment="Top" Width="107" Grid.Column="2" FontSize="18"/>
+        <TextBox x:Name="EmailAddressTextBox" HorizontalAlignment="Left" Height="45" Margin="163,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="374" TabIndex="0" Grid.Column="2"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="45" Margin="68,251,0,0" VerticalAlignment="Top" Width="107" Grid.Column="2" FontSize="18"/>
+        <PasswordBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="45" Margin="163,248,0,0" VerticalAlignment="Top" Width="374" TabIndex="0" Grid.Column="2"/>
+        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="55" Margin="65,339,0,0" VerticalAlignment="Top" Width="230" TabIndex="2"  Grid.Column="2" FontSize="24" FontWeight="Bold" Click="LoginButton_Click" />
+        <Button x:Name="QuitButton" Content="Quit" HorizontalAlignment="Left" Height="55" Margin="333,339,0,0" VerticalAlignment="Top" Width="230" TabIndex="3"  Grid.Column="2" FontSize="24" FontWeight="Bold" Click="QuitButton_Click" />
+    </Grid>
+
+</Window>

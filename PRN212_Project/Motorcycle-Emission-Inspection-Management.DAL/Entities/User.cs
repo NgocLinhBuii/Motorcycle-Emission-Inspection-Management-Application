@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Motorcycle_Emission_Inspection_Management.BLL.Entities;
+namespace Motorcycle_Emission_Inspection_Management.DAL.Entities;
 
 public partial class User
 {
@@ -13,7 +13,7 @@ public partial class User
 
     public string Password { get; set; } = null!;
 
-    public string Role { get; set; } = null!;
+    public int RoleId { get; set; }
 
     public string Phone { get; set; } = null!;
 
@@ -24,6 +24,8 @@ public partial class User
     public virtual ICollection<Log> Logs { get; set; } = new List<Log>();
 
     public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
+
+    public virtual Role Role { get; set; } = null!;
 
     public virtual ICollection<Vehicle> Vehicles { get; set; } = new List<Vehicle>();
 }
