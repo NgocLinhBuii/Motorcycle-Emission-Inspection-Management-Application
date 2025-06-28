@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Motorcycle-Emission-Inspection-Management.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a47d75dbb28c189afd2212066c2e349b7c6a8ee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f8b5cb3f31736ababefba38884e4e543e451774")]
 [assembly: System.Reflection.AssemblyProductAttribute("Motorcycle-Emission-Inspection-Management.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Motorcycle-Emission-Inspection-Management.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
