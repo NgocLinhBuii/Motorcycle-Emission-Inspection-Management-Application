@@ -14,7 +14,7 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Repositories
         public List<InspectionRecord> GetAll()
         {
             using var context = new EmissionInspectionContext();
-            return context.InspectionRecords.Include("Vehicle").ToList();
+            return context.InspectionRecords.Include(v => v.Vehicle).ToList();
         }
 
         public void Add(InspectionRecord x)

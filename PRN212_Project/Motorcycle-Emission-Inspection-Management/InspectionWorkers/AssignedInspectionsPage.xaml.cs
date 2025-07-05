@@ -42,5 +42,49 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
             AssignedInspectionDataGrid.ItemsSource = null;
             AssignedInspectionDataGrid.ItemsSource = _service.GetAll();
         }
+
+     
+
+
+        private void txtPlateNumber_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (txtPlateNumber.Text == "Biển số")
+            {
+                txtPlateNumber.Text = "";
+                txtPlateNumber.Foreground = Brushes.Black;
+            }
+        }
+
+        private void txtPlateNumber_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPlateNumber.Text))
+            {
+                txtPlateNumber.Text = "Biển số";
+                txtPlateNumber.Foreground = Brushes.Gray;
+            }
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            string? plate = txtPlateNumber.Text?.Trim();
+            if (string.IsNullOrEmpty(plate) || plate.Equals("Biển số", StringComparison.OrdinalIgnoreCase))
+                plate = null;                                    
+
+            /* ----------- 2. TRẠNG THÁI ----------- */
+            string? status = (cbStatus.SelectedItem as ComboBoxItem)?.Content?.ToString();
+            if (string.IsNullOrWhiteSpace(status) || status.Equals("Tất cả", StringComparison.OrdinalIgnoreCase))
+                status = null;                                   
+
+            /* ----------- 3. NGÀY KIỂM ĐỊNH ----------- */
+            DateTime? inspDate = dpDate.SelectedDate;           
+
+            /* ----------- 4. LẤY DỮ LIỆU ----------- */
+            var result = (plate == null && status == null && !inspDate.HasValue)
+                         ? _service.GetAll()
+                         : _service.SearchInspectionRecords(plate, status, inspDate);
+
+            AssignedInspectionDataGrid.ItemsSource = null;
+            AssignedInspectionDataGrid.ItemsSource = result;
+        }
     }
 }
