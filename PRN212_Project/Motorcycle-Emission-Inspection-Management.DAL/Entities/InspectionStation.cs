@@ -16,4 +16,6 @@ public partial class InspectionStation
     public string Email { get; set; } = null!;
 
     public virtual ICollection<InspectionRecord> InspectionRecords { get; set; } = new List<InspectionRecord>();
+    public ICollection<User> Users { get; set; }
+
 }

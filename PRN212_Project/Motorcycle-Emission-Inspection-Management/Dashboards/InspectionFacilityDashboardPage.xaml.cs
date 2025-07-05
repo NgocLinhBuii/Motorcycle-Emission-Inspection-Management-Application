@@ -1,4 +1,5 @@
-﻿using Motorcycle_Emission_Inspection_Management.InspectionFacility;
+﻿using Motorcycle_Emission_Inspection_Management.Common;
+using Motorcycle_Emission_Inspection_Management.InspectionFacility;
 using Motorcycle_Emission_Inspection_Management.InspectionWorkers;
 using System;
 using System.Collections.Generic;
@@ -21,10 +22,24 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
     /// </summary>
     public partial class InspectionFacilityDashboardPage : Window
     {
+ 
+        private int _userId;
+
+        public InspectionFacilityDashboardPage(int userId)
+        {
+            InitializeComponent();
+            _userId = userId;
+
+            // Bạn có thể lấy StationID từ UserSession nếu cần
+            // hoặc gọi service tại đây nếu cần dùng _userId
+        }
+
+        // Constructor mặc định nếu bạn vẫn dùng nó ở nơi khác
         public InspectionFacilityDashboardPage()
         {
             InitializeComponent();
         }
+
 
         private void ViewRequestsBtn_Click(object sender, RoutedEventArgs e)
         {

@@ -11,6 +11,7 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Repositories
 {
     public class InspectionRecordRepository
     {
+        
         public List<InspectionRecord> GetAll()
         {
             using var context = new EmissionInspectionContext();

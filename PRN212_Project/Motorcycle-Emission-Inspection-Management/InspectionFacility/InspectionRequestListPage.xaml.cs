@@ -27,7 +27,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
-            new InspectionFacilityDashboardPage().Show();
+
         }
     }
 }

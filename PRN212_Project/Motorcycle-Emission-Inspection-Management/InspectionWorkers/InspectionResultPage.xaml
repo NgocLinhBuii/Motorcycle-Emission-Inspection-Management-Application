@@ -25,8 +25,21 @@
 
             <StackPanel Orientation="Horizontal" Margin="0,5">
                 <TextBlock Text="Biển số xe:" Width="150" VerticalAlignment="Center" FontSize="16" Foreground="#333333"/>
-                <TextBox Width="200" Name="PlateNumberTextBox" IsReadOnly="True" FontSize="16"/>
+                <ComboBox x:Name="cbPlateNumber" DisplayMemberPath="PlateNumber" SelectedValuePath="VehicleId" Width="202"/>
             </StackPanel>
+            <!-- Thêm ComboBox chọn trạm -->
+            <!-- Trạm kiểm định -->
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Trạm kiểm định:" Width="150"
+               VerticalAlignment="Center" FontSize="16" Foreground="#333333"/>
+                <ComboBox x:Name="cbStation"
+              Width="202"
+              DisplayMemberPath="Name"     
+                    SelectedValuePath="StationId" />
+                    <!-- giá trị = StationID -->
+            </StackPanel>
+
+
 
             <StackPanel Orientation="Horizontal" Margin="0,5">
                 <TextBlock Text="CO Emission (ppm):" Width="150" VerticalAlignment="Center" FontSize="16" Foreground="#333333"/>
@@ -38,11 +51,18 @@
                 <TextBox Width="200" Name="HCTextBox" FontSize="16"/>
             </StackPanel>
 
+            <StackPanel Orientation="Horizontal" Margin="0,4">
+                <TextBlock Text="Ngày kiểm định:"  Width="150" VerticalAlignment="Center" FontSize="16" Foreground="#333333"/>
+                <DatePicker x:Name="dpInspectDate"
+                           
+            Width="200"/>
+
+            </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,5">
                 <TextBlock Text="Trạng thái:" Width="150" VerticalAlignment="Center" FontSize="16" Foreground="#333333"/>
-                <ComboBox Width="200" Name="ResultComboBox" FontSize="16">
-                    <ComboBoxItem Content="Đạt"/>
-                    <ComboBoxItem Content="Không đạt"/>
+                <ComboBox Width="200" Name="ResultComboBox" FontSize="16" >
+                    <ComboBoxItem Content="Pass"/>
+                    <ComboBoxItem Content="Fail"/>
                 </ComboBox>
             </StackPanel>
 
@@ -59,7 +79,7 @@
                     Foreground="White"
                     Background="#007BFF"
                     Margin="0,15,0,0"
-                    HorizontalAlignment="Left"/>
+                    HorizontalAlignment="Left" Click="Button_Click"/>
         </StackPanel>
 
         <!-- Nút Thoát -->

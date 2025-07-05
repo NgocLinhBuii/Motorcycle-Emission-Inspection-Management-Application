@@ -1,4 +1,5 @@
-﻿using Motorcycle_Emission_Inspection_Management.InspectionFacility;
+﻿using Motorcycle_Emission_Inspection_Management.DAL.Entities;
+using Motorcycle_Emission_Inspection_Management.InspectionFacility;
 using Motorcycle_Emission_Inspection_Management.InspectionWorkers;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,8 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Motorcycle_Emission_Inspection_Management.Common;   // chứa UserSession
+
 using System.Windows.Shapes;
 
 namespace Motorcycle_Emission_Inspection_Management.Dashboards
@@ -33,7 +36,10 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
 
         private void EnterResultsBtn_Click(object sender, RoutedEventArgs e)
         {
+
             new InspectionResultPage().Show();
+
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
