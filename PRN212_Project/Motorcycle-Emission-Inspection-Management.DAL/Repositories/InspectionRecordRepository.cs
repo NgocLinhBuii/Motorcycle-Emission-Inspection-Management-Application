@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Repositories
         public List<InspectionRecord> GetAll()
         {
             using var context = new EmissionInspectionContext();
-            return context.InspectionRecords.ToList();
+            return context.InspectionRecords.Include("Vehicle").ToList();
         }
 
         public void Add(InspectionRecord x)

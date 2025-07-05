@@ -1,0 +1,153 @@
+﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.InspectionFacility.FacilityReportPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Báo cáo định kỳ"
+        Height="600" Width="900"
+        Background="#FFFFFF"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <!-- 3 hàng: 0 – Tiêu đề + bộ lọc, 1 – DataGrid, 2 – nút hành động -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- ===== TIÊU ĐỀ & BỘ LỌC ===== -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+
+            <!-- Tiêu đề -->
+            <TextBlock Text="Báo cáo định kỳ"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="#333333"
+                       TextAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <!-- Bộ lọc -->
+            <StackPanel Orientation="Horizontal">
+
+                <!-- Từ ngày -->
+                <StackPanel Margin="0 0 15 0">
+                    <TextBlock Text="Từ ngày" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
+                    <DatePicker x:Name="dpFrom" Width="130"/>
+                </StackPanel>
+
+                <!-- Đến ngày -->
+                <StackPanel Margin="0 0 15 0">
+                    <TextBlock Text="Đến ngày" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
+                    <DatePicker x:Name="dpTo" Width="130"/>
+                </StackPanel>
+
+                <!-- Khu vực -->
+                <StackPanel Margin="0 0 15 0">
+                    <TextBlock Text="Khu vực" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
+                    <ComboBox x:Name="cbArea" Width="160" FontSize="14">
+                        <ComboBoxItem Content="Tất cả" IsSelected="True"/>
+                        <ComboBoxItem Content="Hà Nội"/>
+                        <ComboBoxItem Content="TP.HCM"/>
+                        <ComboBoxItem Content="Đà Nẵng"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Số điện thoại -->
+                <StackPanel Margin="0 0 15 0">
+                    <TextBlock Text="Số điện thoại" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
+                    <TextBox x:Name="tbPhone" Width="150" FontSize="14"/>
+                </StackPanel>
+
+                <!-- Nút Lọc -->
+                <Button x:Name="btnFilter"
+                        Content="Lọc"
+                        Width="100" Height="36"
+                        Margin="10 0 0 0"
+                        Background="#007BFF" Foreground="White"
+                        FontSize="16" FontWeight="Bold"
+                        BorderThickness="0"
+                        Cursor="Hand">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- ===== DANH SÁCH ===== -->
+        <DataGrid x:Name="dgReports"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  FontSize="16"
+                  Foreground="#333333"
+                  AlternatingRowBackground="#F0F8FF"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Ngày" Binding="{Binding ReportDate}"  Width="*"/>
+                <DataGridTextColumn Header="Khu vực" Binding="{Binding Area}"     Width="*"/>
+                <DataGridTextColumn Header="Cơ sở" Binding="{Binding FacilityName}" Width="*"/>
+                <DataGridTextColumn Header="Số ĐT" Binding="{Binding Phone}"      Width="*"/>
+                <DataGridTextColumn Header="Xe đạt" Binding="{Binding Passed}"    Width="*"/>
+                <DataGridTextColumn Header="Xe không đạt" Binding="{Binding Failed}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- ===== NÚT HÀNH ĐỘNG ===== -->
+        <Grid Grid.Row="2" Margin="0,15,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Nút Thoát (Secondary) -->
+            <Button x:Name="btnQuit"
+                    Content="Thoát"
+                    Width="120" Height="36"
+                    Background="White"
+                    Foreground="#007BFF"
+                    BorderBrush="#007BFF"
+                    BorderThickness="2"
+                    FontSize="16"
+                    Cursor="Hand"
+                    Click="QuitButton_Click"
+                    Grid.Column="1"
+                    Margin="0 0 10 0">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Nút Gửi báo cáo (Primary) -->
+            <Button x:Name="btnSend"
+                    Content="Gửi báo cáo"
+                    Width="140" Height="40"
+                    Background="#007BFF" Foreground="White"
+                    FontSize="16" FontWeight="Bold"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Grid.Column="2">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

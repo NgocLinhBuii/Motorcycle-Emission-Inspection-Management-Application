@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Motorcycle_Emission_Inspection_Management.InspectionFacility;
+using Motorcycle_Emission_Inspection_Management.InspectionWorkers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,21 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
         public InspectorDashboard()
         {
             InitializeComponent();
+        }
+
+        private void ViewAssignedBtn_Click(object sender, RoutedEventArgs e)
+        {
+            new AssignedInspectionsPage().Show();
+        }
+
+        private void EnterResultsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            new InspectionResultPage().Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new LoginWindow().Show();
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using Motorcycle_Emission_Inspection_Management.BLL.Services;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using Motorcycle_Emission_Inspection_Management.VehicleOwner;
-using Motorcycle_Emission_Inspection_Management.Inspector;
-using Motorcycle_Emission_Inspection_Management.EmissionTestingFacility;
+using Motorcycle_Emission_Inspection_Management.Dashboards;
+using Motorcycle_Emission_Inspection_Management.InspectionFacility;
+using Motorcycle_Emission_Inspection_Management.InspectionWorkers;
 using Motorcycle_Emission_Inspection_Management.Police;
 using System;
 using System.Linq;
@@ -62,10 +63,10 @@ namespace Motorcycle_Emission_Inspection_Management
                     new VehicleOwnerWindow(user.UserId).Show();
                     break;
                 case "Inspector":
-                    new InspectorWindow(user.UserId).Show();
+                    new Motorcycle_Emission_Inspection_Management.Dashboards.InspectorDashboard().Show();
                     break;
                 case "Station":
-                    new StationWindow().Show();
+                    new Motorcycle_Emission_Inspection_Management.Dashboards.InspectionFacilityDashboardPage().Show();
                     break;
                 case "Police":
                     new PoliceWindow().Show();

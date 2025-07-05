@@ -38,7 +38,13 @@ public partial class EmissionInspectionContext : DbContext
         return configuration["ConnectionStrings:DBDefault"];
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(GetConnectionString());
+    {
+        var builder = new ConfigurationBuilder();
+        builder.SetBasePath(Directory.GetCurrentDirectory());
+        builder.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+        var configuration = builder.Build();
+        optionsBuilder.UseSqlServer(configuration.GetConnectionString("Default"));
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
