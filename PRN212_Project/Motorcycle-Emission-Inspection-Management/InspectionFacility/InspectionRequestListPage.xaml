@@ -25,16 +25,15 @@
                 <TextBlock Text="Đến ngày" FontSize="14" Foreground="#333333"/>
                 <DatePicker x:Name="dpTo" Width="140"/>
             </StackPanel>
-
             <StackPanel Margin="0 0 15 0">
                 <TextBlock Text="Trạng thái" FontSize="14" Foreground="#333333"/>
                 <ComboBox x:Name="cbStatus" Width="160" FontSize="14">
                     <ComboBoxItem Content="Tất cả" IsSelected="True"/>
-                    <ComboBoxItem Content="Chờ kiểm định"/>
-                    <ComboBoxItem Content="Đang kiểm định"/>
-                    <ComboBoxItem Content="Hoàn thành"/>
+                    <ComboBoxItem Content="Pass"/>
+                    <ComboBoxItem Content="Fail"/>
                 </ComboBox>
             </StackPanel>
+
 
             <Button x:Name="btnSearch"
                     Content="Tìm kiếm"
@@ -61,8 +60,8 @@
                 <DataGridTextColumn Header="Biển số"      Binding="{Binding PlateNumber}"  Width="*"/>
                 <DataGridTextColumn Header="Hãng"         Binding="{Binding Brand}"        Width="*"/>
                 <DataGridTextColumn Header="Dòng xe"      Binding="{Binding Model}"        Width="*"/>
-                <DataGridTextColumn Header="Ngày đăng ký" Binding="{Binding RequestDate}" Width="*"/>
-                <DataGridTextColumn Header="Trạng thái"   Binding="{Binding Status}"       Width="*"/>
+                <DataGridTextColumn Header="Ngày đăng ký" Binding="{Binding InspectionDate}" Width="*"/>
+                <DataGridTextColumn Header="Trạng thái"   Binding="{Binding Result}"       Width="*"/>
                 <DataGridTextColumn Header="Trạm"         Binding="{Binding StationName}"  Width="*"/>
             </DataGrid.Columns>
         </DataGrid>

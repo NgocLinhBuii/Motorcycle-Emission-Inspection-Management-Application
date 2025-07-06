@@ -7,7 +7,7 @@
         WindowStartupLocation="CenterScreen">
 
     <Grid Margin="40">
-        <StackPanel Width="689" HorizontalAlignment="Center" VerticalAlignment="Center" Height="390">
+        <StackPanel Width="688" HorizontalAlignment="Center" VerticalAlignment="Center" Height="441">
 
             <!-- Tiêu đề -->
             <TextBlock Text="Phân công công nhân kiểm định"
@@ -18,20 +18,34 @@
                        Margin="0,0,0,30"/>
 
             <!-- Biển số -->
-            <TextBlock Text="Biển số:"
-                       FontSize="16"
-                       Foreground="#333333"
-                       Margin="0,0,0,5"/>
-            <TextBox Name="PlateTextBox"
-                     FontSize="16"
-                     Foreground="#333333"
-                     Background="#FFFFFF"
-                     BorderBrush="#CCCCCC"
-                     BorderThickness="1"
-                     Padding="8"
-                     IsReadOnly="True"
-                     Margin="0,0,0,20"
-                     Height="36"/>
+            <TextBlock Text="Chọn biển số:"
+           FontSize="16"
+           Foreground="#333333"
+           Margin="0,0,0,5"/>
+
+            <ComboBox Name="PlateComboBox"
+          FontSize="16"
+          Foreground="#333333"
+          Background="#FFFFFF"
+          BorderBrush="#CCCCCC"
+          BorderThickness="1"
+          Padding="4"
+          Margin="0,0,0,20"
+          Height="36"
+          DisplayMemberPath="PlateNumber"
+          SelectedValuePath="VehicleId"/>
+
+            <TextBlock Text="Ngày kiểm định:"
+           FontSize="16"
+           Foreground="#333333"
+           Margin="0,0,0,5"/>
+            <DatePicker Name="InspectDatePicker"
+            FontSize="16"
+            Background="#FFFFFF"
+            BorderBrush="#CCCCCC"
+            BorderThickness="1"
+            Margin="0,0,0,20"
+            Height="36"/>
 
             <!-- Chọn công nhân -->
             <TextBlock Text="Chọn công nhân:"
@@ -50,15 +64,16 @@
 
             <!-- Nút phân công -->
             <Button Content="Phân công"
-                    Width="150"
-                    Height="44"
-                    Background="#007BFF"
-                    Foreground="White"
-                    FontSize="16"
-                    FontWeight="Bold"
-                    BorderThickness="0"
-                    Cursor="Hand"
-                    Margin="0,0,0,10">
+        Width="150"
+        Height="44"
+        Background="#007BFF"
+        Foreground="White"
+        FontSize="16"
+        FontWeight="Bold"
+        BorderThickness="0"
+        Cursor="Hand"
+        Margin="0,0,0,10"
+        Click="AssignButton_Click">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" CornerRadius="8">
@@ -67,6 +82,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+
 
             <!-- Nút Quit -->
             <Button Content="Thoát"

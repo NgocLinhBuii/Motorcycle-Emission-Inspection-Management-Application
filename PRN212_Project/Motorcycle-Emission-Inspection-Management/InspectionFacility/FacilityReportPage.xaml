@@ -7,7 +7,6 @@
         WindowStartupLocation="CenterScreen">
 
     <Grid Margin="20">
-        <!-- 3 hàng: 0 – Tiêu đề + bộ lọc, 1 – DataGrid, 2 – nút hành động -->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -16,8 +15,6 @@
 
         <!-- ===== TIÊU ĐỀ & BỘ LỌC ===== -->
         <StackPanel Grid.Row="0" Margin="0,0,0,15">
-
-            <!-- Tiêu đề -->
             <TextBlock Text="Báo cáo định kỳ"
                        FontSize="26"
                        FontWeight="Bold"
@@ -25,7 +22,6 @@
                        TextAlignment="Center"
                        Margin="0,0,0,20"/>
 
-            <!-- Bộ lọc -->
             <StackPanel Orientation="Horizontal">
 
                 <!-- Từ ngày -->
@@ -40,18 +36,14 @@
                     <DatePicker x:Name="dpTo" Width="130"/>
                 </StackPanel>
 
-                <!-- Khu vực -->
+                <!-- Khu vực (Địa chỉ trạm kiểm định) -->
                 <StackPanel Margin="0 0 15 0">
-                    <TextBlock Text="Khu vực" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
-                    <ComboBox x:Name="cbArea" Width="160" FontSize="14">
-                        <ComboBoxItem Content="Tất cả" IsSelected="True"/>
-                        <ComboBoxItem Content="Hà Nội"/>
-                        <ComboBoxItem Content="TP.HCM"/>
-                        <ComboBoxItem Content="Đà Nẵng"/>
-                    </ComboBox>
+                    <TextBlock Text="Địa chỉ trạm" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
+                    <ComboBox x:Name="cbStationAddress" Width="160" FontSize="14"
+                              DisplayMemberPath="Address" SelectedValuePath="StationID"/>
                 </StackPanel>
 
-                <!-- Số điện thoại -->
+                <!-- Số điện thoại của trạm -->
                 <StackPanel Margin="0 0 15 0">
                     <TextBlock Text="Số điện thoại" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
                     <TextBox x:Name="tbPhone" Width="150" FontSize="14"/>
@@ -65,19 +57,11 @@
                         Background="#007BFF" Foreground="White"
                         FontSize="16" FontWeight="Bold"
                         BorderThickness="0"
-                        Cursor="Hand">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}" CornerRadius="8">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                        Cursor="Hand" Click="BtnFilter_Click_1"/>
             </StackPanel>
         </StackPanel>
 
-        <!-- ===== DANH SÁCH ===== -->
+        <!-- ===== DANH SÁCH BÁO CÁO ===== -->
         <DataGrid x:Name="dgReports"
                   Grid.Row="1"
                   AutoGenerateColumns="False"
@@ -86,15 +70,15 @@
                   Foreground="#333333"
                   AlternatingRowBackground="#F0F8FF"
                   CanUserAddRows="False"
-                  CanUserDeleteRows="False">
+                  CanUserDeleteRows="False" SelectionChanged="dgReports_SelectionChanged">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Ngày" Binding="{Binding ReportDate}"  Width="*"/>
-                <DataGridTextColumn Header="Khu vực" Binding="{Binding Area}"     Width="*"/>
-                <DataGridTextColumn Header="Cơ sở" Binding="{Binding FacilityName}" Width="*"/>
-                <DataGridTextColumn Header="Số ĐT" Binding="{Binding Phone}"      Width="*"/>
-                <DataGridTextColumn Header="Xe đạt" Binding="{Binding Passed}"    Width="*"/>
-                <DataGridTextColumn Header="Xe không đạt" Binding="{Binding Failed}" Width="*"/>
+                <DataGridTextColumn Header="Ngày kiểm định" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*"/>
+                <DataGridTextColumn Header="Địa chỉ trạm" Binding="{Binding StationAddress}" Width="*"/>
+                <DataGridTextColumn Header="Tên trạm" Binding="{Binding StationName}" Width="*"/>
+                <DataGridTextColumn Header="Số điện thoại" Binding="{Binding Phone}" Width="*"/>
+                <DataGridTextColumn Header="Xe đạt" Binding="{Binding PassedCount}" Width="*"/>
+                <DataGridTextColumn Header="Xe không đạt" Binding="{Binding FailedCount}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
 
@@ -106,7 +90,6 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Nút Thoát (Secondary) -->
             <Button x:Name="btnQuit"
                     Content="Thoát"
                     Width="120" Height="36"
@@ -125,24 +108,6 @@
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
                                 CornerRadius="8">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
-
-            <!-- Nút Gửi báo cáo (Primary) -->
-            <Button x:Name="btnSend"
-                    Content="Gửi báo cáo"
-                    Width="140" Height="40"
-                    Background="#007BFF" Foreground="White"
-                    FontSize="16" FontWeight="Bold"
-                    BorderThickness="0"
-                    Cursor="Hand"
-                    Grid.Column="2">
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>

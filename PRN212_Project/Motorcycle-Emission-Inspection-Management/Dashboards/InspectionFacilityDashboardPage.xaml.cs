@@ -49,7 +49,7 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
 
         private void AssignInspectorBtn_Click(object sender, RoutedEventArgs e)
         {
-            new AssignInspectorPage().Show();
+            new AssignInspectorPage().ShowDialog();
             this.Close();
         }
 

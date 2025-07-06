@@ -6,7 +6,7 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Entities;
 public partial class InspectionStation
 {
     public int StationId { get; set; }
-
+  
     public string Name { get; set; } = null!;
 
     public string Address { get; set; } = null!;

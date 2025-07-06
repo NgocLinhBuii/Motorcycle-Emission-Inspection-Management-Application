@@ -69,6 +69,7 @@
                 <DataGridTextColumn Header="Ngày kiểm định" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*"/>
                 <DataGridTextColumn Header="Trạng thái"    Binding="{Binding Result}"          Width="*"/>
                 <DataGridTextColumn Header="Mức thải CO2"       Binding="{Binding Co2emission}"     Width="*"/>
+                <DataGridTextColumn Header="Station Name"       Binding="{Binding Station.Name}"     Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
 
