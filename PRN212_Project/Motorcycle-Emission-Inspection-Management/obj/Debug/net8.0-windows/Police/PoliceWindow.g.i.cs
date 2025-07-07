@@ -68,7 +68,8 @@ namespace Motorcycle_Emission_Inspection_Management.Police {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;component/police/policewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;V1.0.0.0;component/police/policewindow" +
+                    ".xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Police\PoliceWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

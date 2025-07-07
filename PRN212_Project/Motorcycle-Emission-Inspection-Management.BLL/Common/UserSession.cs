@@ -16,6 +16,22 @@ namespace Motorcycle_Emission_Inspection_Management.Common
         public static int? StationId { get; set; }   // nullable: Owner, Admin có thể null
         public static string Username { get; set; }
         public static string RoleName { get; set; }
+        public static string FullName { get; set; }
+
+        public static UserSessionData Current => new UserSessionData
+        {
+            UserId = UserId,
+            FullName = FullName
+        };
+        public class UserSessionData
+        {
+            public int UserId { get; set; }
+            public string FullName { get; set; }
+        }
     }
+
+   
+
 }
+
 
