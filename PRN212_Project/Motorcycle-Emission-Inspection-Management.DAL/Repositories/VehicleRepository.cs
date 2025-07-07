@@ -1,4 +1,5 @@
-﻿using Motorcycle_Emission_Inspection_Management.DAL.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

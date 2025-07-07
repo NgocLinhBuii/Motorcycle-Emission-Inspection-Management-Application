@@ -1,0 +1,110 @@
+﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.InspectionFacility.AssignInspectorPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Phân công công nhân kiểm định"
+        Height="600" Width="900"
+        Background="#FFFFFF"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="40">
+        <StackPanel Width="688" HorizontalAlignment="Center" VerticalAlignment="Center" Height="441">
+
+            <!-- Tiêu đề -->
+            <TextBlock Text="Phân công công nhân kiểm định"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="#333333"
+                       TextAlignment="Center"
+                       Margin="0,0,0,30"/>
+
+            <!-- Biển số -->
+            <TextBlock Text="Chọn biển số:"
+           FontSize="16"
+           Foreground="#333333"
+           Margin="0,0,0,5"/>
+
+            <ComboBox Name="PlateComboBox"
+          FontSize="16"
+          Foreground="#333333"
+          Background="#FFFFFF"
+          BorderBrush="#CCCCCC"
+          BorderThickness="1"
+          Padding="4"
+          Margin="0,0,0,20"
+          Height="36"
+          DisplayMemberPath="PlateNumber"
+          SelectedValuePath="VehicleId"/>
+
+            <TextBlock Text="Ngày kiểm định:"
+           FontSize="16"
+           Foreground="#333333"
+           Margin="0,0,0,5"/>
+            <DatePicker Name="InspectDatePicker"
+            FontSize="16"
+            Background="#FFFFFF"
+            BorderBrush="#CCCCCC"
+            BorderThickness="1"
+            Margin="0,0,0,20"
+            Height="36"/>
+
+            <!-- Chọn công nhân -->
+            <TextBlock Text="Chọn công nhân:"
+                       FontSize="16"
+                       Foreground="#333333"
+                       Margin="0,0,0,5"/>
+            <ComboBox Name="InspectorComboBox"
+                      FontSize="16"
+                      Foreground="#333333"
+                      Background="#FFFFFF"
+                      BorderBrush="#CCCCCC"
+                      BorderThickness="1"
+                      Padding="4"
+                      Margin="0,0,0,30"
+                      Height="36"/>
+
+            <!-- Nút phân công -->
+            <Button Content="Phân công"
+        Width="150"
+        Height="44"
+        Background="#007BFF"
+        Foreground="White"
+        FontSize="16"
+        FontWeight="Bold"
+        BorderThickness="0"
+        Cursor="Hand"
+        Margin="0,0,0,10"
+        Click="AssignButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+            <!-- Nút Quit -->
+            <Button Content="Thoát"
+                    Width="120"
+                    Height="36"
+                    Background="White"
+                    Foreground="#007BFF"
+                    BorderBrush="#007BFF"
+                    BorderThickness="2"
+                    FontSize="16"
+                    FontWeight="Normal"
+                    Cursor="Hand"
+                    Click="QuitButton_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</Window>

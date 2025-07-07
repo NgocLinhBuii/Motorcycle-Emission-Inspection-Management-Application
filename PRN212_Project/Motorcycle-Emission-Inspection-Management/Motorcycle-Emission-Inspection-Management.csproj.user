@@ -2,6 +2,24 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Dashboards\InspectionFacilityDashboardPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InspectionFacility\AssignInspectorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InspectionFacility\FacilityReportPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InspectionFacility\InspectionRequestListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InspectionWorkers\AssignedInspectionsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="InspectionWorkers\InspectionResultPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -18,6 +18,9 @@ public partial class User
     public string Phone { get; set; } = null!;
 
     public string Address { get; set; } = null!;
+    public int? StationId { get; set; }
+    public InspectionStation Station { get; set; }
+
 
     public virtual ICollection<InspectionRecord> InspectionRecords { get; set; } = new List<InspectionRecord>();
 

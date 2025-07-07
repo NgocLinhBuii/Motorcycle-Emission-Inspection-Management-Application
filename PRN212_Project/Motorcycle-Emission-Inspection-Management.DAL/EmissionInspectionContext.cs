@@ -38,7 +38,14 @@ public partial class EmissionInspectionContext : DbContext
         return configuration["ConnectionStrings:DBDefault"];
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(GetConnectionString());
+    {
+        var builder = new ConfigurationBuilder();
+        builder.SetBasePath(Directory.GetCurrentDirectory());
+        builder.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+        var configuration = builder.Build();
+        optionsBuilder.UseSqlServer(configuration.GetConnectionString("Default"));
+    }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -76,6 +83,8 @@ public partial class EmissionInspectionContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Records_Vehicle");
         });
+
+
 
         modelBuilder.Entity<InspectionStation>(entity =>
         {
@@ -135,22 +144,39 @@ public partial class EmissionInspectionContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC28DFCA6E");
+            entity.HasKey(e => e.UserId)
+                  .HasName("PK__Users__1788CCAC28DFCA6E");
 
-            entity.HasIndex(e => e.Email, "UQ__Users__A9D1053479E04A87").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Users__A9D1053479E04A87")
+                  .IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.FullName).HasMaxLength(100);
             entity.Property(e => e.Password).HasMaxLength(255);
             entity.Property(e => e.Phone).HasMaxLength(15);
+
+            /* ---------- ROLE ---------- */
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
 
-            entity.HasOne(d => d.Role).WithMany(p => p.Users)
-                .HasForeignKey(d => d.RoleId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Users_RoleID");
+            entity.HasOne(d => d.Role)
+                  .WithMany(p => p.Users)
+                  .HasForeignKey(d => d.RoleId)
+                  .OnDelete(DeleteBehavior.ClientSetNull)
+                  .HasConstraintName("FK_Users_RoleID");
+
+            /* ---------- STATION (mới) ---------- */
+            entity.Property(e => e.StationId)          // <-- đảm bảo bạn đã thêm property vào class User
+                  .HasColumnName("StationID");
+
+            entity.HasOne(d => d.Station)              // navigation tới InspectionStation
+                  .WithMany(s => s.Users)              // hoặc .WithMany() nếu bạn KHÔNG tạo Users collection trong InspectionStation
+                  .HasForeignKey(d => d.StationId)
+                  .OnDelete(DeleteBehavior.Restrict)   // hoặc SetNull nếu muốn cho phép xoá trạm
+                  .IsRequired(false)                   // StationId nullable (Admin/Owner có thể null)
+                  .HasConstraintName("FK_Users_StationID");
         });
+
 
         modelBuilder.Entity<Vehicle>(entity =>
         {
