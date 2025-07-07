@@ -33,8 +33,9 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
         {
             try
             {
-                var reports = await _service.GetFacilityReportsAsync(
-                                    from, to, stationId, phone ?? string.Empty);
+                var reports = await Task.Run(() =>
+                _service.GetFacilityReports(from, to, stationId, phone ?? string.Empty));
+
 
                 dgReports.ItemsSource = reports;   // bind thẳng DTO
             }

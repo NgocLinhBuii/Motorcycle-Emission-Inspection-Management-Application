@@ -11,15 +11,15 @@ public partial class InspectionRecord
 
     public int StationId { get; set; }
 
-    public int InspectorId { get; set; }
+    public int? InspectorId { get; set; }
 
     public DateTime? InspectionDate { get; set; }
 
     public string Result { get; set; } = null!;
 
-    public decimal Co2emission { get; set; }
+    public decimal? Co2emission { get; set; }
 
-    public decimal Hcemission { get; set; }
+    public decimal? Hcemission { get; set; }
 
     public string? Comments { get; set; }
 

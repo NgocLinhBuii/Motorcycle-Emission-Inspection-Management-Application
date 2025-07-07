@@ -42,6 +42,11 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Repositories
             using var context = new EmissionInspectionContext();
             return context.Vehicles.FirstOrDefault(v => v.VehicleId == id);
         }
+
+        public async Task GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

@@ -4,14 +4,8 @@ FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcy
 FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Admin\SystemConfigView.xaml;;
 FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Admin\UserManagementView.xaml;;
 FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Dashboards\OwnerDashboard.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Dashboards\PoliceDashboard.xaml;;
 FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\LoginWindow.xaml;;
 FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\MainWindow.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Police\PoliceSearchView.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Police\ViolationLogView.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\VehicleOwner\AddVehicleView.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\VehicleOwner\BookingView.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\VehicleOwner\InspectionHistoryView.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\VehicleOwner\RegisterView.xaml;;
-FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\VehicleOwner\Window1.xaml;;
+FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Police\StatisticsReportPage.xaml;;
+FE:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\Police\VehicleLookupPage.xaml;;
 

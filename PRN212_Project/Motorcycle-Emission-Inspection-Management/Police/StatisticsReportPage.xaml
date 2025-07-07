@@ -1,0 +1,67 @@
+﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.Police.StatisticsReportPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.Police"
+        mc:Ignorable="d"
+        Title="Báo cáo thống kê" Height="500" Width="900"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="20">
+        <!-- Grid chính: 2 hàng -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Bộ lọc -->
+            <RowDefinition Height="*"/>
+            <!-- Bảng -->
+        </Grid.RowDefinitions>
+
+        <!-- Hàng 0: Bộ lọc -->
+        <Grid Grid.Row="0" Margin="0 0 0 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Từ:" Grid.Column="0" VerticalAlignment="Center"/>
+            <DatePicker x:Name="dpFrom" Grid.Column="1" xmlns:sys="clr-namespace:System;assembly=mscorlib"/>
+
+            <TextBlock Text="Đến:" Grid.Column="2" VerticalAlignment="Center"/>
+            <DatePicker x:Name="dpTo" Grid.Column="3" />
+
+            <TextBlock Text="Kết quả:" Grid.Column="4" VerticalAlignment="Center"/>
+            <ComboBox x:Name="cbResult" Grid.Column="5" Height="25">
+                <ComboBoxItem Content="Tất cả" IsSelected="True"/>
+                <ComboBoxItem Content="Pass"/>
+                <ComboBoxItem Content="Fail"/>
+            </ComboBox>
+
+            <Button Content="📊 Xem báo cáo" Grid.Column="6" Height="28"
+                    Click="btnReport_Click" Margin="10 0 0 0"/>
+            <!-- Nút Thoát -->
+            <Button Content="⏎ Thoát" Grid.Column="6" Height="28" Margin="136,0,-80,0"
+                    Padding="10,0" Click="btnExit_Click" VerticalAlignment="Top"/>
+        </Grid>
+
+        <!-- Hàng 1: Bảng kết quả -->
+        <DataGrid x:Name="dgReport"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Ngày" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*"/>
+                <DataGridTextColumn Header="Trạm" Binding="{Binding StationName}" Width="2*"/>
+                <DataGridTextColumn Header="Địa chỉ" Binding="{Binding StationAddress}" Width="2*"/>
+                <DataGridTextColumn Header="Đạt" Binding="{Binding PassedCount}" Width="*"/>
+                <DataGridTextColumn Header="Không đạt" Binding="{Binding FailedCount}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

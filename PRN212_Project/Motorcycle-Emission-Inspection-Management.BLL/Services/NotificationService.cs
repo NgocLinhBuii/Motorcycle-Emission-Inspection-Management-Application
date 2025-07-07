@@ -1,4 +1,5 @@
-﻿using Motorcycle_Emission_Inspection_Management.DAL.Entities;
+﻿using Motorcycle_Emission_Inspection_Management.DAL;
+using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using Motorcycle_Emission_Inspection_Management.DAL.Repositories;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,31 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
         public void Update(Notification x) => _repo.Update(x);
 
         public void Delete(Notification x) => _repo.Delete(x);
-    }
 
+        public void MarkAsRead(int notificationId)
+        {
+            using var context = new EmissionInspectionContext();
+
+            var notification = context.Notifications.Find(notificationId);
+            if (notification != null)
+            {
+                notification.IsRead = true;
+                context.SaveChanges();
+            }
+        }
+
+        public List<Notification> GetByUserId(int userId)
+        {
+            using var context = new EmissionInspectionContext();
+
+            return context.Notifications
+                          .Where(n => n.UserId == userId)
+                          .OrderByDescending(n => n.SentDate)
+                          .ToList();
+        }
+
+        
+    }
 }
+
+
