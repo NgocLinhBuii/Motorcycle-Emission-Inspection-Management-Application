@@ -5,15 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.Dashboards"
         mc:Ignorable="d"
-        Title="OwnerDashboard" Height="450" Width="800">
-    <Grid>
-        <StackPanel Margin="20">
-            <TextBlock Text="Xin chào, Chủ phương tiện" FontSize="24" FontWeight="Bold" Margin="0 0 0 20" />
-            <Button Content="Đăng ký phương tiện" Margin="0 0 0 10"/>
-            <Button Content="Lên lịch kiểm định" Margin="0 0 0 10"/>
-            <Button Content="Theo dõi trạng thái xe" Margin="0 0 0 10"/>
-            <Button Content="Lịch sử kiểm định" Margin="0 0 0 10"/>
-            <Button Content="Đăng xuất" Margin="0 20 0 0" />
+        Title="Dashboard – Chủ phương tiện"
+        Height="600" Width="900"
+        Background="White"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Tiêu đề -->
+        <TextBlock Text="Dashboard – Chủ phương tiện"
+                   FontSize="26"
+                   FontWeight="Bold"
+                   Foreground="#333333"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Các nút chức năng -->
+        <StackPanel Grid.Row="1"
+                    Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Margin="0,0,0,10">
+
+            <Button Content="Danh sách xe"               Width="260" Height="44"
+                    FontSize="16" FontWeight="Bold"
+                    Background="#007BFF" Foreground="White"
+                    Click="VehicleListBtn_Click" Margin="0,0,0,10"/>
+
+            <Button Content="Thêm xe"                    Width="260" Height="44"
+                    FontSize="16" FontWeight="Bold"
+                    Background="#007BFF" Foreground="White"
+                    Click="AddVehicleBtn_Click" Margin="0,0,0,10"/>
+
+            <Button Content="Đăng ký kiểm định"         Width="260" Height="44"
+                    FontSize="16" FontWeight="Bold"
+                    Background="#007BFF" Foreground="White"
+                    Click="RegisterInspectionBtn_Click" Margin="0,0,0,10"/>
+
+            <Button Content="Lịch sử kiểm định"         Width="260" Height="44"
+                    FontSize="16" FontWeight="Bold"
+                    Background="#007BFF" Foreground="White"
+                    Click="InspectionHistoryBtn_Click" Margin="0,0,0,10"/>
+
+            <Button Content="Thông báo"                 Width="260" Height="44"
+                    FontSize="16" FontWeight="Bold"
+                    Background="#007BFF" Foreground="White"
+                    Click="NotificationBtn_Click" Margin="0,0,0,10"/>
+            <Button Content="LOG OUT"
+ Width="263" Height="50"
+ Margin="0,10"
+ FontSize="16"
+ FontWeight="Bold"
+ Foreground="White"
+ Background="#007BFF" Click="Button_Click"
+/>
         </StackPanel>
     </Grid>
 </Window>

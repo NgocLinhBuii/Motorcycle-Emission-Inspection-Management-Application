@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 using Motorcycle_Emission_Inspection_Management.BLL.DTOs;
+using Motorcycle_Emission_Inspection_Management.Common;
 using Motorcycle_Emission_Inspection_Management.DAL;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using Motorcycle_Emission_Inspection_Management.DAL.Repositories;
@@ -8,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Motorcycle_Emission_Inspection_Management.BLL.Services
 {
@@ -15,7 +18,12 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
     {
         private readonly InspectionRecordRepository _repo = new();
 
-        public List<InspectionRecord> GetAll() => _repo.GetAll();
+        public List<InspectionRecord> GetAll()
+        {
+            using var context = new EmissionInspectionContext();
+
+            return context.InspectionRecords.ToList();
+        }
 
         public InspectionRecord? GetById(int id) => _repo.GetById(id);
 
@@ -161,6 +169,16 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
         }
 
 
+        public List<InspectionRecord> GetByOwnerId(int ownerId)
+        {
+            using var context = new EmissionInspectionContext();
+
+            return context.InspectionRecords
+                .Include(r => r.Vehicle)
+                .Where(r => r.Vehicle.OwnerId == ownerId)
+                .ToList();
+        }
+       
 
         public async Task<IList<FacilityReportDto>> GetFacilityReportsAsync(
     DateTime? from, DateTime? to, int? stationId, string phone)
@@ -208,6 +226,39 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
             return result;
         }
 
+        public void RegisterInspection(int vehicleId,
+                               int stationId,
+                               DateTime inspectionDate,
+                               string result = "Fail",
+                               int? inspectorId = null)
+        {
+            // Ngày phải > hôm nay
+            if (inspectionDate.Date <= DateTime.Today)
+                throw new ArgumentException("Ngày kiểm định phải sau hôm nay.", nameof(inspectionDate));
+
+            // Result chỉ được "Pass" hoặc "Fail"
+            result = result.Trim();
+            if (!result.Equals("Pass", StringComparison.OrdinalIgnoreCase) &&
+                !result.Equals("Fail", StringComparison.OrdinalIgnoreCase))
+                throw new ArgumentException("Result chỉ được 'Pass' hoặc 'Fail'.", nameof(result));
+
+            using var ctx = new EmissionInspectionContext();
+
+            var record = new InspectionRecord
+            {
+                VehicleId = vehicleId,
+                StationId = stationId,
+                InspectorId = inspectorId,   // null → phân công sau
+                InspectionDate = inspectionDate,
+                Result = result,        // "Pass" hoặc "Fail"
+                Co2emission = 0m,
+                Hcemission = 0m,
+                Comments = string.Empty
+            };
+
+            ctx.InspectionRecords.Add(record);
+            ctx.SaveChanges();
+        }
 
     }
 

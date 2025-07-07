@@ -82,7 +82,7 @@ namespace Motorcycle_Emission_Inspection_Management
             switch (role)
             {
                 case "Owner":
-                    next = new VehicleOwnerWindow(user.UserId);
+                    next = new OwnerDashboard();
                     break;
 
                 case "Inspector":

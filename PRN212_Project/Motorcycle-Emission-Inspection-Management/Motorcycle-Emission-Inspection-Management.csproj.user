@@ -23,5 +23,23 @@
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Police\ViolationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleOwner\AddVehiclePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleOwner\InspectionHistoryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleOwner\NotificationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleOwner\RegisterInspectionPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VehicleOwner\VehicleListPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

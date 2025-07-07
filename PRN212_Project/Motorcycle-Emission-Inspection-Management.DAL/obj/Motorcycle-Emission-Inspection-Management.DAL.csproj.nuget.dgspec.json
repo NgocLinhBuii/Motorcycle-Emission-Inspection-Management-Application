@@ -10,14 +10,14 @@
         "projectUniqueName": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj",
         "projectName": "Motorcycle-Emission-Inspection-Management.DAL",
         "projectPath": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj",
-        "packagesPath": "C:\\Users\\ledai\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ledai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -95,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

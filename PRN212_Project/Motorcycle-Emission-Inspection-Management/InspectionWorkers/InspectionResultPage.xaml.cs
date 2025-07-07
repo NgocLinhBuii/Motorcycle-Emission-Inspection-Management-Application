@@ -18,6 +18,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
         private readonly InspectionStationService _stationService = new();
 
         private readonly int _inspectorId = UserSession.UserId;   // lấy 1 lần từ session
+  
 
         public InspectionResultPage()
         {
@@ -30,8 +31,12 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
         /* ---------- Nạp biển số ---------- */
         private void LoadPlateNumbers()
         {
-            cbPlateNumber.ItemsSource = _vehicleService.GetAllVehicles();
+            var vehicles = _vehicleService.GetAll();
+            cbPlateNumber.ItemsSource = vehicles;
+            cbPlateNumber.DisplayMemberPath = "PlateNumber"; // hiển thị biển số
+            cbPlateNumber.SelectedValuePath = "VehicleId";   // giá trị thực khi chọn
         }
+
 
         /* ---------- Nạp trạm kiểm định ---------- */
         private void LoadStations()
