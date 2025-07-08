@@ -26,6 +26,44 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Repositories
             context.SaveChanges();
         }
 
+        public bool AddSafe(InspectionRecord record, out string errorMsg)
+        {
+            errorMsg = string.Empty;
+
+            using var context = new EmissionInspectionContext();
+
+            // 1) Xác thực StationId
+            if (record.StationId <= 0)
+            {
+                errorMsg = "StationId không hợp lệ (<= 0).";
+                return false;
+            }
+
+            bool stationExists = context.InspectionStations
+                                        .Any(s => s.StationId == record.StationId);
+
+            if (!stationExists)
+            {
+                errorMsg = $"StationId {record.StationId} không tồn tại trong " +
+                           "bảng InspectionStations.";
+                return false;
+            }
+
+            // 2) Thêm bản ghi & lưu
+            try
+            {
+                context.InspectionRecords.Add(record);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Log nếu cần
+                errorMsg = "Lỗi khi lưu: " + ex.Message;
+                return false;
+            }
+        }
+
         public void Update(InspectionRecord x)
         {
             using var context = new EmissionInspectionContext();

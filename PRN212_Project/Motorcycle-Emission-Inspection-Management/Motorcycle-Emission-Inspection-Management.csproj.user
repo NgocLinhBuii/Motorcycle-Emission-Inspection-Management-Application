@@ -23,7 +23,13 @@
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Police\ViolationPage.xaml.cs">
+    <Compile Update="Police\StatisticsReportPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Police\VehicleLookupPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Police\ViolationRecordPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="VehicleOwner\AddVehiclePage.xaml.cs">

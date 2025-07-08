@@ -16,7 +16,13 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
 
         public List<Vehicle> GetAllVehicles() => _repo.GetAll();
 
+        public Vehicle? GetByPlate(string plateNumber)
+        {
+            using var context = new EmissionInspectionContext();
 
+            return context.Vehicles
+                          .FirstOrDefault(v => v.PlateNumber == plateNumber);
+        }
         public Vehicle? GetVehicle(int id) => _repo.GetById(id);
 
         public void CreateVehicle(Vehicle x) => _repo.Add(x);
