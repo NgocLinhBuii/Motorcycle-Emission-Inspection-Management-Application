@@ -8,7 +8,8 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 {
     public partial class AssignInspectorPage : Window
     {
-        private readonly InspectionRecordService _recordService = new();
+        private readonly InspectionRecordService _rese = new();
+
         private readonly UserService _userService = new();
 
         public AssignInspectorPage()
@@ -29,20 +30,19 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 
         private void LoadPlates()
         {
-            var records = _recordService.GetAll()
-                .Where(r => r.Vehicle != null)
-                .Select(r => new
-                {
-                    RecordId = r.RecordId,
-                    PlateNumber = r.Vehicle.PlateNumber
-                })
-                .Distinct()
-                .ToList();
+            var records = new Motorcycle_Emission_Inspection_Management.BLL.Services.InspectionRecordService()
+                               .GetAll()
+                               .Where(r => r.Vehicle != null)
+                               .Select(r => new { r.RecordId, PlateNumber = r.Vehicle.PlateNumber })
+                               .Distinct()
+                               .ToList();
 
             PlateComboBox.ItemsSource = records;
             PlateComboBox.DisplayMemberPath = "PlateNumber";
             PlateComboBox.SelectedValuePath = "RecordId";
         }
+
+
 
         private void AssignButton_Click(object sender, RoutedEventArgs e)
         {
@@ -71,7 +71,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 
             try
             {
-                _recordService.AssignInspector(recordId, inspectorId, date);
+                _rese.AssignInspector(recordId, inspectorId, date);
                 MessageBox.Show("Phân công thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 Close();
             }
@@ -82,5 +82,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
         }
 
         private void QuitButton_Click(object sender, RoutedEventArgs e) => Close();
+
+    
     }
 }

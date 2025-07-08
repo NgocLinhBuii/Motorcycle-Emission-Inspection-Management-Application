@@ -40,7 +40,8 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
                 }
 
                 /* ---- GỌI SERVICE LẤY DỮ LIỆU ---- */
-                var data = await _recordService.GetRequestsAsync(from, to, result);
+                var data = await Task.Run(() =>
+                   _recordService.GetRequests(from, to, result));
 
                 /* ---- GẮN VÀO DATAGRID ---- */
                 dgVehicles.ItemsSource = data;

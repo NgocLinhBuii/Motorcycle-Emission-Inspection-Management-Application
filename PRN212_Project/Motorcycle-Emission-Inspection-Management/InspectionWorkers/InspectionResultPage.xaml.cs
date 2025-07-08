@@ -31,7 +31,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
         /* ---------- Nạp biển số ---------- */
         private void LoadPlateNumbers()
         {
-            var vehicles = _vehicleService.GetAll();
+            var vehicles = _vehicleService.GetAllVehicles();
             cbPlateNumber.ItemsSource = vehicles;
             cbPlateNumber.DisplayMemberPath = "PlateNumber"; // hiển thị biển số
             cbPlateNumber.SelectedValuePath = "VehicleId";   // giá trị thực khi chọn

@@ -4,9 +4,7 @@ using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using Motorcycle_Emission_Inspection_Management.Dashboards;
 using Motorcycle_Emission_Inspection_Management.InspectionFacility;
 using Motorcycle_Emission_Inspection_Management.InspectionWorkers;
-using Motorcycle_Emission_Inspection_Management.Police;
 using Motorcycle_Emission_Inspection_Management.VehicleOwner;
-using Motorcycle_Emission_Inspection_Management.Common;
 using System;
 using System.Linq;
 using System.Windows;
@@ -104,7 +102,7 @@ namespace Motorcycle_Emission_Inspection_Management
                     return;                // thoát phương thức, không dùng biến next
 
                 case "Police":
-                    next = new PoliceWindow();
+                    next = new PoliceDashboard();
                     break;
 
                 default:
