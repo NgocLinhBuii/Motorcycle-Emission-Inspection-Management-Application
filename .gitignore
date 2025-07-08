@@ -1,0 +1,32 @@
+# Visual Studio temporary files 
+.vs/ 
+*.suo 
+*.user 
+*.userosscache 
+*.sln.docstates 
+ 
+# Build results 
+[Bb]in/ 
+[Oo]bj/ 
+ 
+# Visual Studio Code files 
+.vscode/ 
+ 
+# Rider files 
+.idea/ 
+ 
+# NuGet Packages 
+*.nupkg 
+# Uncomment if you have NuGet packages in your project 
+# packages/* 
+ 
+# Logs 
+*.log 
+ 
+# Temporary files 
+*.tmp 
+*.temp 
+ 
+# OS generated files 
+Thumbs.db 
+.DS_Store 
