@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="Motorcycle_Emission_Inspection_Management.Admin.StatisticsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.Admin"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+       
+        Height="860"
+        Width="900">
+    <Grid Margin="20">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Text="Thống kê xe đạt tiêu chuẩn khí thải"
+                           FontWeight="Bold"
+                           FontSize="16"
+                           Margin="0 0 0 10" />
+
+                <StackPanel Orientation="Horizontal"
+                            Margin="0 0 0 10">
+                    <TextBlock Text="Từ:"
+                               VerticalAlignment="Center"
+                               Margin="0 0 5 0" />
+                    <DatePicker SelectedDate="{Binding FromDate}" />
+                    <TextBlock Text="Đến:"
+                               VerticalAlignment="Center"
+                               Margin="10 0 5 0" />
+                    <DatePicker SelectedDate="{Binding ToDate}" />
+                    <Button Content="Thống kê đạt chuẩn"
+                            Command="{Binding LoadPassedStatsCommand}"
+                            Margin="10 0 0 0" />
+                    <Button Content="Xuất PDF"
+                            Command="{Binding ExportPdfCommand}"
+                            Margin="10 0 0 0" />
+                </StackPanel>
+
+                <DataGrid ItemsSource="{Binding EmissionStats}"
+                          AutoGenerateColumns="False"
+                          Height="200"
+                          Margin="0 0 0 10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Khu vực"
+                                            Binding="{Binding StationName}"
+                                            Width="*" />
+                        <DataGridTextColumn Header="Số xe đạt chuẩn"
+                                            Binding="{Binding PassedVehicleCount}"
+                                            Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <!-- Biểu đồ thống kê -->
+                <lvc:CartesianChart Series="{Binding PassedChartSeries}"
+                                    Height="300"
+                                    Margin="0 10 0 20"
+                                    LegendLocation="Right">
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis Title="Khu vực"
+                                  Labels="{Binding AreaLabels}" />
+                    </lvc:CartesianChart.AxisX>
+                    <lvc:CartesianChart.AxisY>
+                        <lvc:Axis Title="Số xe đạt chuẩn"
+                                  LabelFormatter="{Binding YFormatter}" />
+                    </lvc:CartesianChart.AxisY>
+                </lvc:CartesianChart>
+
+                <Separator Margin="0 20 0 20" />
+
+                <TextBlock Text="Báo cáo cơ sở kiểm định và tỉ lệ xe không đạt"
+                           FontWeight="Bold"
+                           FontSize="16"
+                           Margin="0 0 0 10" />
+                <Button Content="Báo cáo không đạt"
+                        Command="{Binding LoadFailureReportCommand}"
+                        HorizontalAlignment="Left"
+                        Margin="0 0 0 10" />
+
+                <DataGrid ItemsSource="{Binding FailureReports}"
+                          AutoGenerateColumns="False"
+                          Height="250">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Tên cơ sở"
+                                            Binding="{Binding StationName}"
+                                            Width="*" />
+                        <DataGridTextColumn Header="Tổng lượt kiểm định"
+                                            Binding="{Binding TotalInspections}"
+                                            Width="*" />
+                        <DataGridTextColumn Header="Lượt không đạt"
+                                            Binding="{Binding FailedInspections}"
+                                            Width="*" />
+                        <DataGridTextColumn Header="Tỉ lệ không đạt (%)"
+                                            Binding="{Binding FailedRate, StringFormat={}{0:F2}}"
+                                            Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

@@ -1,150 +1,244 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\",
+  "WorkspaceRootPath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\emissioninspectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\emissioninspectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\migrations\\emissioninspectioncontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\migrations\\emissioninspectioncontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\migrations\\20250705152421_addstationidtousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\migrations\\20250705152421_addstationidtousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Duc Luong\\AppData\\Local\\Temp\\.vsdbgsrc\\755b203da153c1147be7834a6e00b7c2948c66d9e563d069c387935ad0a5839e\\NavigationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionworkers\\inspectionresultpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionworkers\\inspectionresultpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\utils\\pdfsharpexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\utils\\pdfsharpexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\repositories\\inspectionrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\repositories\\inspectionrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\viewmodels\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\viewmodels\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\admin\\statisticsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\admin\\statisticsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\admin\\systemconfigview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\admin\\systemconfigview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\inspectionstationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\inspectionstationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\admin\\statisticsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\admin\\statisticsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\admin\\systemconfigview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\admin\\systemconfigview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\inspectionrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\inspectionrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\admin\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\admin\\usermanagementview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\common\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\common\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Duc Luong\\AppData\\Local\\Temp\\.vsdbgsrc\\b8b74ed96cb310e7521b08fc2fd291b3e429a4b509c86c75e9f5ab857cffbff6\\PropertyPathWorker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\common\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\common\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\inspectionrequestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\inspectionrequestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\facilityreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\facilityreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionworkers\\assignedinspectionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionworkers\\assignedinspectionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\dtos\\facilityreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\dtos\\facilityreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\inspectionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\inspectionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\dtos\\emissionstatisticsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\dtos\\emissionstatisticsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\dtos\\inspectionrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\dtos\\inspectionrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\motorcycle-emission-inspection-management.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\motorcycle-emission-inspection-management.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\dtos\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\dtos\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\repositories\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\repositories\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\inspectionstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\inspectionstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\inspectionstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|e:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\admin\\logview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\admin\\logview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\dtos\\facilityreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\dtos\\facilityreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\dtos\\inspectionrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\dtos\\inspectionrecorddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\entities\\inspectionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\entities\\inspectionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\inspectionrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\inspectionrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\migrations\\20250705152421_addstationidtousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\migrations\\20250705152421_addstationidtousers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\dtos\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\dtos\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\dashboards\\ownerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\dashboards\\ownerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\emissioninspectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\emissioninspectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\common\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\common\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\vehicleowner\\addvehiclepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\vehicleowner\\addvehiclepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\vehicleowner\\addvehiclepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\vehicleowner\\addvehiclepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\migrations\\emissioninspectioncontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\migrations\\emissioninspectioncontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionworkers\\inspectionresultpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionworkers\\inspectionresultpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\repositories\\inspectionrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\repositories\\inspectionrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\inspectionstationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\inspectionstationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\violationrecordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\vehiclelookuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\police\\statisticsreportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\dashboards\\policedashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.bll\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2802E724-E68C-4D4B-A330-874ACB4EB256}|Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj|solutionrelative:motorcycle-emission-inspection-management.bll\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\inspectionrequestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\inspectionrequestlistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\facilityreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\facilityreportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionworkers\\assignedinspectionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionworkers\\assignedinspectionspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3422B364-B20D-47A5-9AE0-710F722D75C0}|Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj|solutionrelative:motorcycle-emission-inspection-management\\inspectionfacility\\assigninspectorpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|d:\\motorcycle-emission-inspection-management-application\\prn212_project\\motorcycle-emission-inspection-management.dal\\repositories\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5307FC10-D3FB-44D9-AB3B-4FCE487B6DA1}|Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj|solutionrelative:motorcycle-emission-inspection-management.dal\\repositories\\vehiclerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -154,182 +248,435 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\appsettings.json",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\appsettings.json",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\appsettings.json",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-08T11:45:11.93Z",
-              "EditorCaption": ""
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-09T15:46:55.634Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmissionInspectionContext.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\AssemblyInfo.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T11:45:04.036Z",
+              "WhenOpened": "2025-07-09T16:12:08.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EmissionInspectionContextModelSnapshot.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
-              "ViewState": "AgIAAIIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T11:44:41.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250705152421_AddStationIdToUsers.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T11:44:30.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ViolationRecordPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAIwBoAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:17:00.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InspectionRecordService.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:10:55.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InspectionStationService.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T16:57:09.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ViolationRecordPage.xaml",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-07T16:58:37.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StatisticsReportPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAkwFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T17:11:19.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InspectionRecordRepository.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwEAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:11:02.352Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InspectionResultPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAowHAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T16:28:04.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T01:33:47.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "VehicleService.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAIwBgAAAAJAAAAAAAAAA==",
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\Users\\Duc Luong\\AppData\\Local\\Temp\\.vsdbgsrc\\755b203da153c1147be7834a6e00b7c2948c66d9e563d069c387935ad0a5839e\\NavigationService.cs",
+              "ToolTip": "C:\\Users\\Duc Luong\\AppData\\Local\\Temp\\.vsdbgsrc\\755b203da153c1147be7834a6e00b7c2948c66d9e563d069c387935ad0a5839e\\NavigationService.cs [Read Only]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T14:31:07.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T16:12:33.76Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SystemConfigView.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T06:41:05.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBoAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T16:03:10.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PdfSharpExporter.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Utils\\PdfSharpExporter.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Utils\\PdfSharpExporter.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Utils\\PdfSharpExporter.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Utils\\PdfSharpExporter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:15:29.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserManagementView.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\UserManagementView.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Admin\\UserManagementView.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\UserManagementView.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Admin\\UserManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T06:41:07.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SystemConfigView.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Admin\\SystemConfigView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T06:41:23.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PropertyPathWorker.cs",
+              "DocumentMoniker": "C:\\Users\\Duc Luong\\AppData\\Local\\Temp\\.vsdbgsrc\\b8b74ed96cb310e7521b08fc2fd291b3e429a4b509c86c75e9f5ab857cffbff6\\PropertyPathWorker.cs",
+              "ToolTip": "C:\\Users\\Duc Luong\\AppData\\Local\\Temp\\.vsdbgsrc\\b8b74ed96cb310e7521b08fc2fd291b3e429a4b509c86c75e9f5ab857cffbff6\\PropertyPathWorker.cs",
+              "ViewState": "AgIAAFgEAAAAAAAAAAAYwLIEAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T15:05:33.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LogView.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\LogView.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Admin\\LogView.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\LogView.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Admin\\LogView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-09T14:39:08.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StatisticsView.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:38:02.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StatisticsView.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Admin\\StatisticsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-09T14:37:23.466Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Common\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Common\\RelayCommand.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Common\\RelayCommand.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Common\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:35:48.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StatisticsViewModel.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\ViewModels\\StatisticsViewModel.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\ViewModels\\StatisticsViewModel.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\ViewModels\\StatisticsViewModel.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\ViewModels\\StatisticsViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:33:34.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Motorcycle-Emission-Inspection-Management.csproj",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-09T14:33:00.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StatisticsService.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\StatisticsService.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\StatisticsService.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\StatisticsService.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\StatisticsService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:32:05.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmissionStatisticsDto.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\EmissionStatisticsDto.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\EmissionStatisticsDto.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\EmissionStatisticsDto.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\EmissionStatisticsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:31:29.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Role.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Role.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:10:26.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Notification.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Notification.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:10:20.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Log.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Log.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Log.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T14:10:15.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "OwnerDashboard.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\OwnerDashboard.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Dashboards\\OwnerDashboard.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\OwnerDashboard.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Dashboards\\OwnerDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-09T14:04:44.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddVehiclePage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T13:51:30.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AddVehiclePage.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\VehicleOwner\\AddVehiclePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-09T13:51:20.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\appsettings.json",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\appsettings.json",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\appsettings.json",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-08T11:45:11.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EmissionInspectionContext.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\EmissionInspectionContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T11:45:04.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EmissionInspectionContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\EmissionInspectionContextModelSnapshot.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T11:44:41.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20250705152421_AddStationIdToUsers.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Migrations\\20250705152421_AddStationIdToUsers.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T11:44:30.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ViolationRecordPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwBoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T17:17:00.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "InspectionRecordService.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionRecordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T03:10:55.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "InspectionStationService.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\InspectionStationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:57:09.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ViolationRecordPage.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\ViolationRecordPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-07T16:58:37.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "StatisticsReportPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T17:11:19.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "InspectionRecordRepository.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\InspectionRecordRepository.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T03:11:02.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "InspectionResultPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\InspectionResultPage.xaml.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAowHAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:28:04.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\VehicleService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAIwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:31:07.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "VehicleLookupPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAawD4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -337,44 +684,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 49,
               "Title": "VehicleLookupPage.xaml",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\VehicleLookupPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-07T16:58:09.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 50,
               "Title": "StatisticsReportPage.xaml",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-07T16:59:15.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 51,
               "Title": "PoliceDashboard.xaml",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-07T16:54:16.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 52,
               "Title": "PoliceDashboard.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Dashboards\\PoliceDashboard.xaml.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -382,35 +729,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 37,
               "Title": "UserSession.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Common\\UserSession.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Common\\UserSession.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Common\\UserSession.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Common\\UserSession.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Common\\UserSession.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Common\\UserSession.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T16:53:45.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 34,
               "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\UserService.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\UserService.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\UserService.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\UserService.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\UserService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T17:27:20.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 53,
               "Title": "NotificationService.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\NotificationService.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\NotificationService.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\NotificationService.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Services\\NotificationService.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\Services\\NotificationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -418,11 +765,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 54,
               "Title": "InspectionRequestListPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\InspectionRequestListPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\InspectionRequestListPage.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\InspectionRequestListPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\InspectionRequestListPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\InspectionRequestListPage.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\InspectionRequestListPage.xaml.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAqwC4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -430,11 +777,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 55,
               "Title": "FacilityReportPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\FacilityReportPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\FacilityReportPage.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\FacilityReportPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\FacilityReportPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\FacilityReportPage.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\FacilityReportPage.xaml.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAmwCcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -442,11 +789,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 56,
               "Title": "AssignedInspectionsPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\AssignedInspectionsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\AssignedInspectionsPage.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\AssignedInspectionsPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\AssignedInspectionsPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\AssignedInspectionsPage.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\InspectionWorkers\\AssignedInspectionsPage.xaml.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -454,34 +801,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 58,
               "Title": "AssignInspectorPage.xaml",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-07T16:30:12.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 17,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\App.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T16:19:01.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 57,
               "Title": "AssignInspectorPage.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\InspectionFacility\\AssignInspectorPage.xaml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -489,11 +836,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "FacilityReportDto.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\FacilityReportDto.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\FacilityReportDto.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\FacilityReportDto.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\FacilityReportDto.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\FacilityReportDto.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\FacilityReportDto.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAuwAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -501,59 +848,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 15,
               "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAgwAUAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwA8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T16:28:39.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "InspectionRecord.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionRecord.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionRecord.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionRecord.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionRecord.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionRecord.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionRecord.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAiwBUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T03:18:03.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 19,
               "Title": "App.xaml",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\App.xaml",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\App.xaml",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-07T16:18:47.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T16:18:47.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 24,
               "Title": "InspectionRecordDto.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\InspectionRecordDto.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\InspectionRecordDto.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\InspectionRecordDto.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\InspectionRecordDto.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\InspectionRecordDto.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\InspectionRecordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T07:13:29.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "VehicleDto.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\VehicleDto.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\VehicleDto.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\VehicleDto.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\VehicleDto.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\VehicleDto.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.BLL\\DTOs\\VehicleDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -561,11 +907,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 59,
               "Title": "VehicleRepository.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\VehicleRepository.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\VehicleRepository.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\VehicleRepository.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\VehicleRepository.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\VehicleRepository.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Repositories\\VehicleRepository.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -573,37 +919,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 25,
               "Title": "Vehicle.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Vehicle.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Vehicle.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Vehicle.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Vehicle.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Vehicle.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\Vehicle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T14:40:57.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 21,
               "Title": "InspectionStation.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionStation.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionStation.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionStation.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionStation.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionStation.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\InspectionStation.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T04:02:06.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 26,
               "Title": "User.cs",
-              "DocumentMoniker": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\User.cs",
+              "DocumentMoniker": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\User.cs",
-              "ToolTip": "E:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\User.cs",
+              "ToolTip": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Entities\\User.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management.DAL\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T17:27:13.451Z"
             }

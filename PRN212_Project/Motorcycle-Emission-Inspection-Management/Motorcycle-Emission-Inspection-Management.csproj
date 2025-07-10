@@ -10,13 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Motorcycle-Emission-Inspection-Management.BLL\Motorcycle-Emission-Inspection-Management.BLL.csproj">
-      <Private>True</Private>
-    </ProjectReference>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="PdfSharp-MigraDoc-GDI" Version="1.50.5147" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Admin\" />
+    <ProjectReference Include="..\Motorcycle-Emission-Inspection-Management.BLL\Motorcycle-Emission-Inspection-Management.BLL.csproj">
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
