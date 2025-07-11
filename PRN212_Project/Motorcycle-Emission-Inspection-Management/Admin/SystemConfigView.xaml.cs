@@ -17,7 +17,7 @@ namespace Motorcycle_Emission_Inspection_Management.Admin
     /// <summary>
     /// Interaction logic for SystemConfigView.xaml
     /// </summary>
-    public partial class SystemConfigView : Window
+    public partial class SystemConfigView : UserControl
     {
         public SystemConfigView()
         {

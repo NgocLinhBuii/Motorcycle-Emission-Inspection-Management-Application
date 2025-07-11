@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\
 Motorcycle_Emission_Inspection_Management
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-E:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\App.xaml
-22-1618370215
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\App.xaml
+23248693870
 
-25770511898
-235157277659
-Admin\LogView.xaml;Admin\SystemConfigView.xaml;Admin\UserManagementView.xaml;Dashboards\InspectionFacilityDashboardPage.xaml;Dashboards\InspectorDashboard.xaml;Dashboards\OwnerDashboard.xaml;Dashboards\PoliceDashboard.xaml;InspectionFacility\AssignInspectorPage.xaml;InspectionFacility\FacilityReportPage.xaml;InspectionFacility\InspectionRequestListPage.xaml;InspectionWorkers\AssignedInspectionsPage.xaml;InspectionWorkers\InspectionResultPage.xaml;LoginWindow.xaml;MainWindow.xaml;Police\StatisticsReportPage.xaml;Police\VehicleLookupPage.xaml;Police\ViolationRecordPage.xaml;VehicleOwner\AddVehiclePage.xaml;VehicleOwner\InspectionHistoryPage.xaml;VehicleOwner\NotificationPage.xaml;VehicleOwner\RegisterInspectionPage.xaml;VehicleOwner\VehicleListPage.xaml;
+291776562663
+242-924285398
+Admin\LogView.xaml;Admin\StatisticsView.xaml;Admin\SystemConfigView.xaml;Admin\UserManagementView.xaml;Dashboards\InspectionFacilityDashboardPage.xaml;Dashboards\InspectorDashboard.xaml;Dashboards\OwnerDashboard.xaml;Dashboards\PoliceDashboard.xaml;InspectionFacility\AssignInspectorPage.xaml;InspectionFacility\FacilityReportPage.xaml;InspectionFacility\InspectionRequestListPage.xaml;InspectionWorkers\AssignedInspectionsPage.xaml;InspectionWorkers\InspectionResultPage.xaml;LoginWindow.xaml;MainWindow.xaml;Police\StatisticsReportPage.xaml;Police\VehicleLookupPage.xaml;Police\ViolationRecordPage.xaml;VehicleOwner\AddVehiclePage.xaml;VehicleOwner\InspectionHistoryPage.xaml;VehicleOwner\NotificationPage.xaml;VehicleOwner\RegisterInspectionPage.xaml;VehicleOwner\VehicleListPage.xaml;
 
 False
 
