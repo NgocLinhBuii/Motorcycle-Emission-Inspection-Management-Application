@@ -10,7 +10,7 @@ namespace Motorcycle_Emission_Inspection_Management
             InitializeComponent();
             MainContent.Content = new TextBlock
             {
-                Text = "Chào mừng!",
+                Text = "Chào mừng Admin!",
                 FontSize = 24,
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center

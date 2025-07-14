@@ -3,79 +3,111 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Danh sách phương tiện đăng ký kiểm định"
         Height="600" Width="900"
-        Background="White"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F7FA">
 
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <Border Background="White"
+            CornerRadius="10"
+            Padding="20"
+            Margin="20"
+            BorderBrush="#DDE2E5"
+            BorderThickness="1"
+            Effect="{DynamicResource DropShadowEffect}">
 
-        <!-- Bộ lọc -->
-        <StackPanel Orientation="Horizontal" Margin="0 0 0 15">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-            <StackPanel Margin="0 0 15 0">
-                <TextBlock Text="Từ ngày" FontSize="14" Foreground="#333333"/>
-                <DatePicker x:Name="dpFrom" Width="140"/>
+            <!-- === Bộ lọc === -->
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 15">
+                <!-- Từ ngày -->
+                <StackPanel>
+                    <TextBlock Text="Từ ngày" FontSize="14" FontWeight="SemiBold" Foreground="#333"/>
+                    <DatePicker x:Name="dpFrom" Width="150"/>
+                </StackPanel>
+
+                <!-- Đến ngày -->
+                <StackPanel>
+                    <TextBlock Text="Đến ngày" FontSize="14" FontWeight="SemiBold" Foreground="#333"/>
+                    <DatePicker x:Name="dpTo" Width="150"/>
+                </StackPanel>
+
+                <!-- Trạng thái -->
+                <StackPanel>
+                    <TextBlock Text="Trạng thái" FontSize="14" FontWeight="SemiBold" Foreground="#333"/>
+                    <ComboBox x:Name="cbStatus" Width="160" FontSize="14">
+                        <ComboBoxItem Content="Tất cả" IsSelected="True"/>
+                        <ComboBoxItem Content="Pass"/>
+                        <ComboBoxItem Content="Fail"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Tìm kiếm -->
+                <Button x:Name="btnSearch"
+                        Content="🔍 Tìm kiếm"
+                        Width="120" Height="26"
+                        Margin="10,20,0,0"
+                        Background="#007BFF"
+                        Foreground="White"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        Cursor="Hand"
+                        BorderThickness="0"
+                        Click="BtnSearch_Click"/>
             </StackPanel>
 
-            <StackPanel Margin="0 0 15 0">
-                <TextBlock Text="Đến ngày" FontSize="14" Foreground="#333333"/>
-                <DatePicker x:Name="dpTo" Width="140"/>
+            <!-- === Bảng danh sách === -->
+            <DataGrid x:Name="dgVehicles"
+                      Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      FontSize="14"
+                      Foreground="#333"
+                      AlternatingRowBackground="#F0F8FF"
+                      RowHeight="36"
+                      HeadersVisibility="Column"
+                      CanUserAddRows="False"
+                      CanUserDeleteRows="False">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Biển số"      Binding="{Binding PlateNumber}"         Width="*" />
+                    <DataGridTextColumn Header="Hãng"         Binding="{Binding Brand}"              Width="*" />
+                    <DataGridTextColumn Header="Dòng xe"      Binding="{Binding Model}"              Width="*" />
+                    <DataGridTextColumn Header="Ngày đăng ký" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*" />
+                    <DataGridTextColumn Header="Trạng thái"   Binding="{Binding Result}"             Width="*" />
+                    <DataGridTextColumn Header="Trạm"         Binding="{Binding StationName}"        Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- === Nút Thoát === -->
+            <StackPanel Grid.Row="2"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,20,0,0">
+                <Button Content="❌ Thoát"
+                        Width="100"
+                        Height="36"
+                        FontSize="14"
+                        Background="White"
+                        Foreground="#007BFF"
+                        BorderBrush="#007BFF"
+                        BorderThickness="2"
+                        FontWeight="SemiBold"
+                        Cursor="Hand"
+                        Click="btnQuit_Click"/>
             </StackPanel>
-            <StackPanel Margin="0 0 15 0">
-                <TextBlock Text="Trạng thái" FontSize="14" Foreground="#333333"/>
-                <ComboBox x:Name="cbStatus" Width="160" FontSize="14">
-                    <ComboBoxItem Content="Tất cả" IsSelected="True"/>
-                    <ComboBoxItem Content="Pass"/>
-                    <ComboBoxItem Content="Fail"/>
-                </ComboBox>
-            </StackPanel>
+        </Grid>
+    </Border>
 
-
-            <Button x:Name="btnSearch"
-                    Content="Tìm kiếm"
-                    Width="100" Height="36"
-                    Margin="10 20 0 0"
-                    Background="#007BFF"
-                    Foreground="White"
-                    FontSize="16"
-                    FontWeight="Bold"/>
-        </StackPanel>
-
-        <!-- Bảng -->
-        <DataGrid x:Name="dgVehicles"
-                  Grid.Row="1"
-                  AutoGenerateColumns="False"
-                  IsReadOnly="True"
-                  FontSize="16"
-                  Foreground="#333333"
-                  AlternatingRowBackground="#F0F8FF"
-                  CanUserAddRows="False"
-                  CanUserDeleteRows="False">
-
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Biển số"      Binding="{Binding PlateNumber}"  Width="*"/>
-                <DataGridTextColumn Header="Hãng"         Binding="{Binding Brand}"        Width="*"/>
-                <DataGridTextColumn Header="Dòng xe"      Binding="{Binding Model}"        Width="*"/>
-                <DataGridTextColumn Header="Ngày đăng ký" Binding="{Binding InspectionDate}" Width="*"/>
-                <DataGridTextColumn Header="Trạng thái"   Binding="{Binding Result}"       Width="*"/>
-                <DataGridTextColumn Header="Trạm"         Binding="{Binding StationName}"  Width="*"/>
-            </DataGrid.Columns>
-        </DataGrid>
-
-        <!-- Nút Thoát -->
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-            <Button Content="Thoát"
-                    Width="100" Height="36"
-                    Background="White"
-                    BorderBrush="#007BFF"
-                    BorderThickness="2"
-                    Foreground="#007BFF"
-                    FontSize="16"
-                    Click="btnQuit_Click"/>
-        </StackPanel>
-    </Grid>
+    <!-- Drop Shadow Resource -->
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadowEffect"
+                          BlurRadius="8"
+                          ShadowDepth="2"
+                          Color="#999999"
+                          Opacity="0.2"/>
+    </Window.Resources>
 </Window>

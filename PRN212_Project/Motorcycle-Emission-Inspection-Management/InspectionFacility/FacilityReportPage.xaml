@@ -2,117 +2,139 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Báo cáo định kỳ"
-        Height="600" Width="900"
-        Background="#FFFFFF"
+        Height="580" Width="960"
+        Background="#F5F7FA"
         WindowStartupLocation="CenterScreen">
 
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <Border Background="White"
+            CornerRadius="10"
+            Padding="20"
+            Margin="20"
+            BorderBrush="#DDE2E5"
+            BorderThickness="1"
+            Effect="{DynamicResource DropShadowEffect}">
 
-        <!-- ===== TIÊU ĐỀ & BỘ LỌC ===== -->
-        <StackPanel Grid.Row="0" Margin="0,0,0,15">
-            <TextBlock Text="Báo cáo định kỳ"
-                       FontSize="26"
-                       FontWeight="Bold"
-                       Foreground="#333333"
-                       TextAlignment="Center"
-                       Margin="0,0,0,20"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal">
+            <!-- ===== TIÊU ĐỀ & BỘ LỌC ===== -->
+            <StackPanel Grid.Row="0" Margin="0,0,0,15">
+                <TextBlock Text="Báo cáo định kỳ"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           Foreground="#1F2937"
+                           TextAlignment="Center"
+                           Margin="0,0,0,20"/>
 
-                <!-- Từ ngày -->
-                <StackPanel Margin="0 0 15 0">
-                    <TextBlock Text="Từ ngày" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
-                    <DatePicker x:Name="dpFrom" Width="130"/>
+                <StackPanel Orientation="Horizontal">
+
+                    <!-- Từ ngày -->
+                    <StackPanel>
+                        <TextBlock Text="Từ ngày" FontSize="14" FontWeight="SemiBold" Foreground="#333333" Margin="0 0 0 4"/>
+                        <DatePicker x:Name="dpFrom" Width="130"/>
+                    </StackPanel>
+
+                    <!-- Đến ngày -->
+                    <StackPanel>
+                        <TextBlock Text="Đến ngày" FontSize="14" FontWeight="SemiBold" Foreground="#333333" Margin="0 0 0 4"/>
+                        <DatePicker x:Name="dpTo" Width="130"/>
+                    </StackPanel>
+
+                    <!-- Khu vực -->
+                    <StackPanel>
+                        <TextBlock Text="Địa chỉ trạm" FontSize="14" FontWeight="SemiBold" Foreground="#333333" Margin="0 0 0 4"/>
+                        <ComboBox x:Name="cbStationAddress" Width="180" FontSize="14"
+                                  DisplayMemberPath="Address"
+                                  SelectedValuePath="StationID"/>
+                    </StackPanel>
+
+                    <!-- SĐT -->
+                    <StackPanel>
+                        <TextBlock Text="Số điện thoại" FontSize="14" FontWeight="SemiBold" Foreground="#333333" Margin="0 0 0 4"/>
+                        <TextBox x:Name="tbPhone" Width="160" FontSize="14"/>
+                    </StackPanel>
+
+                    <!-- Lọc -->
+                    <Button x:Name="btnFilter"
+                            Content="🔍 Lọc"
+                            Width="100" Height="36"
+                            Margin="0,20,0,0"
+                            Background="#007BFF"
+                            Foreground="White"
+                            FontSize="14"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Click="BtnFilter_Click_1"/>
                 </StackPanel>
-
-                <!-- Đến ngày -->
-                <StackPanel Margin="0 0 15 0">
-                    <TextBlock Text="Đến ngày" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
-                    <DatePicker x:Name="dpTo" Width="130"/>
-                </StackPanel>
-
-                <!-- Khu vực (Địa chỉ trạm kiểm định) -->
-                <StackPanel Margin="0 0 15 0">
-                    <TextBlock Text="Địa chỉ trạm" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
-                    <ComboBox x:Name="cbStationAddress" Width="160" FontSize="14"
-                              DisplayMemberPath="Address" SelectedValuePath="StationID"/>
-                </StackPanel>
-
-                <!-- Số điện thoại của trạm -->
-                <StackPanel Margin="0 0 15 0">
-                    <TextBlock Text="Số điện thoại" FontSize="14" Foreground="#333333" Margin="0 0 0 4"/>
-                    <TextBox x:Name="tbPhone" Width="150" FontSize="14"/>
-                </StackPanel>
-
-                <!-- Nút Lọc -->
-                <Button x:Name="btnFilter"
-                        Content="Lọc"
-                        Width="100" Height="36"
-                        Margin="10 0 0 0"
-                        Background="#007BFF" Foreground="White"
-                        FontSize="16" FontWeight="Bold"
-                        BorderThickness="0"
-                        Cursor="Hand" Click="BtnFilter_Click_1"/>
             </StackPanel>
-        </StackPanel>
 
-        <!-- ===== DANH SÁCH BÁO CÁO ===== -->
-        <DataGrid x:Name="dgReports"
-                  Grid.Row="1"
-                  AutoGenerateColumns="False"
-                  IsReadOnly="True"
-                  FontSize="16"
-                  Foreground="#333333"
-                  AlternatingRowBackground="#F0F8FF"
-                  CanUserAddRows="False"
-                  CanUserDeleteRows="False" SelectionChanged="dgReports_SelectionChanged">
+            <!-- ===== DANH SÁCH BÁO CÁO ===== -->
+            <DataGrid x:Name="dgReports"
+                      Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      FontSize="14"
+                      RowHeight="34"
+                      Foreground="#333333"
+                      AlternatingRowBackground="#F0F8FF"
+                      HeadersVisibility="Column"
+                      CanUserAddRows="False"
+                      CanUserDeleteRows="False"
+                      SelectionChanged="dgReports_SelectionChanged">
 
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Ngày kiểm định" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*"/>
-                <DataGridTextColumn Header="Địa chỉ trạm" Binding="{Binding StationAddress}" Width="*"/>
-                <DataGridTextColumn Header="Tên trạm" Binding="{Binding StationName}" Width="*"/>
-                <DataGridTextColumn Header="Số điện thoại" Binding="{Binding Phone}" Width="*"/>
-                <DataGridTextColumn Header="Xe đạt" Binding="{Binding PassedCount}" Width="*"/>
-                <DataGridTextColumn Header="Xe không đạt" Binding="{Binding FailedCount}" Width="*"/>
-            </DataGrid.Columns>
-        </DataGrid>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Ngày kiểm định" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*"/>
+                    <DataGridTextColumn Header="Địa chỉ trạm" Binding="{Binding StationAddress}" Width="*"/>
+                    <DataGridTextColumn Header="Tên trạm" Binding="{Binding StationName}" Width="*"/>
+                    <DataGridTextColumn Header="Số điện thoại" Binding="{Binding Phone}" Width="*"/>
+                    <DataGridTextColumn Header="Xe đạt" Binding="{Binding PassedCount}" Width="*"/>
+                    <DataGridTextColumn Header="Xe không đạt" Binding="{Binding FailedCount}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
 
-        <!-- ===== NÚT HÀNH ĐỘNG ===== -->
-        <Grid Grid.Row="2" Margin="0,15,0,0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-
-            <Button x:Name="btnQuit"
-                    Content="Thoát"
-                    Width="120" Height="36"
-                    Background="White"
-                    Foreground="#007BFF"
-                    BorderBrush="#007BFF"
-                    BorderThickness="2"
-                    FontSize="16"
-                    Cursor="Hand"
-                    Click="QuitButton_Click"
-                    Grid.Column="1"
-                    Margin="0 0 10 0">
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="8">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
+            <!-- ===== NÚT HÀNH ĐỘNG ===== -->
+            <StackPanel Grid.Row="2"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0,20,0,0">
+                <Button x:Name="btnQuit"
+                        Content="❌ Thoát"
+                        Width="120"
+                        Height="36"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        Background="White"
+                        Foreground="#007BFF"
+                        BorderBrush="#007BFF"
+                        BorderThickness="2"
+                        Cursor="Hand"
+                        Click="QuitButton_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="8">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
         </Grid>
-    </Grid>
+    </Border>
+
+    <!-- Shadow -->
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadowEffect"
+                          BlurRadius="8"
+                          ShadowDepth="2"
+                          Color="#999999"
+                          Opacity="0.2"/>
+    </Window.Resources>
 </Window>

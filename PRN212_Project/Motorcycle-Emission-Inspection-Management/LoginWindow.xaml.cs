@@ -104,7 +104,9 @@ namespace Motorcycle_Emission_Inspection_Management
                 case "Police":
                     next = new PoliceDashboard();
                     break;
-
+                case "Admin":
+                    next = new MainWindow();
+                    break;
                 default:
                     MessageBox.Show("Vai trò chưa hỗ trợ.",
                                     "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);

@@ -2,96 +2,126 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Thông báo"
-        Height="520" Width="920"
+        Width="960" Height="580"
         WindowStartupLocation="CenterScreen"
-        Background="White">
+        Background="#F9FAFB">
 
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <!-- Tiêu đề -->
-            <RowDefinition Height="*"/>
-            <!-- DataGrid -->
-            <RowDefinition Height="Auto"/>
-            <!-- Nút -->
-        </Grid.RowDefinitions>
+    <Border Background="White"
+            Margin="20"
+            CornerRadius="10"
+            Padding="20"
+            BorderBrush="#DDE2E5"
+            BorderThickness="1"
+            Effect="{DynamicResource DropShadowEffect}">
 
-        <!-- ===== TIÊU ĐỀ ===== -->
-        <TextBlock Text="Danh sách thông báo"
-                   FontSize="24" FontWeight="Bold"
-                   Foreground="#333333"
-                   Margin="0 0 0 15"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Title -->
+                <RowDefinition Height="*"/>
+                <!-- DataGrid -->
+                <RowDefinition Height="Auto"/>
+                <!-- Buttons -->
+            </Grid.RowDefinitions>
 
-        <!-- ===== BẢNG THÔNG BÁO ===== -->
-        <DataGrid x:Name="dgNotifications"
-                  Grid.Row="1"
-                  AutoGenerateColumns="False"
-                  IsReadOnly="True"
-                  AlternatingRowBackground="#F0F8FF"
-                  FontSize="14">
-            <DataGrid.Columns>
-                <!-- Thời gian gửi -->
-                <DataGridTextColumn Header="Thời gian"
-                                    Width="160"
-                                    Binding="{Binding SentDate, StringFormat=dd/MM/yyyy HH:mm}"/>
-                <!-- Nội dung -->
-                <DataGridTextColumn Header="Nội dung"
-                                    Binding="{Binding Message}"
-                                    Width="*"/>
-                <!-- Đã đọc -->
-                <DataGridCheckBoxColumn Header="Đã đọc"
-                                        Binding="{Binding IsRead}"
-                                        Width="80"/>
-                <!-- Nút đánh dấu -->
-                <DataGridTemplateColumn Header=" " Width="120" IsReadOnly="False">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Button Content="Đánh dấu đã đọc"
-                    Padding="6 2"
-                    FontSize="12"
-                    Background="#28A745"
-                    Foreground="White"
-                    BorderThickness="0"
-                    Cursor="Hand"
-                    Click="MarkRead_Click">
-                                <Button.Style>
-                                    <Style TargetType="Button">
-                                        <Setter Property="Visibility" Value="Visible"/>
-                                        <Style.Triggers>
-                                            <DataTrigger Binding="{Binding IsRead}" Value="True">
-                                                <Setter Property="Visibility" Value="Collapsed"/>
-                                            </DataTrigger>
-                                        </Style.Triggers>
-                                    </Style>
-                                </Button.Style>
-                            </Button>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+            <!-- ===== TIÊU ĐỀ ===== -->
+            <TextBlock Text="📬 Danh sách thông báo"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="#2C3E50"
+                       HorizontalAlignment="Center"
+                       Margin="0 0 0 20"/>
 
-            </DataGrid.Columns>
-        </DataGrid>
+            <!-- ===== BẢNG DỮ LIỆU ===== -->
+            <DataGrid x:Name="dgNotifications"
+                      Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      CanUserAddRows="False"
+                      AlternatingRowBackground="#F0F8FF"
+                      GridLinesVisibility="Horizontal"
+                      FontSize="14"
+                      HeadersVisibility="Column"
+                      Margin="0"
+                      BorderBrush="#DDD"
+                      RowHeight="36"
+                      SelectionMode="Single">
 
-        <!-- ===== NÚT ===== -->
-        <StackPanel Grid.Row="2"
-                    Orientation="Horizontal"
-                    HorizontalAlignment="Right"
-                    Margin="0 10 0 0">
-            <Button Content="Tải lại"
-                    Width="100" Height="36"
-                    Background="#007BFF" Foreground="White"
-                    FontWeight="Bold"
-                    Margin="0 0 10 0"
-                    Click="btnReload_Click"/>
+                <DataGrid.Columns>
+                    <!-- Thời gian gửi -->
+                    <DataGridTextColumn Header="Thời gian"
+                                        Width="160"
+                                        Binding="{Binding SentDate, StringFormat=dd/MM/yyyy HH:mm}"/>
+                    <!-- Nội dung -->
+                    <DataGridTextColumn Header="Nội dung"
+                                        Binding="{Binding Message}"
+                                        Width="*"/>
+                    <!-- Trạng thái -->
+                    <DataGridCheckBoxColumn Header="Đã đọc"
+                                            Binding="{Binding IsRead}"
+                                            Width="80"/>
 
-            <Button Content="Thoát"
-                    Width="100" Height="36"
-                    Background="White"
-                    BorderBrush="#007BFF"
-                    BorderThickness="2"
-                    Foreground="#007BFF"
-                    FontWeight="Bold"
-                    Click="btnQuit_Click"/>
-        </StackPanel>
-    </Grid>
+                    <!-- Nút đánh dấu -->
+                    <DataGridTemplateColumn Header=" " Width="140" IsReadOnly="False">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="✔ Đánh dấu đã đọc"
+                                        Padding="6 2"
+                                        FontSize="12"
+                                        Background="#28A745"
+                                        Foreground="White"
+                                        BorderThickness="0"
+                                        Cursor="Hand"
+                                        Click="MarkRead_Click">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsRead}" Value="True">
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- ===== NÚT ĐIỀU KHIỂN ===== -->
+            <StackPanel Grid.Row="2"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        Margin="0 20 0 0">
+                <Button Content="🔄 Tải lại"
+                        Width="110" Height="36"
+                        Background="#007BFF"
+                        Foreground="White"
+                        FontWeight="SemiBold"
+                        Cursor="Hand"
+                        Click="btnReload_Click"/>
+
+                <Button Content="❌ Thoát"
+                        Width="100" Height="36"
+                        Background="White"
+                        BorderBrush="#007BFF"
+                        BorderThickness="2"
+                        Foreground="#007BFF"
+                        FontWeight="SemiBold"
+                        Cursor="Hand"
+                        Click="btnQuit_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+
+    <!-- Hiệu ứng đổ bóng nhẹ -->
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadowEffect"
+                          BlurRadius="10"
+                          ShadowDepth="2"
+                          Color="Gray"
+                          Opacity="0.15"/>
+    </Window.Resources>
 </Window>

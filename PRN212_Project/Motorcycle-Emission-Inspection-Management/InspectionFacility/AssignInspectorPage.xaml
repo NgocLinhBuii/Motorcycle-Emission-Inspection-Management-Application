@@ -2,109 +2,109 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Phân công công nhân kiểm định"
-        Height="600" Width="900"
-        Background="#FFFFFF"
+        Height="580" Width="960"
+        Background="#F5F7FA"
         WindowStartupLocation="CenterScreen">
 
-    <Grid Margin="40">
-        <StackPanel Width="688" HorizontalAlignment="Center" VerticalAlignment="Center" Height="441">
+    <Border Background="White"
+            CornerRadius="10"
+            Padding="40"
+            Margin="20"
+            BorderBrush="#D0D7DE"
+            BorderThickness="1"
+            Effect="{DynamicResource DropShadowEffect}">
+
+        <StackPanel Width="684" HorizontalAlignment="Center" VerticalAlignment="Center" Height="388">
 
             <!-- Tiêu đề -->
             <TextBlock Text="Phân công công nhân kiểm định"
                        FontSize="26"
                        FontWeight="Bold"
-                       Foreground="#333333"
+                       Foreground="#1F2937"
                        TextAlignment="Center"
-                       Margin="0,0,0,30"/>
+                       Margin="0,0,0,20"/>
 
             <!-- Biển số -->
-            <TextBlock Text="Chọn biển số:"
-           FontSize="16"
-           Foreground="#333333"
-           Margin="0,0,0,5"/>
-
+            <TextBlock Text="Biển số xe" FontSize="14" FontWeight="SemiBold" Foreground="#333"/>
             <ComboBox Name="PlateComboBox"
-          FontSize="16"
-          Foreground="#333333"
-          Background="#FFFFFF"
-          BorderBrush="#CCCCCC"
-          BorderThickness="1"
-          Padding="4"
-          Margin="0,0,0,20"
-          Height="36"
-          DisplayMemberPath="PlateNumber"
-          SelectedValuePath="VehicleId" />
-
-            <TextBlock Text="Ngày kiểm định:"
-           FontSize="16"
-           Foreground="#333333"
-           Margin="0,0,0,5"/>
-            <DatePicker Name="InspectDatePicker"
-            FontSize="16"
-            Background="#FFFFFF"
-            BorderBrush="#CCCCCC"
-            BorderThickness="1"
-            Margin="0,0,0,20"
-            Height="36"/>
-
-            <!-- Chọn công nhân -->
-            <TextBlock Text="Chọn công nhân:"
-                       FontSize="16"
-                       Foreground="#333333"
-                       Margin="0,0,0,5"/>
-            <ComboBox Name="InspectorComboBox"
-                      FontSize="16"
-                      Foreground="#333333"
-                      Background="#FFFFFF"
+                      FontSize="14"
+                      Height="36"
+                      Padding="6,2"
                       BorderBrush="#CCCCCC"
                       BorderThickness="1"
-                      Padding="4"
-                      Margin="0,0,0,30"
-                      Height="36"/>
+                      DisplayMemberPath="PlateNumber"
+                      SelectedValuePath="VehicleId"/>
 
-            <!-- Nút phân công -->
-            <Button Content="Phân công"
-        Width="150"
-        Height="44"
-        Background="#007BFF"
-        Foreground="White"
-        FontSize="16"
-        FontWeight="Bold"
-        BorderThickness="0"
-        Cursor="Hand"
-        Margin="0,0,0,10"
-        Click="AssignButton_Click">
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
+            <!-- Ngày kiểm định -->
+            <TextBlock Text="Ngày kiểm định" FontSize="14" FontWeight="SemiBold" Foreground="#333" Margin="0,10,0,0"/>
+            <DatePicker Name="InspectDatePicker"
+                        FontSize="14"
+                        Height="36"
+                        BorderBrush="#CCCCCC"
+                        BorderThickness="1"/>
 
+            <!-- Công nhân -->
+            <TextBlock Text="Công nhân kiểm định" FontSize="14" FontWeight="SemiBold" Foreground="#333" Margin="0,10,0,0"/>
+            <ComboBox Name="InspectorComboBox"
+                      FontSize="14"
+                      Height="36"
+                      Padding="6,2"
+                      BorderBrush="#CCCCCC"
+                      BorderThickness="1"/>
 
-            <!-- Nút Quit -->
-            <Button Content="Thoát"
-                    Width="120"
-                    Height="36"
-                    Background="White"
-                    Foreground="#007BFF"
-                    BorderBrush="#007BFF"
-                    BorderThickness="2"
-                    FontSize="16"
-                    FontWeight="Normal"
-                    Cursor="Hand"
-                    Click="QuitButton_Click">
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="8">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
+            <!-- Buttons -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0">
+                <!-- Nút phân công -->
+                <Button Content="Phân công"
+                        Width="150" Height="44"
+                        FontSize="14"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Background="#007BFF"
+                        Cursor="Hand"
+                        Click="AssignButton_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+                                    CornerRadius="8">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
 
+                <!-- Nút thoát -->
+                <Button Content="Thoát"
+                        Width="100"
+                        Height="44"
+                        FontSize="14"
+                        Background="White"
+                        Foreground="#007BFF"
+                        BorderBrush="#007BFF"
+                        BorderThickness="2"
+                        Cursor="Hand"
+                        Click="QuitButton_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="8">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
         </StackPanel>
-    </Grid>
+    </Border>
+
+    <!-- Đổ bóng -->
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadowEffect"
+                          BlurRadius="8"
+                          ShadowDepth="2"
+                          Color="#999999"
+                          Opacity="0.2"/>
+    </Window.Resources>
 </Window>

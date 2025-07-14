@@ -3,23 +3,123 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management"
         mc:Ignorable="d"
-    Title="LoginWindow"  Height="500" Width="850" Background="#FFCAE4E2" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
-    <Grid Margin="-17,0,0,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="63*"/>
-            <ColumnDefinition Width="65*"/>
-            <ColumnDefinition Width="722*"/>
-        </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="370" Stroke="Black" VerticalAlignment="Top" Width="584" Fill="#C0C0C0" RadiusX="20" RadiusY="20" Margin="23,70,0,0" Grid.Column="2"/>
-        <Label Content="Log in" HorizontalAlignment="Left" Height="60" Margin="195,77,0,0" VerticalAlignment="Top" Width="230" FontWeight="ExtraBold" FontSize="40" HorizontalContentAlignment="Center" Grid.Column="2"/>
-        <Label Content="Email" HorizontalAlignment="Left" Height="45" Margin="68,182,0,0" VerticalAlignment="Top" Width="107" Grid.Column="2" FontSize="18"/>
-        <TextBox x:Name="EmailAddressTextBox" HorizontalAlignment="Left" Height="45" Margin="163,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="374" TabIndex="0" Grid.Column="2"/>
-        <Label Content="Password" HorizontalAlignment="Left" Height="45" Margin="68,251,0,0" VerticalAlignment="Top" Width="107" Grid.Column="2" FontSize="18"/>
-        <PasswordBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="45" Margin="163,248,0,0" VerticalAlignment="Top" Width="374" TabIndex="0" Grid.Column="2"/>
-        <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="55" Margin="65,339,0,0" VerticalAlignment="Top" Width="230" TabIndex="2"  Grid.Column="2" FontSize="24" FontWeight="Bold" Click="LoginButton_Click" />
-        <Button x:Name="QuitButton" Content="Quit" HorizontalAlignment="Left" Height="55" Margin="333,339,0,0" VerticalAlignment="Top" Width="230" TabIndex="3"  Grid.Column="2" FontSize="24" FontWeight="Bold" Click="QuitButton_Click" />
-    </Grid>
+        Title="Đăng nhập hệ thống"
+        Width="960" Height="580"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None">
 
+    <Grid>
+        <!-- Background image -->
+        <Image Source="pack://application:,,,/Assets/bg.jpg"
+               Stretch="UniformToFill"
+               Opacity="1"
+               Panel.ZIndex="-5"/>
+
+        <!-- Overlay title -->
+        <TextBlock Text="ĐĂNG KÝ KIỂM ĐỊNH KHÍ THẢI"
+                   FontSize="36"
+                   FontWeight="Bold"
+                   Foreground="#FFFFFF"
+                   Opacity="0.8"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"/>
+
+        <!-- Main Login Card -->
+        <Border Background="White"
+                CornerRadius="25"
+                Width="600"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="40"
+                Effect="{DynamicResource DropShadowEffect}">
+
+            <StackPanel>
+                <!-- Logo -->
+
+                <!-- Title -->
+                <!-- Logo -->
+                <Image Source="pack://application:,,,/Assets/logo.jpg"
+                       Width="80"
+                       Height="80"
+                       />
+
+                <!-- Title -->
+                <TextBlock Text="Chào mừng trở lại"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           Foreground="#2C3E50"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <!-- Email -->
+                <TextBlock Text="Email" FontSize="15" Margin="5,5,0,0"/>
+                <TextBox x:Name="EmailAddressTextBox"
+                         Height="42"
+                         FontSize="14"
+                         Padding="10"
+                         Background="#F9F9F9"
+                         BorderBrush="#DADADA"
+                         BorderThickness="1"
+                         Margin="0,5"/>
+
+                <!-- Password -->
+                <TextBlock Text="Mật khẩu" FontSize="15" Margin="5,15,0,0"/>
+                <PasswordBox x:Name="PasswordTextBox"
+                             Height="42"
+                             FontSize="14"
+                             Padding="10"
+                             Background="#F9F9F9"
+                             BorderBrush="#DADADA"
+                             BorderThickness="1"
+                             Margin="0,5"/>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0,30,0,0">
+                    <Button Content="Đăng nhập"
+                            Width="130" Height="45"
+                            FontSize="16"
+                            FontWeight="SemiBold"
+                            Foreground="White"
+                            Background="#27AE60"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Click="LoginButton_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#999" BlurRadius="6" ShadowDepth="2"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <Button Content="Thoát"
+                            Width="130" Height="45"
+                            FontSize="16"
+                            FontWeight="SemiBold"
+                            Foreground="White"
+                            Background="#C0392B"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Click="QuitButton_Click">
+                        <Button.Effect>
+                            <DropShadowEffect Color="#999" BlurRadius="6" ShadowDepth="2"/>
+                        </Button.Effect>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Drop shadow effect resource -->
+        <Grid.Resources>
+            <DropShadowEffect x:Key="DropShadowEffect"
+                              Color="Black"
+                              BlurRadius="15"
+                              ShadowDepth="4"
+                              Direction="270"
+                              Opacity="0.1"/>
+        </Grid.Resources>
+    </Grid>
 </Window>
