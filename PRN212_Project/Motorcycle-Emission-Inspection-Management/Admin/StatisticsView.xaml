@@ -77,7 +77,7 @@
 
                 <DataGrid ItemsSource="{Binding FailureReports}"
                           AutoGenerateColumns="False"
-                          Height="250">
+                          Height="228">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Tên cơ sở"
                                             Binding="{Binding StationName}"

@@ -110,7 +110,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
 
             try
             {
-                _recordService.Create(record);
+                _recordService.Update(record);
                 MessageBox.Show("Đã lưu kết quả!",
                                 "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 new InspectorDashboard().Show();

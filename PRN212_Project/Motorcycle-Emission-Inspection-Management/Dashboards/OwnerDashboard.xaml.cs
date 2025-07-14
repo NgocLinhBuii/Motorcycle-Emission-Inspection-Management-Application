@@ -61,6 +61,7 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
             new LoginWindow().Show();
         }
     }

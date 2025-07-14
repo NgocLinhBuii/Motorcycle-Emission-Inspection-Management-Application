@@ -3,85 +3,116 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.Police"
         mc:Ignorable="d"
-        Title="Tra cứu phương tiện" Height="600" Width="900"
-        WindowStartupLocation="CenterScreen">
+        Title="Tra cứu phương tiện"
+        Width="960" Height="580"
+        WindowStartupLocation="CenterScreen"
+        Background="#F9FAFB">
 
-    <Grid Margin="20">
-        <!-- Lưới chính 3 hàng -->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <!-- Ô nhập tìm kiếm -->
-            <RowDefinition Height="*"/>
-            <!-- Thông tin xe -->
-            <RowDefinition Height="*"/>
-            <!-- Lịch sử -->
-        </Grid.RowDefinitions>
+    <Border Background="White"
+            CornerRadius="10"
+            Padding="20"
+            Margin="20"
+            BorderBrush="#DDE2E5"
+            BorderThickness="1"
+            Effect="{DynamicResource DropShadowEffect}">
 
-        <!-- ====== Hàng 0: Tìm kiếm ====== -->
-        <Grid Grid.Row="0" Margin="0 0 0 10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="80"/>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Tìm kiếm -->
+                <RowDefinition Height="*"/>
+                <!-- Thông tin xe -->
+                <RowDefinition Height="*"/>
+                <!-- Lịch sử -->
+            </Grid.RowDefinitions>
 
-            <TextBlock Text="Biển số:"
-                       VerticalAlignment="Center"
-                       FontWeight="SemiBold"/>
-            <TextBox x:Name="tbPlateNumber"
-                     Grid.Column="1"
-                     Height="25"/>
-            <Button x:Name="btnSearch"
-                    Grid.Column="2"
-                    Content="🔍 Tra cứu"
-                    Height="25"
-                    Margin="10 0 0 0"
-                    Padding="10 0"
-                    Click="btnSearch_Click"/>
+            <!-- ===== TIÊU ĐỀ VÀ TÌM KIẾM ===== -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBlock Text="Biển số xe:"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"
+                           FontSize="14"/>
+                <TextBox x:Name="tbPlateNumber"
+                         Width="200"
+                         Height="30"
+                         FontSize="14"/>
 
-            <!-- Nút Thoát -->
-            <Button Content="⏎ Thoát" Height="28"
-        Padding="10,0" Click="btnExit_Click" Width="80" RenderTransformOrigin="5.698,0.526" Grid.Column="2" Margin="135,0,-125,0"/>
-           
+                <Button x:Name="btnSearch"
+                        Content="🔍 Tra cứu"
+                        Width="100"
+                        Height="30"
+                        Background="#007BFF"
+                        Foreground="White"
+                        FontSize="14"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="btnSearch_Click"/>
 
+                <Button Content="❌ Thoát"
+                        Width="80"
+                        Height="30"
+                        Background="White"
+                        BorderBrush="#007BFF"
+                        Foreground="#007BFF"
+                        BorderThickness="2"
+                        FontSize="14"
+                        Cursor="Hand"
+                        Click="btnExit_Click"/>
+            </StackPanel>
+
+            <!-- ===== THÔNG TIN XE ===== -->
+            <GroupBox Header="Thông tin phương tiện"
+                      Grid.Row="1"
+                      FontWeight="Bold"
+                      Margin="0,20,0,10">
+                <DataGrid x:Name="dgVehicle"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          AlternatingRowBackground="#F0F8FF"
+                          HeadersVisibility="Column"
+                          FontSize="14"
+                          Margin="5"
+                          RowHeight="36">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Biển số" Binding="{Binding PlateNumber}" Width="*" />
+                        <DataGridTextColumn Header="Hãng" Binding="{Binding Brand}" Width="*" />
+                        <DataGridTextColumn Header="Model" Binding="{Binding Model}" Width="*" />
+                        <DataGridTextColumn Header="Năm SX" Binding="{Binding ManufactureYear}" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+
+            <!-- ===== LỊCH SỬ KIỂM ĐỊNH ===== -->
+            <GroupBox Header="Lịch sử đăng kiểm"
+                      Grid.Row="2"
+                      FontWeight="Bold"
+                      Margin="0,0,0,0">
+                <DataGrid x:Name="dgHistory"
+                          AutoGenerateColumns="False"
+                          IsReadOnly="True"
+                          AlternatingRowBackground="#F0F8FF"
+                          HeadersVisibility="Column"
+                          FontSize="14"
+                          Margin="5"
+                          RowHeight="36">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Ngày kiểm định" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*" />
+                        <DataGridTextColumn Header="Kết quả" Binding="{Binding Result}" Width="*" />
+                        <DataGridTextColumn Header="CO₂ (g/km)" Binding="{Binding Co2emission}" Width="*" />
+                        <DataGridTextColumn Header="HC (ppm)" Binding="{Binding Hcemission}" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
         </Grid>
+    </Border>
 
-        <!-- ====== Hàng 1: Thông tin phương tiện ====== -->
-        <GroupBox Header="Thông tin phương tiện"
-                  FontWeight="Bold"
-                  Grid.Row="1">
-            <DataGrid x:Name="dgVehicle"
-                      AutoGenerateColumns="False"
-                      CanUserAddRows="False"
-                      IsReadOnly="True"
-                      Margin="5">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Biển số" Binding="{Binding PlateNumber}" Width="*"/>
-                    <DataGridTextColumn Header="Hãng" Binding="{Binding Brand}" Width="*"/>
-                    <DataGridTextColumn Header="Model" Binding="{Binding Model}" Width="*"/>
-                    <DataGridTextColumn Header="Năm SX" Binding="{Binding ManufactureYear}" Width="*"/>
-                </DataGrid.Columns>
-            </DataGrid>
-        </GroupBox>
-
-        <!-- ====== Hàng 2: Lịch sử đăng kiểm ====== -->
-        <GroupBox Header="Lịch sử đăng kiểm"
-                  FontWeight="Bold"
-                  Grid.Row="2" Margin="0 10 0 0">
-            <DataGrid x:Name="dgHistory"
-                      AutoGenerateColumns="False"
-                      CanUserAddRows="False"
-                      IsReadOnly="True"
-                      Margin="5">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Ngày kiểm định" Binding="{Binding InspectionDate, StringFormat=dd/MM/yyyy}" Width="*"/>
-                    <DataGridTextColumn Header="Kết quả" Binding="{Binding Result}" Width="*"/>
-                    <DataGridTextColumn Header="CO₂" Binding="{Binding Co2emission}" Width="*"/>
-                    <DataGridTextColumn Header="HC" Binding="{Binding Hcemission}" Width="*"/>
-                </DataGrid.Columns>
-            </DataGrid>
-        </GroupBox>
-    </Grid>
+    <!-- Đổ bóng -->
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadowEffect"
+                          BlurRadius="10"
+                          ShadowDepth="2"
+                          Color="Gray"
+                          Opacity="0.15"/>
+    </Window.Resources>
 </Window>

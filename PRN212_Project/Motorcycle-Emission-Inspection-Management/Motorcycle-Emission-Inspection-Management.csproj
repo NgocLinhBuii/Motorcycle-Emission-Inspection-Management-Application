@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\bg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
     <PackageReference Include="PdfSharp-MigraDoc-GDI" Version="1.50.5147" />
   </ItemGroup>
@@ -18,6 +22,12 @@
     <ProjectReference Include="..\Motorcycle-Emission-Inspection-Management.BLL\Motorcycle-Emission-Inspection-Management.BLL.csproj">
       <Private>True</Private>
     </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\bg.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

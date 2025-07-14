@@ -89,5 +89,10 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
             }
 
         }
+
+        private void btnCancel_Click_1(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

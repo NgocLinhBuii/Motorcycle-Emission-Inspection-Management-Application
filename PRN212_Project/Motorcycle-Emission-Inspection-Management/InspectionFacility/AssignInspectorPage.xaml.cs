@@ -22,7 +22,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 
         private void LoadInspectors()
         {
-            var inspectors = _userService.GetAllUser; // List<User>
+            var inspectors = _userService.GetAllUser.Where(x => x.RoleId == 3); // List<User>
             InspectorComboBox.ItemsSource = inspectors;
             InspectorComboBox.DisplayMemberPath = "FullName";
             InspectorComboBox.SelectedValuePath = "UserId";

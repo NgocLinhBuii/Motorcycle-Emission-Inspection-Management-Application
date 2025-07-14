@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HDgtsnaNEh4=",
+  "dgSpecHash": "00Urf4R//Vs=",
   "success": true,
-  "projectFilePath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+  "projectFilePath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -73,8 +73,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Package 'LiveCharts 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
       "libraryId": "LiveCharts",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -83,8 +85,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Package 'LiveCharts.Wpf 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
       "libraryId": "LiveCharts.Wpf",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -93,8 +97,10 @@
     {
       "code": "NU1701",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Package 'PDFsharp-MigraDoc-gdi 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Motorcycle-Emission-Inspection-Management.csproj",
       "libraryId": "PDFsharp-MigraDoc-gdi",
       "targetGraphs": [
         "net8.0-windows7.0"
