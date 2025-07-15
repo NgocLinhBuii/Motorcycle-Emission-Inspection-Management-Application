@@ -18,7 +18,7 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
     /// <summary>
     /// Interaction logic for AssignedInspectionsPage.xaml
     /// </summary>
-    public partial class AssignedInspectionsPage : Window     
+    public partial class AssignedInspectionsPage : Page     
     {
         public InspectionRecordService _service = new();
         public AssignedInspectionsPage()
@@ -42,10 +42,6 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
             AssignedInspectionDataGrid.ItemsSource = null;
             AssignedInspectionDataGrid.ItemsSource = _service.GetAll();
         }
-
-     
-
-
         private void txtPlateNumber_GotFocus(object sender, RoutedEventArgs e)
         {
             if (txtPlateNumber.Text == "Biển số")

@@ -8,7 +8,7 @@ using System.Windows.Controls;
 
 namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 {
-    public partial class FacilityReportPage : Window
+    public partial class FacilityReportPage : Page
     {
         private readonly InspectionRecordService _service = new();
         private InspectionStationService _stationService = new();
@@ -87,7 +87,6 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
         private void QuitButton_Click(object sender, RoutedEventArgs e)
         {
             new InspectionFacilityDashboardPage().Show();
-            Close();
         }
 
         /* ------------ Không reload khi chọn dòng ------------ */

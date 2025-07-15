@@ -19,7 +19,7 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
     /// <summary>
     /// Interaction logic for InspectionHistoryPage.xaml
     /// </summary>
-    public partial class InspectionHistoryPage : Window
+    public partial class InspectionHistoryPage : Page
     {
         private readonly InspectionRecordService _recordService = new();
 
@@ -38,7 +38,6 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-            Close();
         }
     }
 

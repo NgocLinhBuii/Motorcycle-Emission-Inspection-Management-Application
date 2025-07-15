@@ -1,9 +1,9 @@
-﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.InspectionFacility.AssignedInspectionsPage"
+﻿<Page x:Class="Motorcycle_Emission_Inspection_Management.InspectionFacility.AssignedInspectionsPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.InspectionWorkers"
         Title="Danh sách xe được giao kiểm định hôm nay"
         Width="960" Height="580"
-        WindowStartupLocation="CenterScreen"
         Background="#F5F7FA">
 
     <Border Background="White"
@@ -89,32 +89,16 @@
                 </DataGrid.Columns>
             </DataGrid>
 
-            <!-- ===== Nút Thoát ===== -->
-            <StackPanel Grid.Row="2"
-                        Orientation="Horizontal"
-                        HorizontalAlignment="Right"
-                        Margin="0,20,0,0">
-                <Button Content="❌ Thoát"
-                        Width="100"
-                        Height="36"
-                        FontSize="14"
-                        Background="White"
-                        Foreground="#007BFF"
-                        BorderBrush="#007BFF"
-                        BorderThickness="2"
-                        FontWeight="SemiBold"
-                        Cursor="Hand"
-                        Click="btnQuit_Click"/>
-            </StackPanel>
+    
         </Grid>
     </Border>
 
     <!-- Đổ bóng -->
-    <Window.Resources>
+    <Page.Resources>
         <DropShadowEffect x:Key="DropShadowEffect"
                           BlurRadius="10"
                           ShadowDepth="2"
                           Color="Gray"
                           Opacity="0.15"/>
-    </Window.Resources>
-</Window>
+    </Page.Resources>
+</Page>

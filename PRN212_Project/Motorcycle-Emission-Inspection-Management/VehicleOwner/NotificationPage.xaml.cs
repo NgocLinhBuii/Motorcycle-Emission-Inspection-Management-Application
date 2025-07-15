@@ -9,7 +9,7 @@ using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 
 namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
 {
-    public partial class NotificationPage : Window
+    public partial class NotificationPage : Page
     {
         private readonly NotificationService _notificationService = new();   // chỉ còn 1 service
 
@@ -48,6 +48,9 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
         private void btnReload_Click(object sender, RoutedEventArgs e) => LoadNotifications();
 
         /* ===== Thoát ===== */
-        private void btnQuit_Click(object sender, RoutedEventArgs e) => Close();
+        private void btnQuit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

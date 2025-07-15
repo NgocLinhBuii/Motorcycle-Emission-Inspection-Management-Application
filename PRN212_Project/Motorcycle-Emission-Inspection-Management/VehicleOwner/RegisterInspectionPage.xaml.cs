@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Controls;
 using Motorcycle_Emission_Inspection_Management.BLL.Services;
 using Motorcycle_Emission_Inspection_Management.Common;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 
 namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
 {
-    public partial class RegisterInspectionPage : Window
+    public partial class RegisterInspectionPage : Page
     {
         /* ---- Services ---- */
         private readonly InspectionStationService _stationService = new();
@@ -88,7 +89,6 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
 
                 MessageBox.Show("Đăng ký kiểm định thành công!",
                                 "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-                Close();
             }
             catch (Exception ex)
             {
@@ -103,6 +103,9 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
         }
 
         /* ===== Thoát ===== */
-        private void btnExit_Click(object sender, RoutedEventArgs e) => Close();
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

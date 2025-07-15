@@ -27,24 +27,36 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
         public InspectorDashboard()
         {
             InitializeComponent();
+            MainContent.Content = new TextBlock
+            {
+                Text = "Chào mừng Nhân viên kiểm định!",
+                FontSize = 24,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center
+            };
         }
 
         private void ViewAssignedBtn_Click(object sender, RoutedEventArgs e)
         {
-            new AssignedInspectionsPage().Show();
+            MainContent.Content = new AssignedInspectionsPage();
         }
 
         private void EnterResultsBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            new InspectionResultPage().Show();
-
-
+            MainContent.Content = new InspectionWorkers.InspectionResultPage();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new LoginWindow().Show();
+            LoginWindow login = new();
+            login.Show();
+            Close();
+        }
+
+        private void MainContent_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new AssignedInspectionsPage();
         }
     }
 }

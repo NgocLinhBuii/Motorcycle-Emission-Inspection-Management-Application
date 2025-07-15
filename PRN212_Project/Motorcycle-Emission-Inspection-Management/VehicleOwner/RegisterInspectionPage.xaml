@@ -1,11 +1,12 @@
-﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.VehicleOwner.RegisterInspectionPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+﻿<Page x:Class="Motorcycle_Emission_Inspection_Management.VehicleOwner.RegisterInspectionPage"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.VehicleOwner"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
         Title="Đăng ký kiểm định khí thải"
         Width="960" Height="580"
         Background="#F9FAFB"
-        WindowStartupLocation="CenterScreen">
+        >
 
     <Border Background="White"
             Margin="30"
@@ -112,11 +113,11 @@
         </Grid>
     </Border>
 
-    <Window.Resources>
+    <Page.Resources>
         <DropShadowEffect x:Key="DropShadowEffect"
                           BlurRadius="10"
                           ShadowDepth="2"
                           Color="Gray"
                           Opacity="0.2"/>
-    </Window.Resources>
-</Window>
+    </Page.Resources>
+</Page>

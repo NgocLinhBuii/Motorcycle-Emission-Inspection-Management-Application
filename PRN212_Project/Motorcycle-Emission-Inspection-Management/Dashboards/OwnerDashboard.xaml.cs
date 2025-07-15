@@ -23,46 +23,54 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
         public OwnerDashboard()
         {
             InitializeComponent();
+            MainContent.Content = new TextBlock
+            {
+                Text = "Chào mừng Chủ phương tiện!",
+                FontSize = 24,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center
+            };
         }
 
         private void VehicleListBtn_Click(object sender, RoutedEventArgs e)
         {
-            var win = new VehicleListPage();
-            win.ShowDialog();
+            MainContent.Content = new VehicleOwner.VehicleListPage();
         }
 
         /* ---------- Thêm xe ---------- */
         private void AddVehicleBtn_Click(object sender, RoutedEventArgs e)
         {
-            var win = new AddVehiclePage();
-            win.ShowDialog();
+            MainContent.Content = new VehicleOwner.AddVehiclePage();
         }
 
         /* ---------- Đăng ký kiểm định ---------- */
         private void RegisterInspectionBtn_Click(object sender, RoutedEventArgs e)
         {
-            var win = new RegisterInspectionPage();
-            win.ShowDialog();
+            MainContent.Content = new VehicleOwner.RegisterInspectionPage();
         }
 
         /* ---------- Lịch sử kiểm định ---------- */
         private void InspectionHistoryBtn_Click(object sender, RoutedEventArgs e)
         {
-            var win = new InspectionHistoryPage();
-            win.ShowDialog();
+            MainContent.Content = new VehicleOwner.InspectionHistoryPage();
         }
 
         /* ---------- Thông báo ---------- */
         private void NotificationBtn_Click(object sender, RoutedEventArgs e)
         {
-            var win = new NotificationPage();
-            win.ShowDialog();
+            MainContent.Content = new VehicleOwner.NotificationPage();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
-            new LoginWindow().Show();
+            LoginWindow login = new();
+            login.Show();
+            Close();
+        }
+
+        private void MainContent_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new VehicleOwner.VehicleListPage();
         }
     }
 }
