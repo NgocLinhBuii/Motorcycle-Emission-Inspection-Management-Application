@@ -103,15 +103,7 @@ xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.VehicleOwne
                         Cursor="Hand"
                         Click="btnReload_Click"/>
 
-                <Button Content="❌ Thoát"
-                        Width="100" Height="36"
-                        Background="White"
-                        BorderBrush="#007BFF"
-                        BorderThickness="2"
-                        Foreground="#007BFF"
-                        FontWeight="SemiBold"
-                        Cursor="Hand"
-                        Click="btnQuit_Click"/>
+                
             </StackPanel>
         </Grid>
     </Border>

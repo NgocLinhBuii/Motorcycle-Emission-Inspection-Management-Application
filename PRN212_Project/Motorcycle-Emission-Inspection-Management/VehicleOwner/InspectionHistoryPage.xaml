@@ -58,16 +58,7 @@
                         Orientation="Horizontal"
                         HorizontalAlignment="Right"
                         Margin="0 20 0 0">
-                <Button Content="❌ Thoát"
-                        Width="110"
-                        Height="36"
-                        Background="#007BFF"
-                        Foreground="White"
-                        FontWeight="SemiBold"
-                        FontSize="14"
-                        BorderThickness="0"
-                        Cursor="Hand"
-                        Click="btnExit_Click"/>
+                
             </StackPanel>
         </Grid>
     </Border>
