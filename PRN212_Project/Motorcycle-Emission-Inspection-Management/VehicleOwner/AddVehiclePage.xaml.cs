@@ -3,10 +3,11 @@ using Motorcycle_Emission_Inspection_Management.Common;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using System;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
 {
-    public partial class AddVehiclePage : Window
+    public partial class AddVehiclePage : Page
     {
         private readonly VehicleService _vehicleService = new();
 
@@ -16,7 +17,10 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
         }
 
    
-        private void btnCancel_Click(object sender, RoutedEventArgs e) => Close();
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
 
         private async void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
@@ -34,7 +38,6 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
             await service.AddVehicleAsync(vehicle);
 
             MessageBox.Show("Thêm xe thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-            this.Close();
         }
 
         private async void btnSave_Click(object sender, RoutedEventArgs e)
@@ -80,7 +83,6 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
                 await _vehicleService.AddVehicleAsync(vehicle);
                 MessageBox.Show("Đã thêm xe thành công!",
                                 "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-                Close();
             }
             catch (Exception ex)
             {
@@ -92,7 +94,6 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
 
         private void btnCancel_Click_1(object sender, RoutedEventArgs e)
         {
-            Close();
         }
     }
 }

@@ -8,7 +8,7 @@ using Motorcycle_Emission_Inspection_Management.BLL.Services;
 
 namespace Motorcycle_Emission_Inspection_Management.Police
 {
-    public partial class StatisticsReportPage : Window
+    public partial class StatisticsReportPage : Page
     {
         // service lấy thống kê (đã chuyển sang đồng bộ)
         private readonly InspectionRecordService _recordService = new();
@@ -75,7 +75,6 @@ namespace Motorcycle_Emission_Inspection_Management.Police
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             new Dashboards.PoliceDashboard().Show();
-            this.Close();
         }
     }
 }

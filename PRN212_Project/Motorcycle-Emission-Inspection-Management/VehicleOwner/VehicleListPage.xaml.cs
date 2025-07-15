@@ -20,7 +20,7 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
     /// <summary>
     /// Interaction logic for VehicleListPage.xaml
     /// </summary>
-    public partial class VehicleListPage : Window
+    public partial class VehicleListPage : Page
     {
 
         public VehicleService _service = new();
@@ -43,7 +43,6 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner
 
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
-            Close();
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)

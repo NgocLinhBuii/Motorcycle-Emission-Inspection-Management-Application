@@ -44,7 +44,14 @@ namespace Motorcycle_Emission_Inspection_Management
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            LoginWindow login = new();
+            login.Show();
+            Close();
+        }
+
+        private void MainContent_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new Admin.StatisticsView();
         }
     }
 }

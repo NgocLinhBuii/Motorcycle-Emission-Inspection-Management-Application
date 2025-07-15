@@ -2,57 +2,79 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Dashboard – Công nhân kiểm định"
-        Height="600" Width="900"
-        Background="White"
-        WindowStartupLocation="CenterScreen">
+        Width="1400" Height="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4F6F7"
+        ResizeMode="CanResizeWithGrip">
 
-    <Grid Margin="30">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <DockPanel>
 
-        <!-- Tiêu đề -->
-        <TextBlock Text="Dashboard - Công nhân kiểm định"
-                   FontSize="24"
-                   FontWeight="Bold"
-                   Foreground="#333333"
-                   HorizontalAlignment="Center"
-                   Margin="0,0,0,20"/>
+            <!-- Header -->
+            <Border DockPanel.Dock="Top"
+                    Height="60"
+                    Background="#2C3E50"
+                    CornerRadius="0,0,6,6"
+                    SnapsToDevicePixels="True">
+                <TextBlock Text="📋 Dashboard – Công nhân kiểm định"
+                           Foreground="White"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Margin="10"/>
+            </Border>
 
-        <!-- Nút chức năng -->
-        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" RenderTransformOrigin="0.5,0.5" Height="222">
-            <StackPanel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="0.751"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="1.115"/>
-                </TransformGroup>
-            </StackPanel.RenderTransform>
-            <Button Content="Danh sách xe được giao hôm nay"
-                    Width="300" Height="50"
-                    Margin="0,10"
-                    FontSize="16"
-                    FontWeight="Bold"
-                    Foreground="White"
-                    Background="#007BFF"
-                    Click="ViewAssignedBtn_Click"/>
-            <Button Content="Ghi kết quả kiểm định"
-                    Width="300" Height="50"
-                    FontSize="16"
-                    FontWeight="Bold"
-                    Foreground="White"
-                    Background="#007BFF"
-                    Click="EnterResultsBtn_Click"/>
-            <Button Content="LOG OUT"
-         Width="300" Height="50"
-         Margin="0,10"
-         FontSize="16"
-         FontWeight="Bold"
-         Foreground="White"
-         Background="#007BFF" Click="Button_Click"
-        />
-        </StackPanel>
-    </Grid>
+            <!-- Sidebar -->
+            <Border DockPanel.Dock="Left"
+                    Width="200"
+                    Background="#34495E">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Margin="0,10,0,0">
+                        <TextBlock Text="📂 Chức năng"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="White"
+                                   Margin="20,0,0,10" Height="42"/>
+
+                        <Button Content="🚗 Xe được giao hôm nay"
+                                Click="ViewAssignedBtn_Click"
+                                Margin="10,4"
+                                Foreground="White"
+                                Background="Transparent"
+                                FontSize="14"
+                                BorderBrush="Transparent"
+                                HorizontalContentAlignment="Left" Height="40"/>
+
+                        <Button Content="📝 Ghi kết quả kiểm định"
+                                Click="EnterResultsBtn_Click"
+                                Margin="10,4"
+                                Foreground="White"
+                                Background="Transparent"
+                                FontSize="14"
+                                BorderBrush="Transparent"
+                                HorizontalContentAlignment="Left" Height="43"/>
+
+                        <Button Content="🚪 Đăng xuất"
+                                Click="Button_Click"
+                                Margin="10,20,10,0"
+                                Foreground="#007BFF"
+                                Background="White"
+                                BorderBrush="#007BFF"
+                                BorderThickness="2"
+                                FontWeight="SemiBold"
+                                HorizontalContentAlignment="Center" Height="33"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+
+            <!-- Main Content -->
+            <Border Background="White" Margin="10">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Frame x:Name="MainContent" Loaded="MainContent_Loaded" />
+                </ScrollViewer>
+            </Border>
+
+        </DockPanel>
+    </ScrollViewer>
 </Window>

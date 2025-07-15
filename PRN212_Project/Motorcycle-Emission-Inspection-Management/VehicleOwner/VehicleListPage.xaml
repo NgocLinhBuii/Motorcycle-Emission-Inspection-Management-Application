@@ -1,9 +1,9 @@
-﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.VehicleOwner.VehicleListPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Page x:Class="Motorcycle_Emission_Inspection_Management.VehicleOwner.VehicleListPage"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.VehicleOwner"
         Title="Danh sách phương tiện"
         Width="960" Height="580"
-        WindowStartupLocation="CenterScreen"
         Background="#F8F9FA">
 
     <Grid Margin="20">
@@ -103,4 +103,4 @@
                     Click="btnQuit_Click"/>
         </StackPanel>
     </Grid>
-</Window>
+</Page>

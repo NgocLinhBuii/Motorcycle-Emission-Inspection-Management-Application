@@ -11,7 +11,7 @@ using Motorcycle_Emission_Inspection_Management.Dashboards;
 
 namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
 {
-    public partial class InspectionResultPage : Window
+    public partial class InspectionResultPage : Page
     {
         private readonly VehicleService _vehicleService = new();
         private readonly InspectionRecordService _recordService = new();
@@ -51,7 +51,6 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
             new InspectorDashboard().Show();
-            Close();
         }
 
         /* ---------- Lưu kết quả ---------- */
@@ -114,7 +113,6 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
                 MessageBox.Show("Đã lưu kết quả!",
                                 "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 new InspectorDashboard().Show();
-                Close();
             }
             catch (DbUpdateException ex)
             {

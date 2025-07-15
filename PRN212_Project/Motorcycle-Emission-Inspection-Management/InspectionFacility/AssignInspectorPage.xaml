@@ -1,110 +1,107 @@
-﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.InspectionFacility.AssignInspectorPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Phân công công nhân kiểm định"
-        Height="580" Width="960"
-        Background="#F5F7FA"
-        WindowStartupLocation="CenterScreen">
+﻿<Page x:Class="Motorcycle_Emission_Inspection_Management.InspectionFacility.AssignInspectorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.InspectionFacility"
+      Title="Phân công công nhân kiểm định"
+      Background="#F3F4F6">
 
-    <Border Background="White"
-            CornerRadius="10"
-            Padding="40"
-            Margin="20"
-            BorderBrush="#D0D7DE"
-            BorderThickness="1"
-            Effect="{DynamicResource DropShadowEffect}">
+    <Grid>
+        <Border Background="White"
+                CornerRadius="12"
+                Padding="40"
+                Margin="40"
+                BorderBrush="#E5E7EB"
+                BorderThickness="1"
+                Effect="{DynamicResource DropShadowEffect}">
 
-        <StackPanel Width="684" HorizontalAlignment="Center" VerticalAlignment="Center" Height="388">
+            <StackPanel Width="600" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <!-- Tiêu đề -->
-            <TextBlock Text="Phân công công nhân kiểm định"
-                       FontSize="26"
-                       FontWeight="Bold"
-                       Foreground="#1F2937"
-                       TextAlignment="Center"
-                       Margin="0,0,0,20"/>
+                <!-- Tiêu đề -->
+                <TextBlock Text="📋 Phân công công nhân kiểm định"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           Foreground="#1F2937"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,10"/>
 
-            <!-- Biển số -->
-            <TextBlock Text="Biển số xe" FontSize="14" FontWeight="SemiBold" Foreground="#333"/>
-            <ComboBox Name="PlateComboBox"
-                      FontSize="14"
-                      Height="36"
-                      Padding="6,2"
-                      BorderBrush="#CCCCCC"
-                      BorderThickness="1"
-                      DisplayMemberPath="PlateNumber"
-                      SelectedValuePath="VehicleId"/>
+                <!-- Biển số xe -->
+                <StackPanel>
+                    <TextBlock Text="Biển số xe"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#374151"
+                               Margin="0,0,0,4"/>
+                    <ComboBox x:Name="PlateComboBox"
+                              Height="38"
+                              FontSize="14"
+                              BorderBrush="#D1D5DB"
+                              BorderThickness="1"
+                              Padding="8,2"
+                              DisplayMemberPath="PlateNumber"
+                              SelectedValuePath="VehicleId"/>
+                </StackPanel>
 
-            <!-- Ngày kiểm định -->
-            <TextBlock Text="Ngày kiểm định" FontSize="14" FontWeight="SemiBold" Foreground="#333" Margin="0,10,0,0"/>
-            <DatePicker Name="InspectDatePicker"
-                        FontSize="14"
-                        Height="36"
-                        BorderBrush="#CCCCCC"
-                        BorderThickness="1"/>
+                <!-- Ngày kiểm định -->
+                <StackPanel>
+                    <TextBlock Text="Ngày kiểm định"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#374151"
+                               Margin="0,8,0,4"/>
+                    <DatePicker x:Name="InspectDatePicker"
+                                Height="38"
+                                FontSize="14"
+                                BorderBrush="#D1D5DB"
+                                BorderThickness="1"/>
+                </StackPanel>
 
-            <!-- Công nhân -->
-            <TextBlock Text="Công nhân kiểm định" FontSize="14" FontWeight="SemiBold" Foreground="#333" Margin="0,10,0,0"/>
-            <ComboBox Name="InspectorComboBox"
-                      FontSize="14"
-                      Height="36"
-                      Padding="6,2"
-                      BorderBrush="#CCCCCC"
-                      BorderThickness="1"/>
+                <!-- Công nhân kiểm định -->
+                <StackPanel>
+                    <TextBlock Text="Công nhân kiểm định"
+                               FontSize="14"
+                               FontWeight="SemiBold"
+                               Foreground="#374151"
+                               Margin="0,8,0,4"/>
+                    <ComboBox x:Name="InspectorComboBox"
+                              Height="38"
+                              FontSize="14"
+                              BorderBrush="#D1D5DB"
+                              BorderThickness="1"
+                              Padding="8,2"/>
+                </StackPanel>
 
-            <!-- Buttons -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,30,0,0">
-                <!-- Nút phân công -->
-                <Button Content="Phân công"
-                        Width="150" Height="44"
-                        FontSize="14"
-                        FontWeight="Bold"
-                        Foreground="White"
-                        Background="#007BFF"
-                        Cursor="Hand"
-                        Click="AssignButton_Click">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}"
-                                    CornerRadius="8">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0,20,0,0">
 
-                <!-- Nút thoát -->
-                <Button Content="Thoát"
-                        Width="100"
-                        Height="44"
-                        FontSize="14"
-                        Background="White"
-                        Foreground="#007BFF"
-                        BorderBrush="#007BFF"
-                        BorderThickness="2"
-                        Cursor="Hand"
-                        Click="QuitButton_Click">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Background="{TemplateBinding Background}"
-                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                    BorderThickness="{TemplateBinding BorderThickness}"
-                                    CornerRadius="8">
-                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+                    <!-- Nút phân công -->
+                    <Button Content="✅ Phân công"
+                            Width="140" Height="42"
+                            FontSize="15"
+                            FontWeight="SemiBold"
+                            Foreground="White"
+                            Background="#2563EB"
+                            Cursor="Hand"
+                            Click="AssignButton_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
             </StackPanel>
-        </StackPanel>
-    </Border>
+        </Border>
+    </Grid>
 
-    <!-- Đổ bóng -->
-    <Window.Resources>
+    <Page.Resources>
         <DropShadowEffect x:Key="DropShadowEffect"
                           BlurRadius="8"
                           ShadowDepth="2"
                           Color="#999999"
                           Opacity="0.2"/>
-    </Window.Resources>
-</Window>
+    </Page.Resources>
+</Page>

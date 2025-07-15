@@ -4,10 +4,11 @@ using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Motorcycle_Emission_Inspection_Management.Police
 {
-    public partial class ViolationRecordPage : Window
+    public partial class ViolationRecordPage : Page
     {
         private readonly VehicleService _vehicleService = new();
         private readonly InspectionRecordService _recordService = new();
@@ -106,7 +107,6 @@ namespace Motorcycle_Emission_Inspection_Management.Police
 
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
         }
 
         private void chkOther_Checked(object sender, RoutedEventArgs e)

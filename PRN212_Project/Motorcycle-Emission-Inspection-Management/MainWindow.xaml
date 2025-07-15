@@ -2,21 +2,21 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Hệ Thống Quản lý đăng kiểm khí thải xe máy"
-        Width="1100" Height="650"
+        Width="1400" Height="800"
         WindowStartupLocation="CenterScreen"
         Background="#F4F6F7"
         ResizeMode="CanResizeWithGrip">
 
-    <!-- Thêm ScrollViewer bao toàn bộ DockPanel -->
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <DockPanel>
+
             <!-- Header -->
             <Border DockPanel.Dock="Top"
                     Height="60"
                     Background="#2C3E50"
                     CornerRadius="0,0,6,6"
                     SnapsToDevicePixels="True">
-                <TextBlock Text="Hệ Thống Kiểm Định Khí Thải Xe Máy"
+                <TextBlock Text="🚦 Hệ Thống Kiểm Định Khí Thải Xe Máy"
                            Foreground="White"
                            FontSize="22"
                            FontWeight="Bold"
@@ -30,29 +30,78 @@
                     Width="200"
                     Background="#34495E">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel>
-                        <TextBlock Text="Menu"
-                                   FontSize="16"
+                    <StackPanel Margin="0,10,0,0">
+                        <TextBlock Text="📂 Menu"
+                                   FontSize="20"
                                    FontWeight="Bold"
                                    Foreground="White"
-                                   Margin="20,15,0,10"/>
+                                   Margin="20,0,0,10"/>
 
-                        <Button Content="🏠  Trang chủ" Click="Home_Click"/>
-                        <Button Content="🚗  Quản lý xe" Click="Vehicle_Click"/>
-                        <Button Content="🧪  Kiểm định" Click="Inspection_Click"/>
-                        <Button Content="📊  Thống kê" Click="Statistics_Click"/>
-                        <Button Content="👤  Tài khoản" Click="Account_Click"/>
-                        <Button Content="🚪  Đăng xuất" Click="Logout_Click"/>
+                        <Button Content="🏠 Trang chủ"
+                                Click="Home_Click"
+                                Margin="10,4"
+                                Foreground="White"
+                                Background="Transparent"
+                                FontSize="14"
+                                BorderBrush="Transparent"
+                                HorizontalContentAlignment="Left" Height="36"/>
+
+                        <Button Content="🚗 Quản lý xe"
+                                Click="Vehicle_Click"
+                                Margin="10,4"
+                                Foreground="White"
+                                Background="Transparent"
+                                FontSize="14"
+                                BorderBrush="Transparent"
+                                HorizontalContentAlignment="Left" Height="36"/>
+
+                        <Button Content="🧪 Kiểm định"
+                                Click="Inspection_Click"
+                                Margin="10,4"
+                                Foreground="White"
+                                Background="Transparent"
+                                FontSize="14"
+                                BorderBrush="Transparent"
+                                HorizontalContentAlignment="Left" Height="36"/>
+
+                        <Button Content="📊 Thống kê"
+                                Click="Statistics_Click"
+                                Margin="10,4"
+                                Foreground="White"
+                                Background="Transparent"
+                                FontSize="14"
+                                BorderBrush="Transparent"
+                                HorizontalContentAlignment="Left" Height="36"/>
+
+                        <Button Content="👤 Tài khoản"
+                                Click="Account_Click"
+                                Margin="10,4"
+                                Foreground="White"
+                                Background="Transparent"
+                                FontSize="14"
+                                BorderBrush="Transparent"
+                                HorizontalContentAlignment="Left" Height="36"/>
+
+                        <Button Content="🚪 Đăng xuất"
+                                Click="Logout_Click"
+                                Margin="10,20,10,0"
+                                Foreground="#007BFF"
+                                Background="White"
+                                BorderBrush="#007BFF"
+                                BorderThickness="2"
+                                FontWeight="SemiBold"
+                                HorizontalContentAlignment="Center" Height="38"/>
                     </StackPanel>
                 </ScrollViewer>
             </Border>
 
-            <!-- Main content với khả năng cuộn -->
+            <!-- Main Content -->
             <Border Background="White" Margin="10">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <ContentControl x:Name="MainContent" />
+                    <ContentControl x:Name="MainContent" Loaded="MainContent_Loaded" />
                 </ScrollViewer>
             </Border>
+
         </DockPanel>
     </ScrollViewer>
 </Window>

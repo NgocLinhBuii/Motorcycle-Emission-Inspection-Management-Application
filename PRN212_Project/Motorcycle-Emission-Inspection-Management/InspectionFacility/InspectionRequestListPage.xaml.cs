@@ -7,7 +7,7 @@ using Motorcycle_Emission_Inspection_Management.Dashboards;
 
 namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 {
-    public partial class InspectionRequestListPage : Window
+    public partial class InspectionRequestListPage : Page
     {
         private readonly InspectionRecordService _recordService = new();
 
@@ -60,7 +60,6 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
             new InspectionFacilityDashboardPage().Show();   // quay lại dashboard
-            Close();
         }
     }
 }

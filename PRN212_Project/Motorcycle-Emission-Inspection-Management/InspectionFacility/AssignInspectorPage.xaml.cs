@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 using Motorcycle_Emission_Inspection_Management.BLL.Services;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 
 namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
 {
-    public partial class AssignInspectorPage : Window
+    public partial class AssignInspectorPage : Page
     {
         private readonly InspectionRecordService _rese = new();
 
@@ -73,7 +74,6 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
             {
                 _rese.AssignInspector(recordId, inspectorId, date);
                 MessageBox.Show("Phân công thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-                Close();
             }
             catch (Exception ex)
             {
@@ -81,7 +81,10 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionFacility
             }
         }
 
-        private void QuitButton_Click(object sender, RoutedEventArgs e) => Close();
+        private void QuitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
 
     
     }

@@ -29,7 +29,7 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
         {
             InitializeComponent();
             _userId = userId;
-
+            
             // Bạn có thể lấy StationID từ UserSession nếu cần
             // hoặc gọi service tại đây nếu cần dùng _userId
         }
@@ -38,31 +38,41 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards
         public InspectionFacilityDashboardPage()
         {
             InitializeComponent();
+            MainContent.Content = new TextBlock
+            {
+                Text = "Chào mừng Chủ trạm!",
+                FontSize = 24,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center
+            };
         }
 
 
         private void ViewRequestsBtn_Click(object sender, RoutedEventArgs e)
         {
-            new InspectionRequestListPage().Show();
-            this.Close();
+            MainContent.Content = new InspectionFacility.InspectionRequestListPage();
         }
 
         private void AssignInspectorBtn_Click(object sender, RoutedEventArgs e)
         {
-            new AssignInspectorPage().ShowDialog();
-            this.Close();
+            MainContent.Content = new InspectionFacility.AssignInspectorPage();
         }
 
         private void FacilityReportBtn_Click(object sender, RoutedEventArgs e)
         {
-            new FacilityReportPage().Show();
-            this.Close();
+            MainContent.Content = new InspectionFacility.FacilityReportPage();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new LoginWindow().Show();
-            this.Close();
+            LoginWindow login = new();
+            login.Show();
+            Close();
+        }
+
+        private void MainContent_Loaded(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new InspectionFacility.InspectionRequestListPage();
         }
     }
 }

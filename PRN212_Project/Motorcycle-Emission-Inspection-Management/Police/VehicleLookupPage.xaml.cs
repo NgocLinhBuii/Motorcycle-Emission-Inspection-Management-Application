@@ -7,7 +7,7 @@ using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 
 namespace Motorcycle_Emission_Inspection_Management.Police
 {
-    public partial class VehicleLookupPage : Window
+    public partial class VehicleLookupPage : Page
     {
         private readonly VehicleService _vehicleService = new();
         private readonly InspectionRecordService _recordService = new();
@@ -60,7 +60,6 @@ namespace Motorcycle_Emission_Inspection_Management.Police
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             new Dashboards.PoliceDashboard().Show();
-            this.Close();
         }
     }
 }
