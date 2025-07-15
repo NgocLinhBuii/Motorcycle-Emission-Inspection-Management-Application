@@ -39,7 +39,7 @@ namespace Motorcycle_Emission_Inspection_Management
 
         private void Account_Click(object sender, RoutedEventArgs e)
         {
-            MainContent.Content = new TextBlock { Text = "Tài khoản", FontSize = 24 };
+            MainContent.Content = new Admin.UserManagementView();
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

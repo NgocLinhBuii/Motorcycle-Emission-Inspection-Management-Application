@@ -5,6 +5,9 @@
     <Compile Update="Admin\StatisticsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Admin\UserEditPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Dashboards\InspectionFacilityDashboardPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

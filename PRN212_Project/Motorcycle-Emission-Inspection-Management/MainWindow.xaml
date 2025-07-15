@@ -98,7 +98,7 @@
             <!-- Main Content -->
             <Border Background="White" Margin="10">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <ContentControl x:Name="MainContent" Loaded="MainContent_Loaded" />
+                    <Frame x:Name="MainContent" Loaded="MainContent_Loaded" />
                 </ScrollViewer>
             </Border>
 

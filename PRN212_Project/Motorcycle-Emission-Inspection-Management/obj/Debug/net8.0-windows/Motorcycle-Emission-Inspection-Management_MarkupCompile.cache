@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\FUL\25_SU25\PRN212\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\App.xaml
-23248693870
+24637781484
 
-291776562663
+30-1142329341
 242-375055792
-Admin\LogView.xaml;Admin\StatisticsView.xaml;Admin\SystemConfigView.xaml;Admin\UserManagementView.xaml;Dashboards\InspectionFacilityDashboardPage.xaml;Dashboards\InspectorDashboard.xaml;Dashboards\OwnerDashboard.xaml;Dashboards\PoliceDashboard.xaml;InspectionFacility\AssignInspectorPage.xaml;InspectionFacility\FacilityReportPage.xaml;InspectionFacility\InspectionRequestListPage.xaml;InspectionWorkers\AssignedInspectionsPage.xaml;InspectionWorkers\InspectionResultPage.xaml;LoginWindow.xaml;MainWindow.xaml;Police\StatisticsReportPage.xaml;Police\VehicleLookupPage.xaml;Police\ViolationRecordPage.xaml;VehicleOwner\AddVehiclePage.xaml;VehicleOwner\InspectionHistoryPage.xaml;VehicleOwner\NotificationPage.xaml;VehicleOwner\RegisterInspectionPage.xaml;VehicleOwner\VehicleListPage.xaml;
+Admin\LogView.xaml;Admin\StatisticsView.xaml;Admin\SystemConfigView.xaml;Admin\UserEditPage.xaml;Admin\UserManagementView.xaml;Dashboards\InspectionFacilityDashboardPage.xaml;Dashboards\InspectorDashboard.xaml;Dashboards\OwnerDashboard.xaml;Dashboards\PoliceDashboard.xaml;InspectionFacility\AssignInspectorPage.xaml;InspectionFacility\FacilityReportPage.xaml;InspectionFacility\InspectionRequestListPage.xaml;InspectionWorkers\AssignedInspectionsPage.xaml;InspectionWorkers\InspectionResultPage.xaml;LoginWindow.xaml;MainWindow.xaml;Police\StatisticsReportPage.xaml;Police\VehicleLookupPage.xaml;Police\ViolationRecordPage.xaml;VehicleOwner\AddVehiclePage.xaml;VehicleOwner\InspectionHistoryPage.xaml;VehicleOwner\NotificationPage.xaml;VehicleOwner\RegisterInspectionPage.xaml;VehicleOwner\VehicleListPage.xaml;
 
 False
 

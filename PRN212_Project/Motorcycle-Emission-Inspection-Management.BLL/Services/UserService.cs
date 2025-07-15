@@ -22,7 +22,5 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
         public void UpdateUser(User user) => _repo.Update(user);
 
         public void DeleteUser(User user) => _repo.Delete(user);
-
-       
     }
 }
