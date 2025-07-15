@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Repositories
         public List<User> GetAll()
         {
             _context = new();
-            return _context.Users.ToList();
+            return _context.Users.Include(u => u.Role).Include(u => u.Station).ToList();
         }
 
         public void Add(User x)

@@ -60,8 +60,8 @@ namespace Motorcycle_Emission_Inspection_Management.Dashboards {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;V1.0.0.0;component/dashboards/policeda" +
-                    "shboard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;component/dashboards/policedashboard.x" +
+                    "aml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dashboards\PoliceDashboard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

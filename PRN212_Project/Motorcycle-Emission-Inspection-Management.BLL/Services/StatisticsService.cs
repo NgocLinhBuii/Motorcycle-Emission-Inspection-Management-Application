@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Motorcycle_Emission_Inspection_Management.BLL.DTOs;
+using Motorcycle_Emission_Inspection_Management.DAL;
+using Motorcycle_Emission_Inspection_Management.DAL.Entities;
+using Motorcycle_Emission_Inspection_Management.DAL.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using Motorcycle_Emission_Inspection_Management.DAL.Entities;
-using Motorcycle_Emission_Inspection_Management.BLL.DTOs;
-using Motorcycle_Emission_Inspection_Management.DAL;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Motorcycle_Emission_Inspection_Management.BLL.Services
 {
@@ -27,6 +28,13 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
 
             return result;
         }
+
+        public class StationService
+        {
+            InspectionStationRepository _repo = new();
+            public List<InspectionStation> GetAllStations() => _repo.GetAll();
+        }
+
 
         public List<InspectionStationReportDto> GetStationFailureRates()
         {
