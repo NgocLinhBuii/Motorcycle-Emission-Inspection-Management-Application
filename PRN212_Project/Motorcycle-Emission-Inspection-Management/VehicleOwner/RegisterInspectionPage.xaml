@@ -91,7 +91,7 @@ xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.VehicleOwne
                         Margin="0,30,0,0">
                 <Button Content="✔ Đăng ký"
                         Width="150" Height="42"
-                        Background="#28A745"
+                        Background="#007BFF"
                         Foreground="White"
                         FontSize="16"
                         FontWeight="SemiBold"
@@ -99,16 +99,7 @@ xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.VehicleOwne
                         Cursor="Hand"
                         Click="btnRegister_Click"/>
 
-                <Button Content="❌ Thoát"
-                        Width="130" Height="42"
-                        Background="White"
-                        BorderBrush="#007BFF"
-                        BorderThickness="2"
-                        Foreground="#007BFF"
-                        FontSize="16"
-                        FontWeight="SemiBold"
-                        Cursor="Hand"
-                        Click="btnExit_Click"/>
+                
             </StackPanel>
         </Grid>
     </Border>

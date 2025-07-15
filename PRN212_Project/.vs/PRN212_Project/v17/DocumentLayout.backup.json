@@ -240,7 +240,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -268,25 +268,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StatisticsReportPage.xaml.cs",
-              "DocumentMoniker": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "ToolTip": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T04:42:37.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
-              "ToolTip": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml*",
-              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml*",
+              "ToolTip": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-14T04:55:59.865Z",
               "EditorCaption": ""
@@ -335,9 +322,22 @@
               "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml.cs",
               "ToolTip": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\MainWindow.xaml.cs",
               "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAswDUAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwDUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T12:26:24.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StatisticsReportPage.xaml.cs",
+              "DocumentMoniker": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "RelativeDocumentMoniker": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "ToolTip": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "RelativeToolTip": "Motorcycle-Emission-Inspection-Management\\Police\\StatisticsReportPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T04:42:37.957Z",
               "EditorCaption": ""
             },
             {

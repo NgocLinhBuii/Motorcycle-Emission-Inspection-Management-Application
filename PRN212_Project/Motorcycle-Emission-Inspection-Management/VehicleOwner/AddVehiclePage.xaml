@@ -82,17 +82,7 @@
                         Cursor="Hand"
                         BorderThickness="0"
                         Click="btnSave_Click"/>
-                <Button x:Name="btnCancel"
-                        Content="❌ Hủy"
-                        Width="110" Height="40"
-                        Background="White"
-                        Foreground="#007BFF"
-                        BorderBrush="#007BFF"
-                        BorderThickness="2"
-                        FontSize="16"
-                        FontWeight="SemiBold"
-                        Cursor="Hand"
-                        Click="btnCancel_Click_1"/>
+                
             </StackPanel>
         </Grid>
     </Border>
