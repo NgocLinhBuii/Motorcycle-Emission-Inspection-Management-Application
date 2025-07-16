@@ -3,7 +3,6 @@
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.InspectionWorkers"
         Title="Danh sách xe được giao kiểm định hôm nay"
-        Width="960" Height="580"
         Background="#F5F7FA">
 
     <Border Background="White"
@@ -86,6 +85,7 @@ xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.InspectionW
                     <DataGridTextColumn Header="Trạng thái"    Binding="{Binding Result}"          Width="*" />
                     <DataGridTextColumn Header="Mức thải CO₂"  Binding="{Binding Co2emission}"     Width="*" />
                     <DataGridTextColumn Header="Trạm kiểm định" Binding="{Binding Station.Name}"     Width="*" />
+                    <DataGridTextColumn Header="Ghi chú" Binding="{Binding Comments}"     Width="*" />
                 </DataGrid.Columns>
             </DataGrid>
 

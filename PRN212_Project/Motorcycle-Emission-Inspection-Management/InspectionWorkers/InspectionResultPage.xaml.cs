@@ -112,7 +112,6 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers
                 _recordService.Update(record);
                 MessageBox.Show("Đã lưu kết quả!",
                                 "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-                new InspectorDashboard().Show();
             }
             catch (DbUpdateException ex)
             {
