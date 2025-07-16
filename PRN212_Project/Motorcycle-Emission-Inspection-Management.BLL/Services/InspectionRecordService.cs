@@ -19,6 +19,7 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
             using var context = new EmissionInspectionContext();
             return context.InspectionRecords
                           .Include(r => r.Vehicle)
+                          .Include(r => r.Station)
                           .ToList();
         }
 
@@ -214,6 +215,7 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
                 {
                     Date = r.InspectionDate!.Value.Date,
                     r.Station.StationId,
+                    r.Station.Phone,
                     r.Station.Name,
                     r.Station.Address
                 })
@@ -221,6 +223,7 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
                 {
                     InspectionDate = g.Key.Date,
                     StationName = g.Key.Name,
+                    Phone = g.Key.Phone,
                     StationAddress = g.Key.Address,
                     PassedCount = g.Count(x => x.Result == "Pass" || x.Result == "PASS" || x.Result == "pass"),
                     FailedCount = g.Count(x => x.Result == "Fail" || x.Result == "FAIL" || x.Result == "fail")
