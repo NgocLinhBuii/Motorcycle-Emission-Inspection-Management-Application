@@ -117,5 +117,11 @@ namespace Motorcycle_Emission_Inspection_Management
             next.Show();
             Hide();
         }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow register = new RegisterWindow();
+            register.ShowDialog();
         }
+    }
     }

@@ -1,39 +1,35 @@
 ﻿using Motorcycle_Emission_Inspection_Management.BLL.Services;
 using Motorcycle_Emission_Inspection_Management.DAL.Entities;
+using System;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using static Motorcycle_Emission_Inspection_Management.BLL.Services.StatisticsService;
-using System.Text.RegularExpressions;
-namespace Motorcycle_Emission_Inspection_Management.Admin
+
+namespace Motorcycle_Emission_Inspection_Management
 {
-    public partial class UserEditPage : Page
+    /// <summary>
+    /// Interaction logic for RegisterWindow.xaml
+    /// </summary>
+    public partial class RegisterWindow : Window
     {
         private readonly UserService _userService = new();
         private readonly RoleService _roleService = new();
         private readonly StationService _stationService = new();
-
         private User _editingUser;
         private bool _isEditMode;
 
-        public UserEditPage(User? user = null)
+        public RegisterWindow()
         {
             InitializeComponent();
+            _editingUser = new User();
+            _isEditMode = false;
+        }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
             LoadRoles();
             LoadStations();
-
-            if (user != null)
-            {
-                _editingUser = user;
-                _isEditMode = true;
-                LoadUserInfo(user);
-            }
-            else
-            {
-                _editingUser = new User();
-                _isEditMode = false;
-            }
         }
 
         private void LoadRoles()
@@ -52,24 +48,18 @@ namespace Motorcycle_Emission_Inspection_Management.Admin
             StationComboBox.SelectedValuePath = "StationId";
         }
 
-        private void LoadUserInfo(User user)
+        private void BtnCancel_Click(object sender, RoutedEventArgs e)
         {
-            FullNameBox.Text = user.FullName;
-            PhoneBox.Text = user.Phone;
-            EmailBox.Text = user.Email;
-            AddressBox.Text = user.Address;
-            PasswordBox.Password = user.Password;
-            RoleComboBox.SelectedValue = user.RoleId;
-            StationComboBox.SelectedValue = user.StationId;
+            Close();
         }
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
             // Validate
             if (string.IsNullOrWhiteSpace(FullNameBox.Text) ||
-            string.IsNullOrWhiteSpace(PasswordBox.Password) ||
-            RoleComboBox.SelectedItem == null ||
-            string.IsNullOrWhiteSpace(EmailBox.Text))
+                string.IsNullOrWhiteSpace(PasswordBox.Password) ||
+                RoleComboBox.SelectedItem == null ||
+                string.IsNullOrWhiteSpace(EmailBox.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin bắt buộc!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -100,10 +90,9 @@ namespace Motorcycle_Emission_Inspection_Management.Admin
             else
                 _userService.CreateUser(_editingUser);
 
-            MessageBox.Show("Đã lưu thông tin người dùng", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-            NavigationService?.GoBack();
+            MessageBox.Show("Đã đăng ký thông tin người dùng", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+            Close();
         }
-
 
         private bool IsValidEmail(string email)
         {
@@ -115,13 +104,6 @@ namespace Motorcycle_Emission_Inspection_Management.Admin
         {
             string phonePattern = @"^0\d{9,10}$";
             return Regex.IsMatch(phoneNumber, phonePattern);
-        }
-
-
-
-        private void BtnCancel_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService?.GoBack();
         }
     }
 }

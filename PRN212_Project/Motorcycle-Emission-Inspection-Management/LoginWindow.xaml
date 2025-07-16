@@ -39,9 +39,6 @@
 
             <StackPanel>
                 <!-- Logo -->
-
-                <!-- Title -->
-                <!-- Logo -->
                 <Image Source="pack://application:,,,/Assets/logo.jpg"
                        Width="80"
                        Height="80"
@@ -76,6 +73,26 @@
                              BorderBrush="#DADADA"
                              BorderThickness="1"
                              Margin="0,5"/>
+
+                <!-- Register Section -->
+                <TextBlock Text="Chưa có tài khoản?" 
+                           FontSize="14" 
+                           HorizontalAlignment="Center" 
+                           Margin="0,20"/>
+                <Button Content="Đăng ký"
+                        Width="130" Height="45"
+                        FontSize="16"
+                        FontWeight="SemiBold"
+                        Foreground="White"
+                        Background="#F39C12"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        HorizontalAlignment="Center"
+                        Click="RegisterButton_Click">
+                    <Button.Effect>
+                        <DropShadowEffect Color="#999" BlurRadius="6" ShadowDepth="2"/>
+                    </Button.Effect>
+                </Button>
 
                 <!-- Buttons -->
                 <StackPanel Orientation="Horizontal"
