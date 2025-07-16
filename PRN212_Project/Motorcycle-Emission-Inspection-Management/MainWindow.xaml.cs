@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Motorcycle_Emission_Inspection_Management.Admin;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Motorcycle_Emission_Inspection_Management
@@ -19,12 +20,12 @@ namespace Motorcycle_Emission_Inspection_Management
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-            MainContent.Content = new Admin.SystemConfigView();
+            MainContent.Content = new VehicleEmissionReportPage();
         }
 
         private void Vehicle_Click(object sender, RoutedEventArgs e)
         {
-            MainContent.Content = new TextBlock { Text = "Quản lý xe", FontSize = 24 };
+            MainContent.Content = new VehicleManagementPage();
         }
 
         private void Inspection_Click(object sender, RoutedEventArgs e)

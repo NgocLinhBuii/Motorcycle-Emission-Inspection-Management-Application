@@ -19,8 +19,6 @@
 
         <!-- Form -->
         <StackPanel Grid.Row="1" Margin="0 10 0 10">
-            <Label Content="Tên đăng nhập:"/>
-            <TextBox x:Name="UsernameBox" Height="30"/>
 
             <Label Content="Họ tên:"/>
             <TextBox x:Name="FullNameBox" Height="30"/>
@@ -33,6 +31,7 @@
 
             <Label Content="Vai trò:"/>
             <ComboBox x:Name="RoleComboBox" Height="30" DisplayMemberPath="RoleName"/>
+            
             <Label Content="Số điện thoại:"/>
             <TextBox x:Name="PhoneBox" Height="30"/>
 

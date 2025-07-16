@@ -11,12 +11,25 @@ namespace Motorcycle_Emission_Inspection_Management.Admin
     {
         private readonly UserService _userService = new();
         private ObservableCollection<User> _userList;
+        private readonly RoleService _roleService = new();
 
         public UserManagementView()
         {
             InitializeComponent();
             LoadUserData();
             this.Loaded += UserManagementView_Loaded;
+            LoadRoles();
+        }
+
+        private void LoadRoles()
+        {
+            // Assuming you have a method to get roles from the database
+            var roles = _roleService.GetAllRoles();
+
+            // Bind the roles to the ComboBox
+            RoleSearchComboBox.ItemsSource = roles;
+            RoleSearchComboBox.DisplayMemberPath = "RoleName"; // Display the Role Name in the ComboBox
+            RoleSearchComboBox.SelectedValuePath = "RoleId"; // Use RoleId as the selected value
         }
 
         private void LoadUserData()
@@ -61,6 +74,19 @@ namespace Motorcycle_Emission_Inspection_Management.Admin
                 _userList.Remove(selectedUser);
                 MessageBox.Show("Đã xóa người dùng", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             }
+        }
+        private void BtnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            // Retrieve search queries from the UI controls
+            string nameQuery = NameSearchTextBox.Text.Trim();   // Name search
+            string emailQuery = EmailSearchTextBox.Text.Trim(); // Email search
+            string roleQuery = RoleSearchComboBox.SelectedValue?.ToString(); // Role search (using selected value)
+
+            // Call the SearchUsers method from the UserService
+            var filteredUsers = _userService.SearchUsers(nameQuery, emailQuery, roleQuery);
+
+            // Bind the filtered users list to the DataGrid
+            UserDataGrid.ItemsSource = filteredUsers;
         }
 
         private void UserManagementView_Loaded(object sender, RoutedEventArgs e)

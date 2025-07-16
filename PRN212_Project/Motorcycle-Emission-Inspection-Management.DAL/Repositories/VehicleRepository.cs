@@ -13,7 +13,7 @@ namespace Motorcycle_Emission_Inspection_Management.DAL.Repositories
         public List<Vehicle> GetAll()
         {
             using var context = new EmissionInspectionContext();
-            return context.Vehicles.ToList();
+            return context.Vehicles.Include("Owner").ToList();
         }
 
         public void Add(Vehicle x)

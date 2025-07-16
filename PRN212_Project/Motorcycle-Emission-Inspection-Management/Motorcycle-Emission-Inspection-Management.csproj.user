@@ -8,6 +8,9 @@
     <Compile Update="Admin\UserEditPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Admin\VehicleEmissionReportPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Dashboards\InspectionFacilityDashboardPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +39,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Police\ViolationRecordPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Admin\VehicleManagementPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="VehicleOwner\AddVehiclePage.xaml.cs">
