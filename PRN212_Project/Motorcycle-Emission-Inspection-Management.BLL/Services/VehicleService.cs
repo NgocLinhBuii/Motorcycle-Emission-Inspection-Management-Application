@@ -25,6 +25,7 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
         }
         public Vehicle? GetVehicle(int id) => _repo.GetById(id);
 
+
         public void CreateVehicle(Vehicle x) => _repo.Add(x);
 
         public void UpdateVehicle(Vehicle x) => _repo.Update(x);
@@ -36,6 +37,40 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
             using var context = new EmissionInspectionContext();
             context.Vehicles.Add(vehicle);
             await context.SaveChangesAsync();
+        }
+
+        public bool DeleteVehicleById(int vehicleId, out string errorMsg)
+        {
+            errorMsg = string.Empty;
+
+            try
+            {
+                using var ctx = new EmissionInspectionContext();
+
+                var vehicle = ctx.Vehicles.FirstOrDefault(v => v.VehicleId == vehicleId);
+                if (vehicle == null)
+                {
+                    errorMsg = "Không tìm thấy phương tiện.";
+                    return false;
+                }
+
+                // Xóa toàn bộ bản ghi kiểm định liên quan
+                var inspections = ctx.InspectionRecords
+                                     .Where(r => r.VehicleId == vehicleId)
+                                     .ToList();
+
+                ctx.InspectionRecords.RemoveRange(inspections);
+
+                // Sau đó xóa xe
+                ctx.Vehicles.Remove(vehicle);
+                ctx.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorMsg = "Lỗi khi xóa: " + ex.Message;
+                return false;
+            }
         }
 
         public List<Vehicle> SearchVehicle(string? plateNumber, string? model)

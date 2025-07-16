@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Motorcycle-Emission-Inspection-Management.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23bcd7e8f521e88edeabc7155f5e9499c1c2d228")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57e2fc7e80f79b0335e98aa25a1594276e143f06")]
 [assembly: System.Reflection.AssemblyProductAttribute("Motorcycle-Emission-Inspection-Management.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Motorcycle-Emission-Inspection-Management.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
