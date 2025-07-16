@@ -109,8 +109,8 @@ namespace Motorcycle_Emission_Inspection_Management.InspectionWorkers {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;component/inspectionworkers/inspection" +
-                    "resultpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;V1.0.0.0;component/inspectionworkers/i" +
+                    "nspectionresultpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\InspectionWorkers\InspectionResultPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

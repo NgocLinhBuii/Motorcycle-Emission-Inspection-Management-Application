@@ -85,8 +85,8 @@ namespace Motorcycle_Emission_Inspection_Management.VehicleOwner {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;component/vehicleowner/vehiclelistpage" +
-                    ".xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;V1.0.0.0;component/vehicleowner/vehicl" +
+                    "elistpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\VehicleOwner\VehicleListPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

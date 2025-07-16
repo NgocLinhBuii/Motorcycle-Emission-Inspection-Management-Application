@@ -53,7 +53,8 @@ namespace Motorcycle_Emission_Inspection_Management.Admin {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;component/admin/systemconfigview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Motorcycle-Emission-Inspection-Management;V1.0.0.0;component/admin/systemconfigv" +
+                    "iew.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Admin\SystemConfigView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
