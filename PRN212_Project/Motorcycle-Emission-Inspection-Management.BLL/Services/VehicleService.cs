@@ -30,6 +30,40 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
         public void UpdateVehicle(Vehicle x) => _repo.Update(x);
 
         public void DeleteVehicle(Vehicle x) => _repo.Delete(x);
+        public bool DeleteVehicleById(int vehicleId, out string errorMsg)
+        {
+            errorMsg = string.Empty;
+
+            try
+            {
+                using var ctx = new EmissionInspectionContext();
+
+                var vehicle = ctx.Vehicles.FirstOrDefault(v => v.VehicleId == vehicleId);
+                if (vehicle == null)
+                {
+                    errorMsg = "Không tìm thấy phương tiện.";
+                    return false;
+                }
+
+                // Xóa toàn bộ bản ghi kiểm định liên quan
+                var inspections = ctx.InspectionRecords
+                                     .Where(r => r.VehicleId == vehicleId)
+                                     .ToList();
+
+                ctx.InspectionRecords.RemoveRange(inspections);
+
+                // Sau đó xóa xe
+                ctx.Vehicles.Remove(vehicle);
+                ctx.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorMsg = "Lỗi khi xóa: " + ex.Message;
+                return false;
+            }
+        }
+
 
         public async Task AddVehicleAsync(Vehicle vehicle)
         {

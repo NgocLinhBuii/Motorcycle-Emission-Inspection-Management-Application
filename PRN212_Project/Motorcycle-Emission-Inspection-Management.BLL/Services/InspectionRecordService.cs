@@ -21,44 +21,43 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
                           .Include(r => r.Vehicle)
                           .ToList();
         }
-      
-            // Các hàm có sẵn của bạn…
 
-            public bool AddSafe(InspectionRecord record, out string errorMsg)
+        // Các hàm có sẵn của bạn…
+
+        public bool AddSafe(InspectionRecord record, out string errorMsg)
+        {
+            errorMsg = string.Empty;
+
+            using var context = new EmissionInspectionContext();
+
+            // Kiểm tra StationId có tồn tại
+            bool stationExists = context.InspectionStations
+                                        .Any(s => s.StationId == record.StationId);
+
+            if (!stationExists)
             {
-                errorMsg = string.Empty;
-
-                using var context = new EmissionInspectionContext();
-
-                // Kiểm tra StationId có tồn tại
-                bool stationExists = context.InspectionStations
-                                            .Any(s => s.StationId == record.StationId);
-
-                if (!stationExists)
-                {
-                    errorMsg = $"Trạm kiểm định có ID = {record.StationId} không tồn tại.";
-                    return false;
-                }
-
-                try
-                {
-                    context.InspectionRecords.Add(record);
-                    context.SaveChanges();
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    errorMsg = "Lỗi khi lưu: " + ex.Message;
-                    return false;
-                }
+                errorMsg = $"Trạm kiểm định có ID = {record.StationId} không tồn tại.";
+                return false;
             }
-  
+
+            try
+            {
+                context.InspectionRecords.Add(record);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorMsg = "Lỗi khi lưu: " + ex.Message;
+                return false;
+            }
+        }
 
 
-    public InspectionRecord? GetById(int id) => _repo.GetById(id);
+
+        public InspectionRecord? GetById(int id) => _repo.GetById(id);
         public void Create(InspectionRecord x) => _repo.Add(x);
         public void Update(InspectionRecord x) => _repo.Update(x);
-        public void Delete(InspectionRecord x) => _repo.Delete(x);
 
         /* ==== TÌM KIẾM HỒ SƠ ==== */
         public List<InspectionRecord> SearchInspectionRecords(
@@ -187,10 +186,25 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
         {
             using var context = new EmissionInspectionContext();
             return context.InspectionRecords
-                          .Include(r => r.Vehicle)
-                          .Where(r => r.Vehicle.OwnerId == ownerId)
-                          .ToList();
+              .Include(r => r.Vehicle)
+              .Include(r => r.Station) // <<< Bắt buộc có để binding hiển thị Station.Name
+              .Where(r => r.Vehicle.OwnerId == ownerId)
+              .ToList();
+
         }
+        public List<InspectionStation> GetAllStations()
+        {
+            using var context = new EmissionInspectionContext();
+            return context.InspectionStations.OrderBy(s => s.Name).ToList();
+        }
+
+        public void Delete(InspectionRecord record)
+        {
+            using var ctx = new EmissionInspectionContext();
+            ctx.InspectionRecords.Remove(record);
+            ctx.SaveChanges();
+        }
+
 
         public IList<FacilityReportDto> GetFacilityReports(
         DateTime? from, DateTime? to,

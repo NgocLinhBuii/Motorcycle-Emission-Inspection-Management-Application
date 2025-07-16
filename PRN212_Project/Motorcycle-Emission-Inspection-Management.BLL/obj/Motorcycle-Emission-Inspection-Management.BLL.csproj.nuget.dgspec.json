@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj": {}
+    "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj": {}
   },
   "projects": {
-    "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj": {
+    "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj",
+        "projectUniqueName": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj",
         "projectName": "Motorcycle-Emission-Inspection-Management.BLL",
-        "projectPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\obj\\",
+        "projectPath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\Motorcycle-Emission-Inspection-Management.BLL.csproj",
+        "packagesPath": "C:\\Users\\ledai\\.nuget\\packages\\",
+        "outputPath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ledai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj": {
-                "projectPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj"
+              "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj": {
+                "projectPath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj"
               }
             }
           }
@@ -69,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj": {
+    "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj",
+        "projectUniqueName": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj",
         "projectName": "Motorcycle-Emission-Inspection-Management.DAL",
-        "projectPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\FUL\\25_SU25\\PRN212\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\obj\\",
+        "projectPath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\Motorcycle-Emission-Inspection-Management.DAL.csproj",
+        "packagesPath": "C:\\Users\\ledai\\.nuget\\packages\\",
+        "outputPath": "D:\\Motorcycle-Emission-Inspection-Management-Application\\PRN212_Project\\Motorcycle-Emission-Inspection-Management.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ledai\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -164,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

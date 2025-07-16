@@ -9,9 +9,13 @@
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <!-- Tiêu đề -->
             <RowDefinition Height="Auto"/>
+            <!-- Bộ lọc -->
             <RowDefinition Height="*"/>
+            <!-- Bảng dữ liệu -->
             <RowDefinition Height="Auto"/>
+            <!-- Footer hoặc nút thoát -->
         </Grid.RowDefinitions>
 
         <!-- Tiêu đề -->
@@ -20,15 +24,36 @@
                    FontWeight="Bold"
                    Foreground="#2C3E50"
                    HorizontalAlignment="Center"
-                   Margin="0,10"/>
+                   Margin="0,10,0,10"
+                   Grid.Row="0"/>
 
-        <!-- Bộ lọc -->
-        <StackPanel Orientation="Horizontal"
-                    Grid.Row="1"
-                    HorizontalAlignment="Center"
-                    Margin="0,15,0,10">
-            <StackPanel>
-                <TextBlock Text="Biển số xe" FontSize="14" FontWeight="SemiBold" Foreground="#333"/>
+        <!-- Bộ lọc + nút -->
+        <Grid Grid.Row="1"
+              Margin="0,0,0,10"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Width="860">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180"/>
+                <!-- Biển số -->
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="180"/>
+                <!-- Model -->
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="120"/>
+                <!-- Tìm kiếm -->
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="100"/>
+                <!-- Xóa xe -->
+            </Grid.ColumnDefinitions>
+
+            <!-- Biển số xe -->
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Biển số xe"
+                           FontSize="14"
+                           FontWeight="SemiBold"
+                           Foreground="#333"
+                           Margin="0,0,0,4"/>
                 <TextBox x:Name="txtPlateFilter"
                          Width="180"
                          Height="30"
@@ -38,8 +63,13 @@
                          BorderThickness="1"/>
             </StackPanel>
 
-            <StackPanel>
-                <TextBlock Text="Model" FontSize="14" FontWeight="SemiBold" Foreground="#333"/>
+            <!-- Model -->
+            <StackPanel Grid.Column="2">
+                <TextBlock Text="Model"
+                           FontSize="14"
+                           FontWeight="SemiBold"
+                           Foreground="#333"
+                           Margin="0,0,0,4"/>
                 <TextBox x:Name="txtModelFilter"
                          Width="180"
                          Height="30"
@@ -49,18 +79,34 @@
                          BorderThickness="1"/>
             </StackPanel>
 
+            <!-- Nút tìm kiếm -->
             <Button x:Name="btnSearch"
+                    Grid.Column="4"
                     Content="🔍 Tìm kiếm"
                     Width="120" Height="36"
+                    VerticalAlignment="Bottom"
                     Background="#007BFF"
                     Foreground="White"
                     FontWeight="SemiBold"
                     FontSize="14"
                     Cursor="Hand"
                     BorderThickness="0"
-                    Margin="0,18,0,0"
                     Click="btnSearch_Click"/>
-        </StackPanel>
+
+            <!-- Nút xóa xe -->
+            <Button x:Name="btnDelete"
+                    Grid.Column="6"
+                    Content="🗑 Xóa xe"
+                    Width="100" Height="36"
+                    VerticalAlignment="Bottom"
+                    Background="#DC3545"
+                    Foreground="White"
+                    FontWeight="SemiBold"
+                    FontSize="14"
+                    Cursor="Hand"
+                    BorderThickness="0"
+                    Click="btnDelete_Click"/>
+        </Grid>
 
         <!-- Bảng dữ liệu -->
         <DataGrid x:Name="dgVehicles"
@@ -73,9 +119,10 @@
                   FontSize="14"
                   AlternatingRowBackground="#F0F2F5"
                   BorderBrush="#DDE2E5"
-                  Margin="0,10"
+                  Margin="0,10,0,10"
                   SelectionMode="Single"
-                  SelectionChanged="dgVehicles_SelectionChanged">
+                  SelectionChanged="dgVehicles_SelectionChanged"
+>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Biển số" Binding="{Binding PlateNumber}" Width="*" />
                 <DataGridTextColumn Header="Hãng" Binding="{Binding Brand}" Width="*" />
@@ -85,11 +132,14 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <!-- Nút Thoát -->
+        <!-- Footer (nếu cần) -->
         <StackPanel Grid.Row="3"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right"
-                    Margin="0,15,10,0">
+                    Margin="0,10,10,0">
+            <!-- Bạn có thể thêm nút Thoát ở đây nếu cần -->
         </StackPanel>
     </Grid>
+
 </Page>
+

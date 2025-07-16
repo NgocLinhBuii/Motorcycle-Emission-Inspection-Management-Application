@@ -29,6 +29,21 @@
                        HorizontalAlignment="Center"
                        Margin="0 0 0 20"/>
 
+            <TextBlock Text="Cơ sở kiểm định:" VerticalAlignment="Top" Margin="0,0,744,0" Grid.Row="1"/>
+            <ComboBox x:Name="cbStationFilter" Width="180" DisplayMemberPath="Name" SelectedValuePath="StationID" Margin="97,52,601,396" Grid.RowSpan="2"/>
+
+            <TextBlock Text="Ngày kiểm định:" VerticalAlignment="Top" Margin="308,0,-298,0" Grid.Row="1"/>
+            <DatePicker x:Name="dpDateFilter" Width="160" Margin="416,0,302,399" Grid.Row="1"/>
+
+            <Button Content="Tìm kiếm" Click="btnSearch_Click" Margin="596,0,191,396" Grid.Row="1"/>
+            <Button x:Name="btnDelete"
+        Content="Xóa kiểm định"
+        Background="#DC3545"
+        Foreground="White"
+        FontWeight="SemiBold"
+        FontSize="14"
+        Margin="715,0,39,396"
+        Click="btnDelete_Click" Grid.Row="1"/>
             <!-- DataGrid -->
             <DataGrid x:Name="dgInspectionHistory"
                       Grid.Row="1"
@@ -42,7 +57,7 @@
                       BorderBrush="#DDD"
                       RowHeight="36"
                       SelectionMode="Single"
-                      Margin="0">
+                      Margin="0,44,0,0">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Biển số xe" Binding="{Binding Vehicle.PlateNumber}" Width="*" />
                     <DataGridTextColumn Header="Cơ sở kiểm định" Binding="{Binding Station.Name}" Width="*" />
@@ -58,7 +73,7 @@
                         Orientation="Horizontal"
                         HorizontalAlignment="Right"
                         Margin="0 20 0 0">
-                
+
             </StackPanel>
         </Grid>
     </Border>
@@ -72,3 +87,5 @@
                           Opacity="0.15"/>
     </Page.Resources>
 </Page>
+
+ 
