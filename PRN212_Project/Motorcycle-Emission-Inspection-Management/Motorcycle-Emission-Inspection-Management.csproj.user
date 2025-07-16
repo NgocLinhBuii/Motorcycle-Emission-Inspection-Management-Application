@@ -44,6 +44,9 @@
     <Compile Update="Admin\VehicleManagementPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="RegisterWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="VehicleOwner\AddVehiclePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
