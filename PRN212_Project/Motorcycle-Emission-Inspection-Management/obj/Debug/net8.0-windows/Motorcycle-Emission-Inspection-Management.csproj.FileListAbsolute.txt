@@ -258,3 +258,9 @@ D:\FUL\25_SU25\PRN212\Motorcycle-Emission-Inspection-Management-Application\PRN2
 D:\FUL\25_SU25\PRN212\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\VehicleManagementPage.g.cs
 D:\FUL\25_SU25\PRN212\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\VehicleEmissionReportPage.baml
 D:\FUL\25_SU25\PRN212\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\VehicleEmissionReportPage.g.cs
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\UserEditPage.baml
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\UserEditPage.g.cs
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\VehicleEmissionReportPage.g.cs
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\VehicleManagementPage.g.cs
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\VehicleEmissionReportPage.baml
+D:\Motorcycle-Emission-Inspection-Management-Application\PRN212_Project\Motorcycle-Emission-Inspection-Management\obj\Debug\net8.0-windows\Admin\VehicleManagementPage.baml
