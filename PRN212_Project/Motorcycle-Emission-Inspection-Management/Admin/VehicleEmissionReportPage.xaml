@@ -1,0 +1,83 @@
+﻿<Page x:Class="Motorcycle_Emission_Inspection_Management.Admin.VehicleEmissionReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Motorcycle_Emission_Inspection_Management.Admin"
+      mc:Ignorable="d"
+      Background="#F4F6F7"
+      Title="Thống kê xe đạt tiêu chuẩn khí thải">
+
+    <DockPanel>
+
+        <!-- Header -->
+        <Border DockPanel.Dock="Top" Background="#2C3E50" Height="60">
+            <TextBlock Text="🏍️ Thống kê xe đạt tiêu chuẩn khí thải"
+                       Foreground="White"
+                       FontSize="22"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Margin="10"/>
+        </Border>
+
+        <!-- Main content -->
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Search Section -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15">
+                <!-- Tìm kiếm theo Biển số -->
+                <Label Content="Biển số" VerticalAlignment="Center" Margin="5"/>
+                <TextBox x:Name="PlateNumberSearchTextBox" Width="120" FontSize="14" Margin="5" VerticalAlignment="Center"/>
+
+                <!-- Tìm kiếm theo Ngày kiểm tra -->
+                <Label Content="Ngày kiểm tra từ" VerticalAlignment="Center" Margin="5"/>
+                <DatePicker x:Name="FromDatePicker" Width="120" Margin="5" VerticalAlignment="Center"/>
+
+                <Label Content="đến" VerticalAlignment="Center" Margin="5"/>
+                <DatePicker x:Name="ToDatePicker" Width="120" Margin="5" VerticalAlignment="Center"/>
+
+                <!-- Tìm kiếm theo Trạm kiểm định -->
+                <Label Content="Trạm kiểm định" VerticalAlignment="Center" Margin="5"/>
+                <TextBox x:Name="StationSearchTextBox" Width="120" FontSize="14" Margin="5" VerticalAlignment="Center"/>
+
+                <!-- Search Button -->
+                <Button Content="🔍 Tìm kiếm" Width="120" Margin="5" Click="BtnSearch_Click"
+                        Background="#2980B9" Foreground="White" FontWeight="Bold" Padding="10,0"/>
+            </StackPanel>
+
+            <!-- DataGrid hiển thị danh sách xe đạt tiêu chuẩn khí thải -->
+            <DataGrid x:Name="VehicleEmissionDataGrid"
+                      Grid.Row="1"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      HeadersVisibility="Column"
+                      GridLinesVisibility="None"
+                      Margin="0"
+                      AlternatingRowBackground="#ECF0F1">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Biển số" Binding="{Binding PlateNumber}" Width="120"/>
+                    <DataGridTextColumn Header="Hãng xe" Binding="{Binding Brand}" Width="150"/>
+                    <DataGridTextColumn Header="Mẫu xe" Binding="{Binding Model}" Width="150"/>
+                    <DataGridTextColumn Header="Ngày kiểm tra" Binding="{Binding InspectionDate}" Width="150"/>
+                    <DataGridTextColumn Header="Trạm kiểm định" Binding="{Binding StationName}" Width="200"/>
+                    <DataGridTextColumn Header="Kết quả" Binding="{Binding Result}" Width="100"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Footer (tùy chọn) -->
+            <TextBlock Grid.Row="2"
+                       Text="📌 Thống kê các xe đạt tiêu chuẩn khí thải (Kết quả 'Pass')"
+                       Foreground="Gray"
+                       FontStyle="Italic"
+                       Margin="0,10,0,0"/>
+        </Grid>
+    </DockPanel>
+</Page>

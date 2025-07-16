@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Motorcycle_Emission_Inspection_Management.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Hệ Thống Quản lý đăng kiểm khí thải xe máy"
+        Title="Hệ Thống Quản lý đăng kiểm khí thải xe cơ giới"
         Width="1400" Height="800"
         WindowStartupLocation="CenterScreen"
         Background="#F4F6F7"
@@ -16,7 +16,7 @@
                     Background="#2C3E50"
                     CornerRadius="0,0,6,6"
                     SnapsToDevicePixels="True">
-                <TextBlock Text="🚦 Hệ Thống Kiểm Định Khí Thải Xe Máy"
+                <TextBlock Text="🚦 Hệ Thống Kiểm Định Khí Thải Xe Cơ Giới"
                            Foreground="White"
                            FontSize="22"
                            FontWeight="Bold"

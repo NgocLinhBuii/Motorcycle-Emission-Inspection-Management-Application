@@ -21,41 +21,41 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
                           .Include(r => r.Vehicle)
                           .ToList();
         }
-      
-            // Các hàm có sẵn của bạn…
 
-            public bool AddSafe(InspectionRecord record, out string errorMsg)
+        // Các hàm có sẵn của bạn…
+
+        public bool AddSafe(InspectionRecord record, out string errorMsg)
+        {
+            errorMsg = string.Empty;
+
+            using var context = new EmissionInspectionContext();
+
+            // Kiểm tra StationId có tồn tại
+            bool stationExists = context.InspectionStations
+                                        .Any(s => s.StationId == record.StationId);
+
+            if (!stationExists)
             {
-                errorMsg = string.Empty;
-
-                using var context = new EmissionInspectionContext();
-
-                // Kiểm tra StationId có tồn tại
-                bool stationExists = context.InspectionStations
-                                            .Any(s => s.StationId == record.StationId);
-
-                if (!stationExists)
-                {
-                    errorMsg = $"Trạm kiểm định có ID = {record.StationId} không tồn tại.";
-                    return false;
-                }
-
-                try
-                {
-                    context.InspectionRecords.Add(record);
-                    context.SaveChanges();
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    errorMsg = "Lỗi khi lưu: " + ex.Message;
-                    return false;
-                }
+                errorMsg = $"Trạm kiểm định có ID = {record.StationId} không tồn tại.";
+                return false;
             }
-  
+
+            try
+            {
+                context.InspectionRecords.Add(record);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                errorMsg = "Lỗi khi lưu: " + ex.Message;
+                return false;
+            }
+        }
 
 
-    public InspectionRecord? GetById(int id) => _repo.GetById(id);
+
+        public InspectionRecord? GetById(int id) => _repo.GetById(id);
         public void Create(InspectionRecord x) => _repo.Add(x);
         public void Update(InspectionRecord x) => _repo.Update(x);
         public void Delete(InspectionRecord x) => _repo.Delete(x);
@@ -268,5 +268,43 @@ namespace Motorcycle_Emission_Inspection_Management.BLL.Services
             ctx.InspectionRecords.Add(record);
             ctx.SaveChanges();
         }
+
+        /* ==== TÌM KIẾM HỒ SƠ ==== */
+        public List<InspectionRecord> SearchInspectionRecords(string plateNumber, DateTime? fromDate, DateTime? toDate, string stationName)
+        {
+            // Start query to fetch inspection records
+            var query = _repo.GetAll().AsQueryable();
+
+            // Filter by Plate Number (Biển số xe)
+            if (!string.IsNullOrEmpty(plateNumber))
+            {
+                query = query.Where(ir => ir.Vehicle.PlateNumber.Contains(plateNumber.Trim(), StringComparison.OrdinalIgnoreCase));
+            }
+
+            // Filter by Inspection Date Range (Từ ngày đến ngày)
+            if (fromDate.HasValue)
+            {
+                query = query.Where(ir => ir.InspectionDate >= fromDate.Value);
+            }
+
+            if (toDate.HasValue)
+            {
+                query = query.Where(ir => ir.InspectionDate <= toDate.Value);
+            }
+
+            // Filter by Station Name (Trạm kiểm định)
+            if (!string.IsNullOrEmpty(stationName))
+            {
+                query = query.Where(ir => ir.Station.Name.Contains(stationName.Trim(), StringComparison.OrdinalIgnoreCase));
+            }
+
+            // Filter by Result (only "Pass")
+            query = query.Where(ir => ir.Result.Equals("Pass", StringComparison.OrdinalIgnoreCase));
+
+            // Execute the query and return the filtered results
+            return query.ToList();
+        }
+
+
     }
 }

@@ -9,13 +9,13 @@
     <DockPanel>
 
         <!-- Header -->
-        <Border DockPanel.Dock="Top" Background="#2C3E50" Height="60">
+        <Border DockPanel.Dock="Top" Background="#2C3E50" Height="80">
             <TextBlock Text="👤 Quản lý tài khoản người dùng"
                        Foreground="White"
-                       FontSize="22"
+                       FontSize="24"
                        FontWeight="Bold"
-                       VerticalAlignment="Center"
                        HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
                        Margin="10"/>
         </Border>
 
@@ -23,23 +23,53 @@
         <Grid Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
+            <!-- Tìm kiếm -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15" >
+                <!-- Tìm kiếm theo Tên -->
+                <Label>Tên</Label>
+                <TextBox x:Name="NameSearchTextBox"
+                         Width="100"
+                         Margin="5"
+                         FontSize="14"
+                         VerticalAlignment="Center" />
+
+                <!-- Tìm kiếm theo Email -->
+                <Label>Email</Label>
+                <TextBox x:Name="EmailSearchTextBox"
+                         Width="100"
+                         Margin="5"
+                         FontSize="14"
+                         VerticalAlignment="Center" />
+
+                <!-- Tìm kiếm theo Vai trò -->
+                <Label>Vai trò</Label>
+                <ComboBox x:Name="RoleSearchComboBox"
+                              Width="100" Margin="5">
+                </ComboBox>
+
+                <!-- Nút tìm kiếm -->
+                <Button Content="🔍 Tìm kiếm" Width="120" Margin="5" Click="BtnSearch_Click"
+                        Background="#2980B9" Foreground="White" FontWeight="Bold" Padding="10,0"/>
+            </StackPanel>
+
             <!-- Button controls -->
-            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
-                <Button Content="➕ Thêm" Width="100" Margin="5" Click="BtnAdd_Click"
-                        Background="#27AE60" Foreground="White"/>
-                <Button Content="✏️ Sửa" Width="100" Margin="5" Click="BtnEdit_Click"
-                        Background="#2980B9" Foreground="White"/>
-                <Button Content="🗑️ Xóa" Width="100" Margin="5" Click="BtnDelete_Click"
-                        Background="#C0392B" Foreground="White"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+                <Button Content="➕ Thêm" Width="120" Height="30" Margin="5" Click="BtnAdd_Click"
+                        Background="#27AE60" Foreground="White" FontWeight="Bold" Padding="10,0"/>
+                <Button Content="✏️ Sửa" Width="120" Margin="5" Click="BtnEdit_Click"
+                        Background="#2980B9" Foreground="White" FontWeight="Bold" Padding="10,0"/>
+                <Button Content="🗑️ Xóa" Width="120" Margin="5" Click="BtnDelete_Click"
+                        Background="#C0392B" Foreground="White" FontWeight="Bold" Padding="10,0"/>
             </StackPanel>
 
             <!-- DataGrid hiển thị danh sách người dùng -->
             <DataGrid x:Name="UserDataGrid"
-                      Grid.Row="1"
+                      Grid.Row="2"
                       AutoGenerateColumns="False"
                       CanUserAddRows="False"
                       IsReadOnly="True"
@@ -47,9 +77,11 @@
                       HeadersVisibility="Column"
                       GridLinesVisibility="None"
                       Margin="0"
-                      AlternatingRowBackground="#ECF0F1">
+                      AlternatingRowBackground="#ECF0F1"
+                      FontSize="14"
+                      Padding="10">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="ID" Binding="{Binding UserId}" Width="80"/>
+                    <DataGridTextColumn Header="ID" Binding="{Binding UserId}" Width="80" />
                     <DataGridTextColumn Header="Họ tên" Binding="{Binding FullName}" Width="*"/>
                     <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
                     <DataGridTextColumn Header="SĐT" Binding="{Binding Phone}" Width="120"/>
@@ -59,11 +91,13 @@
                 </DataGrid.Columns>
             </DataGrid>
 
-            <!-- Footer (tùy chọn) -->
-            <TextBlock Grid.Row="2"
+            <!-- Footer -->
+            <TextBlock Grid.Row="4"
                        Text="📌 Chọn tài khoản để sửa hoặc xóa – Thêm để tạo mới"
                        Foreground="Gray"
                        FontStyle="Italic"
+                       FontSize="12"
+                       HorizontalAlignment="Left"
                        Margin="0,10,0,0"/>
         </Grid>
     </DockPanel>
